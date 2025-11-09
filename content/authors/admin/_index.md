@@ -86,7 +86,8 @@ work:
     date_start: 2025-07-01
     date_end: ''
     summary: |2-
-      Coordinate clinic-wide operations for two-provider audiology site. Developed master insurance benefits tracking system reducing provider follow-up time by 75%. Achieve 100% on-time patient preparation.
+      Coordinated clinic-wide operations for a two-provider audiology site, managing daily workflows, scheduling priorities, and patient readiness — achieving 100% on-time preparation and reducing same-day delays. Developed a master insurance benefits tracking system in Excel, consolidating coverage data into a single monthly reference for audiologists — eliminating repetitive emails and reducing provider follow-up time by 75%. Coordinated hearing aid order workflows by linking device requests to insurance and clinical documentation platforms (AudBase, NOAH) and validating coverage and contract details — ensuring accurate, on-time documentation and smooth fitting appointments. Managed clinical hearing aid inventory and vendor logistics, including ordering, receiving, device assembly, and mailing supplies to patients as needed — maintaining 0% stockouts and ensuring full device availability for all scheduled fittings.
+      
   - position: CBRF Compliance & Support Assistant
     company_name: Circle Of Hope, Inc II
     company_url: ''
@@ -94,7 +95,34 @@ work:
     date_start: 2024-08-01
     date_end: 2025-05-31
     summary: |
-      Authored revised employee handbook integrating HIPAA, DHS 83/88, and agency-specific regulations. Designed compliance-driven documentation workflows.
+      Authored a revised employee handbook integrating HIPAA, DHS 83/88, and agency-specific regulations to enhance policy clarity and accountability. Designed compliance-driven documentation workflows to reduce onboarding inefficiencies and improve regulatory inspection outcomes. Initiated retention-sensitive policy updates that aligned staffing practices with organizational stability goals, contributing to reduced turnover.
+      
+  - position: Clinical Operations Support (Non-Clinical)
+    company_name: Interim HealthCare
+    company_url: ''
+    icon: ''
+    date_start: 2024-01-01
+    date_end: 2024-06-30
+    summary: |
+      Oversaw outpatient scheduling and documentation operations to enhance care coordination across home health and ambulatory programs. Verified credentials and immunization records to maintain compliance and readiness for audits and patient-facing care. Maintained HIPAA-compliant intake logs and supported room prep, faxing, and medical record organization in a fast-paced care setting.
+      
+  - position: Administrative Operations Support (Contract Roles)
+    company_name: The QTI Group / Drake & Company Staffing Solutions
+    company_url: ''
+    icon: ''
+    date_start: 2021-01-01
+    date_end: 2023-07-31
+    summary: |
+      Assigned Clients: UW Health, Wisconsin Association of Independent Colleges, Madison Metropolitan School District, Sand County Foundation, Clack Corporation. Provided administrative coordination across healthcare, education, and nonprofit sites; managed scheduling, multi-line communications, and confidential documentation for clinical and academic operations. Systematically prepared and indexed 1,000+ records for digitization; ensured data accuracy and maintained HIPAA/FERPA compliance across operational workflows. Maintained donor and sponsorship databases; processed contributions, prepared acknowledgments, and supported communication efforts for stakeholder engagement. Supported operational workflows in a regulated facility environment, ensuring precision, materials handling, and consistent task execution aligned with organizational standards.
+      
+  - position: Logistics & Operations Support
+    company_name: U.S. Army
+    company_url: ''
+    icon: ''
+    date_start: 2021-07-01
+    date_end: 2024-08-31
+    summary: |
+      Managed regulated transportation and storage of hazardous materials in compliance with federal safety standards. Maintained continuous audit readiness for 40+ critical systems through rigorous documentation, inspections, and regulatory compliance protocols. Implemented risk mitigation strategies and enforced operational standards to ensure alignment with Army regulations and federal guidelines. Led compliance-driven training, operational oversight, and emergency response drills for cross-functional teams.
 
 # Skills
 skills:
@@ -133,7 +161,7 @@ languages:
   - name: English
     percent: 100
 
-# Awards
+# Certifications
 awards:
   - title: Basic Life Support HealthCare Provider (BLS HCP)
     url: ''
