@@ -1,20 +1,17 @@
 ---
 # Display name
-title: Alex Johnson
+title: Kamellia Hyacinth
 
 # Name pronunciation (optional)
 name_pronunciation: ''
 
 # Full name (for SEO)
-first_name: Alex
-last_name: Johnson
-
-# Pronouns (optional)
-pronouns: he/him
+first_name: Kamellia
+last_name: Hyacinth
 
 # Status emoji
 status:
-  icon: 🚀
+  icon: 🎓
 
 # Is this the primary user of the site?
 superuser: true
@@ -23,150 +20,128 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Senior AI Research Scientist
+role: Dual MHA/MPH Candidate | Public Health Policy & Healthcare Administration
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+  - name: University of Wisconsin - Milwaukee
+    url: https://uwm.edu/
 
 # Social network links
-# Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:alex.johnson@meta.com'
+    url: 'mailto:kamelliahyacinth@gmail.com'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/AlexAIResearch
-  - icon: brands/github
-    url: https://github.com/alexjohnsonai
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/alexjohnsonai/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=alexjohnson
-  - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: https://www.linkedin.com/in/kamellia
+  - icon: brands/github
+    url: https://github.com/Kamelliah
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - Healthcare Policy & Advocacy
+  - Public Health & Community Wellness
+  - Patient Experience & Quality Improvement
+  - Healthcare Data Analytics
+  - Strategic Planning & Leadership
+  - Population Health
+  - Epidemiology
 
 education:
-  - area: PhD Computer Science (AI Focus)
-    institution: Stanford University
+  - area: Master of Science - Public Health (Policy & Management)
+    institution: University of Wisconsin - Milwaukee
     icon: ""
-    date_start: 2015-09-01
-    date_end: 2019-06-30
+    date_start: 2024-08-01
+    date_end: 2026-12-31
     summary: |
-      Thesis on _Scaling Laws for Neural Language Models_. Supervised by Prof. Andrew Ng. Published 5 papers in NeurIPS and ICML, with 2 best paper awards.
+      Expected graduation: December 2026
+      
+      I am pursuing a Master of Public Health at the University of Wisconsin–Milwaukee with a concentration in Public Health Policy and Management. This program will strengthen my ability to evaluate health systems, develop policy solutions, and lead initiatives that advance equity and regulatory compliance in healthcare.
     button:
-      text: 'Read Thesis'
-      url: 'https://example.com/thesis.pdf'
-  - area: MS Computer Science
-    institution: Carnegie Mellon University
+      text: 'Learn More'
+      url: 'https://uwm.edu/publichealth/'
+  - area: Master of Science - Healthcare Administration
+    institution: University of Wisconsin - La Crosse
     icon: ""
-    date_start: 2013-09-01
-    date_end: 2015-05-31
+    date_start: 2023-08-01
+    date_end: 2025-05-31
     summary: |
-      GPA: 4.0/4.0
-
-      Specialized in machine learning and robotics.
-  - area: BS Computer Science
-    institution: MIT
+      Graduated: May 2025
+      
+      Specialized in healthcare operations, strategic planning, and organizational management.
+  - area: Bachelor of Science - Information Technology
+    institution: St. George's University
     icon: ""
-    date_start: 2009-09-01
-    date_end: 2013-05-31
+    date_start: 2011-09-01
+    date_end: 2015-12-31
     summary: |
-      GPA: 3.9/4.0
-
-      Minored in Mathematics. President of AI Club.
+      Graduated: December 2015
+      
+      Foundation in systems management, data analysis, and technology solutions.
 
 work:
-  - position: Senior AI Research Scientist
-    company_name: Meta AI
-    company_url: 'https://ai.meta.com/'
+  - position: Audiology Clinical Operations Coordinator
+    company_name: SSM Health Dean Medical Group
+    company_url: 'https://www.ssmhealth.com/'
     icon: ''
-    date_start: 2020-01-01
+    date_start: 2025-07-01
     date_end: ''
     summary: |2-
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models. 50+ citations in 3 years.
-  - position: AI Research Intern
-    company_name: OpenAI
-    company_url: 'https://openai.com/'
+      Coordinate clinic-wide operations for two-provider audiology site. Developed master insurance benefits tracking system reducing provider follow-up time by 75%. Achieve 100% on-time patient preparation.
+  - position: CBRF Compliance & Support Assistant
+    company_name: Circle Of Hope, Inc II
+    company_url: ''
     icon: ''
-    date_start: 2019-06-01
-    date_end: 2019-12-31
+    date_start: 2024-08-01
+    date_end: 2025-05-31
     summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+      Authored revised employee handbook integrating HIPAA, DHS 83/88, and agency-specific regulations. Designed compliance-driven documentation workflows.
 
 # Skills
-# Add your own SVG icons to `assets/media/icons/`
 skills:
   - name: Technical Skills
     items:
-      - name: Python & PyTorch
-        description: ''
-        percent: 95
-        icon: code-bracket
-      - name: Machine Learning
-        description: ''
-        percent: 100
-        icon: chart-bar
-      - name: Cloud Computing (AWS/GCP)
+      - name: Excel, SAS, Tableau
         description: ''
         percent: 85
+        icon: code-bracket
+      - name: Regulatory Compliance
+        description: ''
+        percent: 90
+        icon: chart-bar
+      - name: Public Health Surveillance
+        description: ''
+        percent: 80
         icon: cloud
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking in the Rockies
-        description: ''
-        percent: 80
-        icon: person-simple-walk
-      - name: Building Custom PCs
+      - name: Community Service
         description: ''
         percent: 90
-        icon: cpu-chip
-      - name: Sci-Fi Reading
+        icon: person-simple-walk
+      - name: Health Advocacy
         description: ''
-        percent: 70
+        percent: 95
+        icon: cpu-chip
+      - name: Professional Development
+        description: ''
+        percent: 85
         icon: book-open
 
 languages:
   - name: English
     percent: 100
-  - name: Spanish
-    percent: 50
 
-# Awards.
-#   Add/remove as many awards below as you like.
-#   Only `title`, `awarder`, and `date` are required.
-#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
+# Awards
 awards:
-  - title: Best Paper Award
-    url: https://neurips.cc/
-    date: '2022-12-01'
-    awarder: NeurIPS
-    icon: hero/trophy
-    summary: |
-      Awarded for groundbreaking work on efficient training of large models.
-  - title: AI Innovation Grant
-    url: https://www.nsf.gov/
-    date: '2021-06-15'
-    awarder: National Science Foundation
-    icon: hero/currency-dollar
-    summary: |
-      $500,000 grant for research in ethical AI development.
-  - title: Outstanding PhD Thesis
-    url: https://www.stanford.edu/
-    date: '2019-06-30'
-    awarder: Stanford University
+  - title: Basic Life Support HealthCare Provider (BLS HCP)
+    url: ''
+    date: '2024-01-01'
+    awarder: American Heart Association
     icon: hero/academic-cap
     summary: |
-      Recognized for contributions to scaling laws in deep learning.
+      Current certification in Basic Life Support for Healthcare Providers through the Resuscitation Quality Improvement (RQI) Program.
 ---
 
-Alex Johnson is a Senior AI Research Scientist at Meta AI, where he leads groundbreaking work on large language models and multimodal systems. His research has been published in top conferences like NeurIPS and ICML, with over 10,000 citations. Alex is passionate about pushing the boundaries of AI while ensuring ethical development. Outside of work, he enjoys hiking in the Rockies, building custom PCs, and mentoring the next generation of AI talent.
+As a healthcare administration professional with a strong foundation in public health and health IT, I am passionate about driving change through innovative policy, operations, and technology. Focused on epidemiology, health advocacy, and regulatory compliance, I leverage data-driven decision-making and healthcare innovation to improve outcomes. My military leadership background has instilled discipline, strategic thinking, and adaptability, which I apply in dynamic healthcare environments. I am dedicated to transforming healthcare systems and advancing public health initiatives through technology and policy. Outside of my professional work, I stay active in community service and civic duties continually pursuing personal and professional growth.
