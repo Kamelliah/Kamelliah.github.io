@@ -233,5 +233,4 @@ Currently seeking strategic roles involving policy execution, operational oversi
 - Led compliance and logistics across 40+ high-risk Army systems, ensuring regulatory readiness and uninterrupted operations
 - Designed and implemented a policy manual aligning CBRF operations with HIPAA, CMS, and DHS 83/88 standards, improving onboarding and accountability
 - Developed data-based workflows that reduced admin tasks by 75% and improved audit accuracy and transparency in clinical settings
-- Coordinated clinic-wide operations achieving 100% on-time patient preparation and
----
+- Coordinated clinic-wide operations achieving 100% on-time patient preparation and maintaining 0% stockouts in inventory management
