@@ -6,13 +6,14 @@ type: landing
 design:
   # Default section spacing
   spacing: '6rem'
+
 sections:
   - block: resume-biography-3
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
       text: ''
-      # Show a call-to-action button under your biography? (optional)
+      # Show a call-to-action button under your biography
       button:
         text: Download CV
         url: uploads/resume.pdf
@@ -21,12 +22,19 @@ sections:
         education: ''
         interests: ''
     design:
-      # Apply a gradient background
+      # Apply gradient background
       css_class: hbx-bg-gradient
       # Avatar customization
       avatar:
-        size: xl # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
-        shape: circle # Options: circle (default), square, rounded
+        size: xxl         # Increased size (was xl)
+        shape: circle     # Circle shape for profile
+      css_style: |
+        /* Force larger and responsive avatar */
+        .avatar {
+          max-width: 500px !important;
+          height: auto !important;
+        }
+
   - block: markdown
     content:
       title: '📚 My Research'
@@ -37,6 +45,7 @@ sections:
         Please reach out to collaborate 😃
     design:
       columns: '1'
+
   - block: collection
     id: papers
     content:
@@ -48,6 +57,7 @@ sections:
     design:
       view: article-grid
       columns: 2
+
   - block: collection
     content:
       title: Recent Publications
@@ -58,6 +68,7 @@ sections:
         exclude_featured: false
     design:
       view: citation
+
   - block: collection
     id: talks
     content:
@@ -67,17 +78,15 @@ sections:
           - events
     design:
       view: card
+
   - block: collection
     id: news
     content:
       title: Recent News
       subtitle: ''
       text: ''
-      # Page type to display. E.g. post, talk, publication...
       page_type: blog
-      # Choose how many pages you would like to display (0 = all pages)
       count: 5
-      # Filter on criteria
       filters:
         author: ''
         category: ''
@@ -86,18 +95,15 @@ sections:
         exclude_future: false
         exclude_past: false
         publication_type: ''
-      # Choose how many pages you would like to offset by
       offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
       order: desc
     design:
-      # Choose a layout view
       view: card
-      # Reduce spacing
       spacing:
         padding: [0, 0, 0, 0]
+
   - block: cta-card
-    demo: true # Only display this section in the Hugo Blox Builder demo site
+    demo: true
     content:
       title: 👉 Build your own academic website like this
       text: |-
@@ -110,7 +116,6 @@ sections:
         url: https://hugoblox.com/templates/
     design:
       card:
-        # Card background color (CSS class)
         css_class: 'bg-primary-300 dark:bg-primary-700'
         css_style: ''
 ---
