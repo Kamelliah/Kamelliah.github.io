@@ -32,10 +32,12 @@ profiles:
   - icon: at-symbol
     url: 'mailto:kamelliahyacinth@gmail.com'
     label: E-mail Me
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/kamellia
   - icon: brands/github
     url: https://github.com/Kamelliah
+    label: GitHub
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/kamellia
+    label: LinkedIn
 
 interests:
   - Healthcare Policy & Advocacy
