@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Dual MHA/MPH Candidate | Public Health Policy & Healthcare Administration
+role: MPH Candidate | Public Health Policy & Healthcare Administration
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
