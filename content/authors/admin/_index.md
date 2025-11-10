@@ -29,7 +29,7 @@ organizations:
 
 # Social network links
 profiles:
-  - icon: at-symbol
+  - icon: envelope
     url: 'mailto:kamelliahyacinth@gmail.com'
     label: E-mail Me
   - icon: brands/github
