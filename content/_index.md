@@ -1,12 +1,11 @@
 ---
 # Leave the homepage title empty to use the site title
-title: Kamella Hyacinth
+title: ''
 date: 2022-10-24
 type: landing
 design:
   # Default section spacing
   spacing: '6rem'
-
 sections:
   - block: resume-biography-3
     content:
@@ -26,16 +25,8 @@ sections:
       css_class: hbx-bg-gradient
       # Avatar customization
       avatar:
-        size: xxl           # Increased size
-        shape: circle       # Circle shape for profile
-        filename: kamellia.jpg   # 👈🏽 add this line to use your own image file
-      css_style: |
-        /* Force larger and responsive avatar */
-        .avatar {
-          max-width: 500px !important;
-          height: auto !important;
-        }
-
+        size: xxl
+        shape: circle
   - block: markdown
     content:
       title: '📚 My Research'
@@ -46,7 +37,6 @@ sections:
         Please reach out to collaborate 😃
     design:
       columns: '1'
-
   - block: collection
     id: papers
     content:
@@ -58,7 +48,6 @@ sections:
     design:
       view: article-grid
       columns: 2
-
   - block: collection
     content:
       title: Recent Publications
@@ -69,7 +58,6 @@ sections:
         exclude_featured: false
     design:
       view: citation
-
   - block: collection
     id: talks
     content:
@@ -79,7 +67,6 @@ sections:
           - events
     design:
       view: card
-
   - block: collection
     id: news
     content:
@@ -102,7 +89,6 @@ sections:
       view: card
       spacing:
         padding: [0, 0, 0, 0]
-
   - block: cta-card
     demo: true
     content:
