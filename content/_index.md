@@ -25,7 +25,7 @@ sections:
       css_class: hbx-bg-gradient
       # Avatar customization
       avatar:
-        size: xxl
+        size: xl
         shape: circle
   - block: markdown
     content:
