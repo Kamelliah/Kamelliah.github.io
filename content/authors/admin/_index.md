@@ -61,6 +61,7 @@ education:
     button:
       text: 'Learn More'
       url: 'https://uwm.edu/publichealth/'
+      
   - area: Master of Science - Healthcare Administration
     institution: University of Wisconsin - La Crosse
     icon: ""
@@ -70,6 +71,7 @@ education:
       Graduated: May 2025
       
       Specialized in healthcare operations, strategic planning, and organizational management.
+      
   - area: Bachelor of Science - Information Technology
     institution: St. George's University
     icon: ""
@@ -87,11 +89,13 @@ work:
     icon: ''
     date_start: 2025-07-01
     date_end: ''
-    summary: |2-
+    summary: |
+      Responsibilities include:
+      
       - Coordinated clinic-wide operations for a two-provider audiology site, managing daily workflows, scheduling priorities, and patient readiness — achieving 100% on-time preparation and reducing same-day delays
       - Developed a master insurance benefits tracking system in Excel, consolidating coverage data into a single monthly reference for audiologists — eliminating repetitive emails and reducing provider follow-up time by 75%
-      - Coordinated hearing aid order workflows by linking device requests to insurance and clinical documentation platforms (AudBase, NOAH) and validating coverage and contract details — ensuring accurate, on-time documentation and smooth fitting appointments
-      - Managed clinical hearing aid inventory and vendor logistics, including ordering, receiving, device assembly, and mailing supplies to patients as needed — maintaining 0% stockouts and ensuring full device availability for all scheduled fittings
+      - Coordinated hearing aid order workflows by linking device requests to insurance and clinical documentation platforms (AudBase, NOAH) and validating coverage and contract details
+      - Managed clinical hearing aid inventory and vendor logistics, maintaining 0% stockouts and ensuring full device availability for all scheduled fittings
       
   - position: CBRF Compliance & Support Assistant
     company_name: Circle Of Hope, Inc II
@@ -99,7 +103,9 @@ work:
     icon: ''
     date_start: 2024-08-01
     date_end: 2025-05-31
-    summary: |2-
+    summary: |
+      Responsibilities include:
+      
       - Authored a revised employee handbook integrating HIPAA, DHS 83/88, and agency-specific regulations to enhance policy clarity and accountability
       - Designed compliance-driven documentation workflows to reduce onboarding inefficiencies and improve regulatory inspection outcomes
       - Initiated retention-sensitive policy updates that aligned staffing practices with organizational stability goals, contributing to reduced turnover
@@ -110,7 +116,9 @@ work:
     icon: ''
     date_start: 2024-01-01
     date_end: 2024-06-30
-    summary: |2-
+    summary: |
+      Responsibilities include:
+      
       - Oversaw outpatient scheduling and documentation operations to enhance care coordination across home health and ambulatory programs
       - Verified credentials and immunization records to maintain compliance and readiness for audits and patient-facing care
       - Maintained HIPAA-compliant intake logs and supported room prep, faxing, and medical record organization in a fast-paced care setting
@@ -121,13 +129,15 @@ work:
     icon: ''
     date_start: 2021-01-01
     date_end: 2023-07-31
-    summary: |2-
+    summary: |
       Assigned Clients: UW Health, Wisconsin Association of Independent Colleges, Madison Metropolitan School District, Sand County Foundation, Clack Corporation
       
-      - Provided administrative coordination across healthcare, education, and nonprofit sites; managed scheduling, multi-line communications, and confidential documentation for clinical and academic operations
-      - Systematically prepared and indexed 1,000+ records for digitization; ensured data accuracy and maintained HIPAA/FERPA compliance across operational workflows
-      - Maintained donor and sponsorship databases; processed contributions, prepared acknowledgments, and supported communication efforts for stakeholder engagement
-      - Supported operational workflows in a regulated facility environment, ensuring precision, materials handling, and consistent task execution aligned with organizational standards
+      Responsibilities include:
+      
+      - Provided administrative coordination across healthcare, education, and nonprofit sites; managed scheduling, multi-line communications, and confidential documentation
+      - Systematically prepared and indexed 1,000+ records for digitization; ensured data accuracy and maintained HIPAA/FERPA compliance
+      - Maintained donor and sponsorship databases; processed contributions and acknowledgments
+      - Supported operational workflows in regulated facility environments
       
   - position: Logistics & Operations Support
     company_name: U.S. Army
@@ -135,11 +145,14 @@ work:
     icon: ''
     date_start: 2021-07-01
     date_end: 2024-08-31
-    summary: |2-
+    summary: |
+      Responsibilities include:
+      
       - Managed regulated transportation and storage of hazardous materials in compliance with federal safety standards
-      - Maintained continuous audit readiness for 40+ critical systems through rigorous documentation, inspections, and regulatory compliance protocols
-      - Implemented risk mitigation strategies and enforced operational standards to ensure alignment with Army regulations and federal guidelines
-      - Led compliance-driven training, operational oversight, and emergency response drills for cross-functional teams
+      - Maintained continuous audit readiness for 40+ critical systems through rigorous documentation and inspections
+      - Implemented risk mitigation strategies and enforced operational standards aligned with Army regulations
+      - Led compliance-driven training, operational oversight, and emergency response drills
+
 # Skills
 skills:
   - name: Technical Skills
@@ -156,6 +169,7 @@ skills:
         description: ''
         percent: 80
         icon: cloud
+        
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
