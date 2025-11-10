@@ -26,8 +26,9 @@ sections:
       css_class: hbx-bg-gradient
       # Avatar customization
       avatar:
-        size: xxl         # Increased size (was xl)
-        shape: circle     # Circle shape for profile
+        size: xxl           # Increased size
+        shape: circle       # Circle shape for profile
+        filename: kamellia.jpg   # 👈🏽 add this line to use your own image file
       css_style: |
         /* Force larger and responsive avatar */
         .avatar {
@@ -119,3 +120,4 @@ sections:
         css_class: 'bg-primary-300 dark:bg-primary-700'
         css_style: ''
 ---
+
