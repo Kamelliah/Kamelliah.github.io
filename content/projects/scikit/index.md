@@ -1,15 +1,19 @@
 ---
-title: scikit-learn
-date: 2023-10-26
-links:
-  - type: site
-    url: https://github.com/scikit-learn/scikit-learn
-tags:
-  - Hugo
-  - HugoBlox
-  - Markdown
+title: "Professional Communication & Interpersonal Skills"
+summary: "Developing equitable communication strategies to strengthen workforce and patient engagement."
+date: 2025-10-03
+tags: ["Communication", "Equity", "Public Health"]
+image:
+  filename: communication.jpg
+  alt_text: "Health equity communication graphic"
+design:
+  view: showcase
+  columns: "2"
 ---
 
-scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.
+In **HCA 710**, I developed patient education strategies that supported health literacy and inclusive communication.  
+A **literature review in HCA 705** deepened my understanding of culturally competent communication and how it impacts health outcomes—especially during the COVID-19 pandemic.
 
-<!--more-->
+**Artifacts**
+- Health Communication Proposal Flier  
+- Public Health Crisis Communication
