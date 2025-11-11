@@ -10,7 +10,7 @@ sections:
     content:
       title: "Professional Portfolio"
       text: |
-        Welcome to my professional portfolio — a curated collection of my academic, policy, and operational projects demonstrating evidence-based problem solving and leadership across healthcare systems.
+        As a former graduate of the Master of Healthcare Administration (MHA) program and a current graduate student in the Master of Public Health (MPH) program at the University of Wisconsin–Milwaukee, I am proud to present a portfolio that reflects my growing expertise in healthcare leadership and public health policy. My academic and professional journey has equipped me with competencies in strategic planning, financial management, healthcare operations, and policy advocacy, all grounded in a commitment to advancing health equity. Each project showcased here demonstrates my ability to bridge administrative strategy with population health, and my readiness to lead meaningful improvements across healthcare and public service systems.
       image:
         filename: portrait.jpg
         alt_text: "Portfolio hero image"
@@ -30,3 +30,4 @@ sections:
       sort: "date_desc"
       view: card
 ---
+
