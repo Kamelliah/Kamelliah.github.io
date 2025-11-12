@@ -17,16 +17,14 @@ main:
     url: /projects/mph-capstone/
     weight: 32
     parent: Capstone Projects
-  - name: News
-    url: /news/
-    weight: 40
   - name: Experience
     url: /experience/
     weight: 50
+  - name: News
+    url: /news/
+    weight: 40
   - name: Contact
     url: /contact/
     weight: 60
     main:
-  - name: Timeline
-    url: '/timeline/'
-    weight: 45
+  
