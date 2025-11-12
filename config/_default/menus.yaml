@@ -26,3 +26,7 @@ main:
   - name: Contact
     url: /contact/
     weight: 60
+    main:
+  - name: Timeline
+    url: '/timeline/'
+    weight: 45
