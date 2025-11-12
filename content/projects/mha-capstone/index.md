@@ -129,13 +129,7 @@ Through this experience, I gained valuable insights into the complexities of hum
 
 ## Skills Demonstrated
 
-{{< badge >}}Strategic Planning{{< /badge >}}
-{{< badge >}}Human Resources Management{{< /badge >}}
-{{< badge >}}Policy Development{{< /badge >}}
-{{< badge >}}Cost Analysis{{< /badge >}}
-{{< badge >}}Organizational Development{{< /badge >}}
-{{< badge >}}Stakeholder Engagement{{< /badge >}}
-{{< badge >}}Process Improvement{{< /badge >}}
+**Strategic Planning** • **Human Resources Management** • **Policy Development** • **Cost Analysis** • **Organizational Development** • **Stakeholder Engagement** • **Process Improvement**
 
 ---
 
