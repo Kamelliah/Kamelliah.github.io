@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 500">
+  <!-- Background -->
+  <rect width="1400" height="500" fill="#ffffff"/>
+  
+  <!-- Main horizontal line with gradient -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FDB702;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#FF6B35;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#C5050C;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#9B4F96;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#667eea;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect x="100" y="246" width="1200" height="8" rx="4" fill="url(#grad1)"/>
+  
+  <!-- Milestone 1 -->
+  <g>
+    <line x1="250" y1="150" x2="250" y2="246" stroke="#FDB702" stroke-width="4"/>
+    <rect x="235" y="235" width="30" height="30" transform="rotate(45 250 250)" fill="#FDB702"/>
+    <circle cx="250" cy="100" r="50" fill="white" stroke="#FDB702" stroke-width="8"/>
+  </g>
+  
+  <!-- Milestone 2 -->
+  <g>
+    <line x1="500" y1="254" x2="500" y2="350" stroke="#FF6B35" stroke-width="4"/>
+    <rect x="485" y="239" width="30" height="30" transform="rotate(45 500 254)" fill="#FF6B35"/>
+    <circle cx="500" cy="400" r="50" fill="white" stroke="#FF6B35" stroke-width="8"/>
+  </g>
+  
+  <!-- Milestone 3 -->
+  <g>
+    <line x1="750" y1="150" x2="750" y2="246" stroke="#C5050C" stroke-width="4"/>
+    <rect x="735" y="235" width="30" height="30" transform="rotate(45 750 250)" fill="#C5050C"/>
+    <circle cx="750" cy="100" r="50" fill="white" stroke="#C5050C" stroke-width="8"/>
+  </g>
+  
+  <!-- Milestone 4 -->
+  <g>
+    <line x1="1000" y1="254" x2="1000" y2="350" stroke="#9B4F96" stroke-width="4"/>
+    <rect x="985" y="239" width="30" height="30" transform="rotate(45 1000 254)" fill="#9B4F96"/>
+    <circle cx="1000" cy="400" r="50" fill="white" stroke="#9B4F96" stroke-width="8"/>
+  </g>
+  
+  <!-- Milestone 5 -->
+  <g>
+    <line x1="1150" y1="150" x2="1150" y2="246" stroke="#667eea" stroke-width="4"/>
+    <rect x="1135" y="235" width="30" height="30" transform="rotate(45 1150 250)" fill="#667eea"/>
+    <circle cx="1150" cy="100" r="50" fill="white" stroke="#667eea" stroke-width="8"/>
+  </g>
+</svg>
