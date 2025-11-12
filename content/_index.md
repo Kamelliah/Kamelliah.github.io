@@ -63,31 +63,28 @@ sections:
       spacing:
         padding: [0, 0, 0, 0]
   
-  - block: contact
+  - block: markdown
     id: contact
     content:
       title: Contact
-      subtitle: ''
-      text: "I'm available for collaboration, consultation, and professional opportunities in healthcare administration and public health."
-      email: kamelliahyacinth@gmail.com
-      phone: 608-571-8876
-      address:
-        street: ''
-        city: Fitchburg
-        region: WI
-        postcode: '53713'
-        country: United States
-        country_code: US
-      office_hours:
-        - 'Monday - Friday: 9:00 AM - 3:00 PM'
-        - 'Saturday: Closed'
-        - 'Sunday: Closed'
-      contact_links:
-        - icon: linkedin
-          icon_pack: fab
-          name: LinkedIn
-          link: https://www.linkedin.com/in/kamellia
-      autolink: true
+      text: |-
+        **Get in Touch**
+        
+        I'm available for collaboration, consultation, and professional opportunities in healthcare administration and public health.
+        
+        📧 **Email:** [kamelliahyacinth@gmail.com](mailto:kamelliahyacinth@gmail.com)
+        
+        📞 **Phone:** 608-571-8876
+        
+        📍 **Location:** Fitchburg, WI 53713
+        
+        ⏰ **Hours:** Monday - Friday, 9:00 AM - 3:00 PM
+        
+        🔗 **LinkedIn:** [linkedin.com/in/kamellia](https://www.linkedin.com/in/kamellia)
+        
+        ---
+        
+        [Visit my full contact page →](/contact/)
     design:
-      columns: '2'
+      columns: '1'
 ---
