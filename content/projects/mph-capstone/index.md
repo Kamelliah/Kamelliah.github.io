@@ -11,7 +11,6 @@ categories:
   - Projects
 ---
 
-## MPH Capstone Project
 
 My Master of Public Health capstone project focuses on addressing critical public health challenges through community-based research and evidence-based interventions. This project represents the culmination of my graduate studies in public health and demonstrates my commitment to advancing health equity and improving population health outcomes.
 
