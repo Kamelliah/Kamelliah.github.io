@@ -1,7 +1,7 @@
 ---
 title: "MPH Capstone Project"
 summary: "Master of Public Health capstone project focused on advancing health equity and community wellness through evidence-based public health interventions."
-date: 2026-05-01
+date: 2026-06-01
 authors:
   - admin
 tags:
@@ -13,10 +13,6 @@ tags:
 categories:
   - Projects
   - MPH Capstone
-image:
-  caption: 'MPH Capstone Project'
-  focal_point: ''
-  preview_only: false
 ---
 
 ## MPH Capstone Project
