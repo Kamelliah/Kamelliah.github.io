@@ -33,11 +33,16 @@ profiles:
     url: 'mailto:kamelliahyacinth@gmail.com'
     label: E-mail Me
   - icon: brands/github
-    url: https://github.com/Kamelliah
+    url: 'https://github.com/Kamelliah'
     label: GitHub
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/kamellia
+    url: 'https://www.linkedin.com/in/kamellia'
     label: LinkedIn
+  - icon: calendar
+    url: 'https://www.calendly.com/kamelliahyacinth'
+    label: Schedule a Meeting
+
+
 
 interests:
   - Healthcare Policy & Advocacy
