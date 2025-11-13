@@ -42,7 +42,7 @@ profiles:
     url: 'https://www.calendly.com/kamelliahyacinth'
     label: Schedule a Meeting
   - icon: video
-    url: 'https://us04web.zoom.us/j/*******854?pwd=IVuckHPNbFbXCfona32ipp7FOjr59H.1'
+    url: 'https://zoom.us/j/7012830854'
     label: Schedule a Meeting
 
 
