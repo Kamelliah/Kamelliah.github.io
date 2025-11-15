@@ -41,8 +41,7 @@ profiles:
   - icon: calendar
     url: 'https://www.calendly.com/kamelliahyacinth'
     label: Schedule a Meeting
-  - icon: video
-    icon_pack: fas
+  - icon: fas/video
     url: 'https://zoom.us/j/7012830854'
     label: Zoom Meeting
 
