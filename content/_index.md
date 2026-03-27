@@ -220,9 +220,9 @@ sections:
       title: Get In Touch
       subtitle: "Let's build something amazing together"
       text: |-
-        I'm always interested in hearing about new projects and opportunities.
-        Whether you're looking to hire, collaborate, or just want to say hi, feel free to reach out!
-      email: alex@example.com
+        I'm always interested in opportunities to contribute to public health and healthcare improvement initiatives.
+        Whether you're interested in collaboration, professional connections, or discussing shared interests in healthcare and policy, feel free to reach out.
+      email: kamelliahyacinth@gmail.com
       autolink: true
     design:
       columns: '1'
