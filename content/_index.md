@@ -1,6 +1,6 @@
 ---
 # Leave the homepage title empty to use the site title
-title: ''
+title: 'Kamellia Hyacinth'
 summary: ''
 date: 2026-01-05
 type: landing
@@ -147,7 +147,7 @@ sections:
       items:
         - title: Community Health & Policy Intern 
           company: Children's Wisconsin
-          company_url: ''
+          company_url: 'https://childrenswi.org'
           company_logo: ''
           location: Remote
           date_start: '2023-01-01'
@@ -159,7 +159,7 @@ sections:
             * Tech stack: React, Node.js, PostgreSQL, AWS
         - title: Clinical Operations Coordinator
           company: SSM Health
-          company_url: ''
+          company_url: 'https://www.ssmhealth.com'
           company_logo: ''
           location: Madison, WI
           date_start: '2021-06-01'
