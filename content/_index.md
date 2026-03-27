@@ -12,8 +12,11 @@ design:
 sections:
 
   # Developer Hero - Gradient background with name, role, social, and CTAs
-  - block: dev-hero
-    id: hero
+ design:
+  style: centered
+  avatar_shape: circle
+  avatar_size: xl
+  animations: true
     content:
       username: me
       greeting: "Hi, I'm"
