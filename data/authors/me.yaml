@@ -1,7 +1,8 @@
 schema: hugoblox/author/v1
 slug: me
 is_owner: true
-
+avatar:
+  filename: me.png
 name:
   display: Kamellia Hyacinth
   given: Kamellia
