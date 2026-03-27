@@ -1,4 +1,7 @@
-.avatar {
+section#hero img {
   width: 260px !important;
   height: 260px !important;
+  max-width: 260px !important;
+  max-height: 260px !important;
+  object-fit: cover;
 }
