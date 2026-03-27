@@ -89,26 +89,25 @@ experience:
     org: Children's Wisconsin
     start: 2023-01-01
     summary: |
-      Lead development of microservices architecture serving 1M+ users.
-      Improved API response time by 40% through optimization.
-      Mentored team of 5 junior developers.
+      Supported community health and prevention initiatives through program coordination and policy research.
+      Assisted with community needs assessments, data analysis, and reporting to support population health strategies.
+      Contributed to initiatives addressing health disparities and improving access to care.
 
   - role: Audiology Clinical Operations Coordinator
     org: SSM Health
     start: 2025-07-28
     end: 2026-02-13
     summary: |
-      Built and deployed 3 production applications from scratch.
-      Implemented CI/CD pipeline reducing deployment time by 60%.
-      Led migration from monolith to microservices architecture.
+      Coordinated clinical workflows, scheduling operations, and patient service processes.
+      Supported operational efficiency and compliance with healthcare organizational standards.
 
   - role: CBRF Compliance & Policy Intern 
     org: Circle Of Hope Inc. II
     start: 2020-01-01
     end: 2021-05-31
     summary: |
-      Developed client websites using React and modern web technologies.
-      Participated in code reviews and agile ceremonies.
+      Assisted with compliance review and organizational policy development including contributions to employee handbook improvements.
+      Supported workforce system improvements related to onboarding processes, staff policies, and regulatory compliance requirements.
 
 skills:
   - name: Development
