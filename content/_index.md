@@ -146,10 +146,10 @@ sections:
       date_format: Jan 2006
       items:
         - title: Community Health & Policy Intern 
-          company: Tech Corp
+          company: Children's Wisconsin
           company_url: ''
           company_logo: ''
-          location: San Francisco, CA
+          location: Remote
           date_start: '2023-01-01'
           date_end: ''
           description: |2-
@@ -158,10 +158,10 @@ sections:
             * Mentored team of 5 junior developers
             * Tech stack: React, Node.js, PostgreSQL, AWS
         - title: Clinical Operations Coordinator
-          company: Startup Inc
+          company: SSM Health
           company_url: ''
           company_logo: ''
-          location: Remote
+          location: Madison, WI
           date_start: '2021-06-01'
           date_end: '2022-12-31'
           description: |2-
@@ -169,11 +169,11 @@ sections:
             * 
             * Collaborated with design team on UI/UX improvements
             * Tech stack: Next.js, Express, MongoDB, Docker
-        - title: Junior Developer
-          company: Web Agency
+        - title: CBRF Compliance & Policy Intern 
+          company: Circle of Hope Inc. II
           company_url: ''
           company_logo: ''
-          location: New York, NY
+          location: Eau Claire, WI
           date_start: '2020-01-01'
           date_end: '2021-05-31'
           description: |2-
