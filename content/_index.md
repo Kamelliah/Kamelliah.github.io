@@ -220,7 +220,7 @@ sections:
     id: contact
     content:
       title: Get In Touch
-      subtitle: "Let's build something amazing together"
+      subtitle: "Let's connect on public health and healthcare initiatives"
       text: |-
         I'm always interested in opportunities to contribute to public health and healthcare improvement initiatives.
         Whether you're interested in collaboration, professional connections, or discussing shared interests in healthcare and policy, feel free to reach out.
@@ -241,7 +241,7 @@ sections:
     content:
       title: "Open to Opportunities"
       text: |-
-        I'm currently looking for **senior engineering** or **tech lead** roles.
+        I'm currently seeking opportunities to contribute to public health, healthcare systems improvement, and policy development.
 
         Let's connect and discuss how I can help your team.
       button:
