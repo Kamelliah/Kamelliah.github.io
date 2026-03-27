@@ -245,8 +245,8 @@ sections:
 
         Let's connect and discuss how I can help your team.
       button:
-        text: 'Download Resume'
-        url: uploads/resume.pdf
+        text: 'View Resume'
+        url: https://www.overleaf.com/read/xbvckpnysgnj
         new_tab: true
 
     design:
