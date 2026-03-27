@@ -145,7 +145,7 @@ sections:
       title: Experience
       date_format: Jan 2006
       items:
-        - title: Senior Software Engineer
+        - title: Community Health & Policy Intern 
           company: Tech Corp
           company_url: ''
           company_logo: ''
@@ -157,7 +157,7 @@ sections:
             * Improved API response time by 40% through optimization
             * Mentored team of 5 junior developers
             * Tech stack: React, Node.js, PostgreSQL, AWS
-        - title: Full-Stack Developer
+        - title: Clinical Operations Coordinator
           company: Startup Inc
           company_url: ''
           company_logo: ''
@@ -165,8 +165,8 @@ sections:
           date_start: '2021-06-01'
           date_end: '2022-12-31'
           description: |2-
-            * Built and deployed 3 production applications from scratch
-            * Implemented CI/CD pipeline reducing deployment time by 60%
+            * Served as sole operations support for two audiology providers, independently managing daily clinic workflow, patient scheduling, and front-end coordination to ensure uninterrupted service delivery.
+            * 
             * Collaborated with design team on UI/UX improvements
             * Tech stack: Next.js, Express, MongoDB, Docker
         - title: Junior Developer
