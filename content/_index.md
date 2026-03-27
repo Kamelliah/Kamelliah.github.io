@@ -86,48 +86,63 @@ sections:
     id: skills
     content:
       title: "Core Competencies"
-      subtitle: "Technologies I use to build things"
+      subtitle: "Public health policy, healthcare operations, and regulatory compliance expertise"
       categories:
-        - name: Languages
+        - name: Policy & Compliance
           items:
-            - name: TypeScript
-              icon: devicon/typescript
-            - name: JavaScript
-              icon: devicon/javascript
-            - name: Python
-              icon: devicon/python
-            - name: Go
-              icon: devicon/go
-        - name: Frontend
-          items:
-            - name: React
-              icon: devicon/react
-            - name: Next.js
-              icon: devicon/nextjs
-            - name: Tailwind CSS
-              icon: devicon/tailwindcss
-            - name: Alpine.js
-              icon: devicon/alpinejs
-        - name: Backend
-          items:
-            - name: Node.js
-              icon: devicon/nodejs
-            - name: Express
-              icon: devicon/express
-            - name: PostgreSQL
-              icon: devicon/postgresql
-            - name: Redis
-              icon: devicon/redis
-        - name: DevOps
-          items:
-            - name: Docker
-              icon: devicon/docker
-            - name: AWS
-              icon: devicon/amazonwebservices-wordmark
-            - name: GitHub Actions
-              icon: brands/github
-            - name: Vercel
-              icon: devicon/vercel
+            - name: Regulatory Compliance
+              icon: hero/shield-check
+           - name: Policy Analysis
+        icon: hero/document-magnifying-glass
+
+      - name: Regulatory Gap Analysis
+        icon: hero/clipboard-document-check
+
+      - name: Policy Implementation
+        icon: hero/document-text
+
+  - name: Healthcare Operations
+    items:
+      - name: Clinical Operations
+        icon: hero/building-office-2
+
+      - name: Workflow Coordination
+        icon: hero/cog-6-tooth
+
+      - name: Process Improvement
+        icon: hero/arrow-path
+
+      - name: Program Administration
+        icon: hero/briefcase
+
+  - name: Research & Data
+    items:
+      - name: Program Evaluation
+        icon: hero/chart-bar
+
+      - name: Data Analysis
+        icon: hero/chart-pie
+
+      - name: Reporting & Documentation
+        icon: hero/document-chart-bar
+
+      - name: Systems Implementation
+        icon: hero/circle-stack
+
+  - name: Leadership & Collaboration
+    items:
+      - name: Project Coordination
+        icon: hero/calendar-days
+
+      - name: Stakeholder Engagement
+        icon: hero/user-group
+
+      - name: Strategic Communication
+        icon: hero/chat-bubble-left-right
+
+      - name: Health Equity
+        icon: hero/scale
+        
     design:
       style: grid
       show_levels: false
