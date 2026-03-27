@@ -113,24 +113,35 @@ experience:
       Supported workforce system improvements related to onboarding processes, staff policies, and regulatory compliance requirements.
 
 skills:
-  - name: Development
+  - name: Policy & Compliance
     items:
-      - label: TypeScript
+      - label: Regulatory Compliance
         level: 5
-      - label: React
+      - label: Policy Analysis
         level: 5
-      - label: Node.js
-        level: 5
-      - label: Python
+      - label: Regulatory Gap Analysis
+        level: 4
+      - label: Policy Implementation
         level: 4
 
-  - name: DevOps
+  - name: Healthcare Administration
     items:
-      - label: Docker
+      - label: Healthcare Operations
+        level: 5
+      - label: Quality Improvement
         level: 4
-      - label: AWS
+      - label: Program Coordination
         level: 4
-      - label: CI/CD
+      - label: Process Improvement
+        level: 4
+
+  - name: Research & Data
+    items:
+      - label: Program Evaluation
+        level: 4
+      - label: Data Analysis
+        level: 4
+      - label: Reporting & Documentation
         level: 5
 
 languages:
@@ -138,4 +149,10 @@ languages:
     level: 5
     label: Native
 
-awards: []
+certifications: 
+- title: Basic Life Support (BLS) Healthcare Provider
+    awarder: American Heart Association
+    date: 2026
+  - title: Resuscitation Quality Improvement (RQI)
+    awarder: American Heart Association
+    date: 2026
