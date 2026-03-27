@@ -2,9 +2,9 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: Alex Johnson
-  given: Alex
-  family: Johnson
+  display: Kamellia Hyacinth
+  given: Kamellia
+  family: Hyacinth
 postnominals: []
 status:
   icon: "💻"  # Emoji shown on avatar badge: 💻 developer, 🎨 designer, 🚀 startup, 🔬 researcher, 🎓 student
@@ -20,12 +20,12 @@ affiliations:
 
 links:
   - icon: at-symbol
-    url: mailto:alex@example.com
+    url: mailto:kamelliahyacinth@gmail.com
     label: E-mail Me
   - icon: brands/github
     url: https://github.com/alexjohnson
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/alexjohnson/
+    url: https://www.linkedin.com/in/kamellia/
   - icon: brands/x
     url: https://x.com/alexjohnson
 
@@ -36,10 +36,10 @@ interests:
   - Developer Experience
 
 education:
-  - degree: B.S. Computer Science
-    institution: State University
-    start: 2015-09-01
-    end: 2019-05-31
+  - degree: Master of Public Health - Public Health Policy & Management
+    institution: University of Wisconsin Milwaukee
+    start: 2025-09-01
+    end: 2027-05-17
     summary: |
       Focus on software engineering and distributed systems.
       Senior project on distributed caching systems.
@@ -49,17 +49,17 @@ education:
       icon: brands/github
 
 experience:
-  - role: Senior Software Engineer
-    org: Tech Corp
+  - role: Community Health & Policy Intern 
+    org: Children's Wisconsin
     start: 2023-01-01
     summary: |
       Lead development of microservices architecture serving 1M+ users.
       Improved API response time by 40% through optimization.
       Mentored team of 5 junior developers.
-  - role: Full-Stack Developer
-    org: Startup Inc
-    start: 2021-06-01
-    end: 2022-12-31
+  - role: Audiology Clinical Operations Coordinator
+    org: SSM Health
+    start: 2025-07-28
+    end: 2026-02-13
     summary: |
       Built and deployed 3 production applications from scratch.
       Implemented CI/CD pipeline reducing deployment time by 60%.
