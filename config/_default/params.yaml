@@ -75,6 +75,7 @@ hugoblox:
     spacing: "comfortable"
     # Avatar shape in author profiles
     avatar_shape: circle                # circle | square | rounded
+    avatar_size: xl
 
   # ────────────────────────────────────────────────────────────────────────────
   # HEADER
