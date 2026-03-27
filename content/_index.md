@@ -81,7 +81,7 @@ sections:
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
   
-  # Visual Tech Stack - Icons organized by category
+  # Core Competencies - Icons organized by category
   - block: tech-stack
     id: skills
     content:
@@ -92,57 +92,46 @@ sections:
           items:
             - name: Regulatory Compliance
               icon: hero/shield-check
-           - name: Policy Analysis
-        icon: hero/document-magnifying-glass
+            - name: Policy Analysis
+              icon: hero/document-magnifying-glass
+            - name: Regulatory Gap Analysis
+              icon: hero/clipboard-document-check
+            - name: Policy Implementation
+              icon: hero/document-text
 
-      - name: Regulatory Gap Analysis
-        icon: hero/clipboard-document-check
+       - name: Healthcare Operations
+          items:
+            - name: Clinical Operations
+              icon: hero/building-office-2
+            - name: Workflow Coordination
+              icon: hero/cog-6-tooth
+            - name: Process Improvement
+              icon: hero/arrow-path
+            - name: Program Administration
+              icon: hero/briefcase
 
-      - name: Policy Implementation
-        icon: hero/document-text
+       - name: Research & Data
+          items:
+            - name: Program Evaluation
+              icon: hero/chart-bar
+            - name: Data Analysis
+              icon: hero/chart-pie
+            - name: Reporting & Documentation
+              icon: hero/document-chart-bar
+            - name: Systems Implementation
+              icon: hero/circle-stack
 
-  - name: Healthcare Operations
-    items:
-      - name: Clinical Operations
-        icon: hero/building-office-2
+       - name: Leadership & Collaboration
+          items:
+            - name: Project Coordination
+              icon: hero/calendar-days
+            - name: Stakeholder Engagement
+              icon: hero/user-group
+            - name: Strategic Communication
+              icon: hero/chat-bubble-left-right
+            - name: Health Equity
+              icon: hero/scale
 
-      - name: Workflow Coordination
-        icon: hero/cog-6-tooth
-
-      - name: Process Improvement
-        icon: hero/arrow-path
-
-      - name: Program Administration
-        icon: hero/briefcase
-
-  - name: Research & Data
-    items:
-      - name: Program Evaluation
-        icon: hero/chart-bar
-
-      - name: Data Analysis
-        icon: hero/chart-pie
-
-      - name: Reporting & Documentation
-        icon: hero/document-chart-bar
-
-      - name: Systems Implementation
-        icon: hero/circle-stack
-
-  - name: Leadership & Collaboration
-    items:
-      - name: Project Coordination
-        icon: hero/calendar-days
-
-      - name: Stakeholder Engagement
-        icon: hero/user-group
-
-      - name: Strategic Communication
-        icon: hero/chat-bubble-left-right
-
-      - name: Health Equity
-        icon: hero/scale
-        
     design:
       style: grid
       show_levels: false
