@@ -10,18 +10,18 @@ name:
 postnominals: []
 
 status: Public Health Policy, Systems & Compliance Professional
-icon: "💻"  # Emoji shown on avatar badge: 💻 developer, 🎨 designer, 🚀 startup, 🔬 researcher, 🎓 student
+icon: "🎓"
 
 role: Public Health Policy, Systems & Compliance Professional
 
 email: kamelliahyacinth@gmail.com
 
 bio: |
-  Public health and healthcare administration professional focused on policy, compliance, and health systems improvement. 
+  Public health and healthcare administration professional focused on policy, compliance, and health systems improvement.
   MPH candidate with an MHA and a strong interest in healthcare quality, regulatory strategy, and population health.
 
 affiliations:
-  - name: University of Wisconisn Milwaukee
+  - name: University of Wisconsin Milwaukee
     url: https://uwm.edu
 
 links:
@@ -45,7 +45,6 @@ interests:
   - Regulatory Compliance
   - Healthcare Operations
   - Health Systems Improvement
-  
 
 education:
   - degree: Master of Public Health - Public Health Policy & Management
@@ -62,7 +61,7 @@ education:
       icon: brands/github
 
   - degree: Master of Science - Healthcare Administration
-    institution: University of Wisconsin LaCrosee
+    institution: University of Wisconsin La Crosse
     start: 2023-05-26
     end: 2025-05-17
     summary: |
@@ -88,7 +87,7 @@ education:
       icon: brands/github
 
 experience:
-  - role: Community Health & Policy Intern 
+  - role: Community Health & Policy Intern
     org: Children's Wisconsin
     start: 2023-01-01
     summary: |
@@ -104,7 +103,7 @@ experience:
       Coordinated clinical workflows, scheduling operations, and patient service processes.
       Supported operational efficiency and compliance with healthcare organizational standards.
 
-  - role: CBRF Compliance & Policy Intern 
+  - role: CBRF Compliance & Policy Intern
     org: Circle Of Hope Inc. II
     start: 2020-01-01
     end: 2021-05-31
@@ -149,10 +148,11 @@ languages:
     level: 5
     label: Native
 
-certifications: 
-- title: Basic Life Support (BLS) Healthcare Provider
+certifications:
+  - title: Basic Life Support (BLS) Healthcare Provider
     awarder: American Heart Association
     date: 2026
+
   - title: Resuscitation Quality Improvement (RQI)
     awarder: American Heart Association
     date: 2026
