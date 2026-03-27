@@ -154,9 +154,9 @@ sections:
           date_start: '2023-01-01'
           date_end: ''
           description: |2-
-            * Lead development of microservices architecture serving 1M+ users
-            * Improved API response time by 40% through optimization
-            * Mentored team of 5 junior developers
+            * Conduct policy research and environmental scans supporting youth vaping prevention initiatives and school health policy development.
+            * Support Community Health Needs Assessment (CHNA) Implementation Strategy initiatives focused on population health improvement and community benefit priorities.
+            * Contribute to development, implementation, and evaluation of evidence-based community health programs addressing youth risk behaviors.
             * Tech stack: React, Node.js, PostgreSQL, AWS
         - title: Clinical Operations Coordinator
           company: SSM Health
