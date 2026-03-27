@@ -85,7 +85,7 @@ sections:
   - block: tech-stack
     id: skills
     content:
-      title: "Tech Stack"
+      title: "Core Competencies"
       subtitle: "Technologies I use to build things"
       categories:
         - name: Languages
