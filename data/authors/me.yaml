@@ -1,15 +1,21 @@
 schema: hugoblox/author/v1
 slug: me
 is_owner: true
+
 name:
   display: Kamellia Hyacinth
   given: Kamellia
   family: Hyacinth
+
 postnominals: []
+
 status: Public Health Policy, Systems & Compliance Professional
-  icon: "💻"  # Emoji shown on avatar badge: 💻 developer, 🎨 designer, 🚀 startup, 🔬 researcher, 🎓 student
+icon: "💻"  # Emoji shown on avatar badge: 💻 developer, 🎨 designer, 🚀 startup, 🔬 researcher, 🎓 student
+
 role: 
+
 email: kamelliahyacinth@gmail.com
+
 bio: |
   Public health and healthcare administration professional focused on policy, compliance, and health systems improvement. 
   MPH candidate with an MHA and a strong interest in healthcare quality, regulatory strategy, and population health.
@@ -22,10 +28,13 @@ links:
   - icon: at-symbol
     url: mailto:kamelliahyacinth@gmail.com
     label: E-mail Me
+
   - icon: brands/github
     url: https://github.com/alexjohnson
+
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/kamellia/
+
   - icon: brands/instagram
     url: https://www.instagram.com/kamelliah/
 
@@ -43,10 +52,12 @@ education:
     summary: |
       Focus on software engineering and distributed systems.
       Senior project on distributed caching systems.
+
     button:
       text: View Project
       url: https://github.com/alexjohnson/senior-project
       icon: brands/github
+
   - degree: Master of Science - Healthcare Administration
     institution: University of Wisconsin LaCrosee
     start: 2023-05-26
@@ -54,10 +65,12 @@ education:
     summary: |
       Focus on software engineering and distributed systems.
       Senior project on distributed caching systems.
+
     button:
       text: View Project
       url: https://github.com/alexjohnson/senior-project
       icon: brands/github
+
   - degree: Bachelor of Science - Information Technology
     institution: St. George's University
     start: 2011-01-22
@@ -65,10 +78,12 @@ education:
     summary: |
       Focus on software engineering and distributed systems.
       Senior project on distributed caching systems.
+
     button:
       text: View Project
       url: https://github.com/alexjohnson/senior-project
       icon: brands/github
+
 experience:
   - role: Community Health & Policy Intern 
     org: Children's Wisconsin
@@ -77,6 +92,7 @@ experience:
       Lead development of microservices architecture serving 1M+ users.
       Improved API response time by 40% through optimization.
       Mentored team of 5 junior developers.
+
   - role: Audiology Clinical Operations Coordinator
     org: SSM Health
     start: 2025-07-28
@@ -85,8 +101,9 @@ experience:
       Built and deployed 3 production applications from scratch.
       Implemented CI/CD pipeline reducing deployment time by 60%.
       Led migration from monolith to microservices architecture.
+
   - role: CBRF Compliance & Policy Intern 
-    org: Web Agency
+    org: Circle Of Hope Inc. II
     start: 2020-01-01
     end: 2021-05-31
     summary: |
@@ -104,6 +121,7 @@ skills:
         level: 5
       - label: Python
         level: 4
+
   - name: DevOps
     items:
       - label: Docker
