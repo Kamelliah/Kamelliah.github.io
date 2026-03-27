@@ -10,6 +10,7 @@ design:
   spacing: '0'
 
 sections:
+
   # Developer Hero - Gradient background with name, role, social, and CTAs
   - block: dev-hero
     id: hero
@@ -46,8 +47,8 @@ sections:
           dark: "#0a0a0f"
       spacing:
         padding: ["6rem", "0", "4rem", "0"]
-  
-  # Filterable Portfolio - Alpine.js powered project filtering
+
+  # Filterable Portfolio
   - block: portfolio
     id: projects
     content:
@@ -67,11 +68,6 @@ sections:
         - name: Backend
           tag: Backend
       default_button_index: 0
-      # Archive link auto-shown if more projects exist than 'count' above
-      # archive:
-      #   enable: false  # Set to false to explicitly hide
-      #   text: "Browse All"  # Customize text
-      #   link: "/work/"  # Custom URL
     design:
       columns: 3
       background:
@@ -80,13 +76,14 @@ sections:
           dark: "#0d0d12"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  
-  # Core Competencies - Icons organized by category
+
+  # Core Competencies
   - block: tech-stack
     id: skills
     content:
       title: "Core Competencies"
       subtitle: "Public health policy, healthcare operations, and regulatory compliance expertise"
+
       categories:
         - name: Policy & Compliance
           items:
@@ -99,7 +96,7 @@ sections:
             - name: Policy Implementation
               icon: hero/document-text
 
-       - name: Healthcare Operations
+        - name: Healthcare Operations
           items:
             - name: Clinical Operations
               icon: hero/building-office-2
@@ -110,7 +107,7 @@ sections:
             - name: Program Administration
               icon: hero/briefcase
 
-       - name: Research & Data
+        - name: Research & Data
           items:
             - name: Program Evaluation
               icon: hero/chart-bar
@@ -121,7 +118,7 @@ sections:
             - name: Systems Implementation
               icon: hero/circle-stack
 
-       - name: Leadership & Collaboration
+        - name: Leadership & Collaboration
           items:
             - name: Project Coordination
               icon: hero/calendar-days
@@ -141,7 +138,7 @@ sections:
           dark: "#08080c"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  
+
   # Experience Timeline
   - block: resume-experience
     id: experience
@@ -169,8 +166,7 @@ sections:
           date_start: '2021-06-01'
           date_end: '2022-12-31'
           description: |2-
-            * Served as sole operations support for two audiology providers, independently managing daily clinic workflow, patient scheduling, and front-end coordination to ensure uninterrupted service delivery.
-            * 
+            * Served as sole operations support for two audiology providers, independently managing daily clinic workflow.
             * Collaborated with design team on UI/UX improvements
             * Tech stack: Next.js, Express, MongoDB, Docker
         - title: CBRF Compliance & Policy Intern 
@@ -185,6 +181,7 @@ sections:
             * Maintained and updated legacy codebases
             * Participated in code reviews and agile ceremonies
             * Tech stack: React, WordPress, PHP, MySQL
+
     design:
       columns: '1'
       background:
@@ -193,7 +190,7 @@ sections:
           dark: "#0d0d12"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  
+
   # Recent Blog Posts
   - block: collection
     id: blog
@@ -207,6 +204,7 @@ sections:
         exclude_featured: false
       count: 3
       order: desc
+
     design:
       view: card
       columns: 3
@@ -216,7 +214,7 @@ sections:
           dark: "#08080c"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  
+
   # Contact Section
   - block: contact-info
     id: contact
@@ -228,6 +226,7 @@ sections:
         Whether you're interested in collaboration, professional connections, or discussing shared interests in healthcare and policy, feel free to reach out.
       email: kamelliahyacinth@gmail.com
       autolink: true
+
     design:
       columns: '1'
       background:
@@ -236,28 +235,31 @@ sections:
           dark: "#0d0d12"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  
+
   # CTA Card
   - block: cta-card
     content:
       title: "Open to Opportunities"
       text: |-
         I'm currently looking for **senior engineering** or **tech lead** roles.
-        
+
         Let's connect and discuss how I can help your team.
       button:
         text: 'Download Resume'
         url: uploads/resume.pdf
         new_tab: true
+
     design:
       card:
-        # Light mode: soft pastel theme gradient | Dark mode: rich deep gradient
         css_class: 'bg-gradient-to-br from-primary-200 via-primary-100 to-secondary-200 dark:from-primary-600 dark:via-primary-700 dark:to-secondary-700'
         text_color: dark
+
       background:
         color:
           light: "#f5f5f5"
           dark: "#08080c"
+
       spacing:
         padding: ["4rem", "0", "6rem", "0"]
+
 ---
