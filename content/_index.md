@@ -12,11 +12,8 @@ design:
 sections:
 
   # Developer Hero - Gradient background with name, role, social, and CTAs
- design:
-  style: centered
-  avatar_shape: circle
-  avatar_size: xl
-  animations: true
+  - block: dev-hero
+    id: hero
     content:
       username: me
       greeting: "Hi, I'm"
@@ -43,6 +40,7 @@ sections:
     design:
       style: centered
       avatar_shape: circle
+      avatar_size: xl
       animations: true
       background:
         color:
@@ -161,6 +159,7 @@ sections:
             * Support Community Health Needs Assessment (CHNA) Implementation Strategy initiatives focused on population health improvement and community benefit priorities.
             * Contribute to development, implementation, and evaluation of evidence-based community health programs addressing youth risk behaviors.
             * Tech stack: React, Node.js, PostgreSQL, AWS
+
         - title: Clinical Operations Coordinator
           company: SSM Health
           company_url: 'https://www.ssmhealth.com'
@@ -172,6 +171,7 @@ sections:
             * Served as sole operations support for two audiology providers, independently managing daily clinic workflow.
             * Collaborated with design team on UI/UX improvements
             * Tech stack: Next.js, Express, MongoDB, Docker
+
         - title: CBRF Compliance & Policy Intern 
           company: Circle of Hope Inc. II
           company_url: ''
