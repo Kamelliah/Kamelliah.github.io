@@ -1,4 +1,9 @@
+```css
 .w-32.h-32 {
-  width: 260px !important;
-  height: 260px !important;
+  width: 220px !important;
+  height: 220px !important;
+  min-width: 220px !important;
+  min-height: 220px !important;
 }
+```
+
