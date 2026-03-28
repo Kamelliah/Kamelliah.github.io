@@ -1,5 +1,5 @@
 ---
-title: "If You Have to Ask, You've Already Lost: Information Asymmetry in Public Health Systems"
+title: "Accessibly Invisible: When Public Health Resources Are Visible but Unusable"
 date: 2026-03-27
 summary: "Exploring how fragmented systems and information asymmetry create structural barriers that prevent individuals from accessing the support they need"
 tags:
