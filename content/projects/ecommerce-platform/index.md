@@ -9,7 +9,7 @@ tags:
   - Public Health
 links:
   - type: pdf
-    url: uploads/veteran-suicide-prevention.pdf
+    url: annotated-Kamellia_Hyacinth_Policy_Brief-3.pdf
     label: View Brief
 featured: true
 status: "Completed"
