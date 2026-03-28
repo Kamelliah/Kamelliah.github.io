@@ -2,23 +2,23 @@
 title: "Policy Analysis: Enhancing Price Transparency in Private Health Insurance"
 date: 2024-10-09
 summary: "A policy memo analyzing options for improving healthcare price transparency while preserving private insurer competitiveness"
-tags:
-  - Health Policy
-  - Public Health
-links:
-  - type: pdf
-    url: uploads/PolicyMemo-3-1.pdf
-    label: View Memo
 featured: true
 status: "Completed"
 role: "Policy Consultant"
 duration: "3 weeks"
 team_size: 1
+tags:
+  - Health Policy
+  - Public Health
 highlights:
   - "Analyzed 3 federal transparency policy options"
   - "Recommended standardized price reporting for AHIP"
   - "Addressed equity implications for rural and small providers"
   - "Informed by CMS, NEJM, and KFF research"
+links:
+  - type: pdf
+    url: uploads/PolicyMemo-3-1.pdf
+    label: View Memo
 ---
 
 A staged policy memo developed as part of graduate coursework in the MHA program at UW–La Crosse, written from the perspective of a policy consultant advising America's Health Insurance Plans (AHIP) on healthcare price transparency legislation.
@@ -30,12 +30,14 @@ Healthcare price transparency is a critical issue as consumers demand clearer in
 ## Key Features
 
 ### Policy Recommendation
+
 - **Standardized Price Reporting** — Mandating uniform formats for service prices and cost-sharing data across providers and insurers
 - **Phased Implementation** — Reducing administrative burden on smaller providers through staged rollout
 - **Technical Assistance** — Support for rural and small providers to meet compliance requirements
 - **Consumer Empowerment** — Clear, comparable pricing enabling informed healthcare decisions
 
 ### Policy Options Analyzed
+
 - **Option 1** — Implementing Standardized Price Reporting *(Recommended)*
 - **Option 2** — Incentive-Based Compliance Program
 - **Option 3** — Enhanced Consumer Education and Decision-Support Tools
@@ -43,14 +45,17 @@ Healthcare price transparency is a critical issue as consumers demand clearer in
 ## Technical Highlights
 
 ### Stakeholder Analysis
+
 - Mapped interests and influence of consumers, providers, private insurers, policymakers, employers, and advocacy organizations
 - Identified points of conflict and alignment across stakeholder groups
 
 ### Policy Assessment
+
 - Evaluated each option on transparency impact, administrative burden, equity implications, and market competitiveness
 - Applied AHIP's organizational goals as a framework for recommendation
 
 ### Equity Considerations
+
 - Identified rural and low-income populations as disproportionately affected by both opaque pricing and digital tool limitations
 - Flagged risk of small provider market exit under poorly implemented mandates
 
@@ -63,9 +68,9 @@ Healthcare price transparency is a critical issue as consumers demand clearer in
 
 ## Project Details
 
-**Course**: Health Law & Policy — UW–La Crosse MHA Program  
-**Client**: America's Health Insurance Plans (AHIP) *(simulated)*  
-**Audience**: U.S. House Representatives considering transparency legislation  
+**Course**: Health Law & Policy — UW–La Crosse MHA Program
+**Client**: America's Health Insurance Plans (AHIP) *(simulated)*
+**Audience**: U.S. House Representatives considering transparency legislation
 **Deliverable**: Staged Policy Memo with Landscape Analysis, Options, and Recommendation
 
 ## Lessons Learned
@@ -77,5 +82,5 @@ Healthcare price transparency is a critical issue as consumers demand clearer in
 
 ---
 
-**Project Status**: ✅ Completed  
+**Project Status**: ✅ Completed
 **Deliverable**: [View Policy Memo](uploads/health-price-transparency.pdf)
