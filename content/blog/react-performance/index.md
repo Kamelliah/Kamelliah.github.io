@@ -1,397 +1,97 @@
 ---
-title: "React Performance Optimization: A Practical Guide"
-date: 2024-11-22
-summary: "Learn how to identify and fix performance bottlenecks in React applications with real-world examples and profiling techniques"
+title: "If You Have to Ask, You've Already Lost: Information Asymmetry in Public Health Systems"
+date: 2026-03-27
+summary: "Exploring how fragmented systems and information asymmetry create structural barriers that prevent individuals from accessing the support they need"
 tags:
-  - React
-  - Performance
-  - JavaScript
-  - Frontend
-  - Optimization
+  - Public Health
+  - Health Equity
+  - Social Determinants
+  - Policy
+  - Systems Design
 authors:
   - me
-featured: true
+featured: false
 ---
-
-React apps can become slow as they grow. This guide covers practical techniques to identify bottlenecks and optimize performance, backed by real-world examples.
-
-## Common Performance Issues
-
-Before optimizing, measure. Use React DevTools Profiler to identify:
-- Unnecessary re-renders
-- Heavy computations
-- Large component trees
-- Inefficient list rendering
-
-## 1. Prevent Unnecessary Re-renders
-
-### Problem: Parent Re-renders Cascade
-
-```jsx
-// ❌ Bad: Child re-renders on every parent update
-function Parent() {
-  const [count, setCount] = useState(0)
-  
-  return (
-    <div>
-      <button onClick={() => setCount(count + 1)}>Count: {count}</button>
-      <ExpensiveChild /> {/* Re-renders even though it doesn't use count! */}
-    </div>
-  )
-}
-```
-
-### Solution: React.memo
-
-```jsx
-// ✅ Good: Child only re-renders when props change
-const ExpensiveChild = React.memo(() => {
-  console.log('ExpensiveChild rendered')
-  return <div>{/* expensive rendering */}</div>
-})
-```
-
-**When to use**: Components that render often but rarely change props.
-
-## 2. Optimize Expensive Calculations
-
-### Problem: Recalculating on Every Render
-
-```jsx
-// ❌ Bad: filterItems runs on every render
-function ProductList({ products, searchTerm }) {
-  const filtered = products.filter(p => 
-    p.name.toLowerCase().includes(searchTerm.toLowerCase())
-  ) // Runs even when products/searchTerm haven't changed!
-  
-  return <ul>{filtered.map(p => <li key={p.id}>{p.name}</li>)}</ul>
-}
-```
-
-### Solution: useMemo
-
-```jsx
-// ✅ Good: Only recalculates when dependencies change
-function ProductList({ products, searchTerm }) {
-  const filtered = useMemo(() => 
-    products.filter(p => 
-      p.name.toLowerCase().includes(searchTerm.toLowerCase())
-    ),
-    [products, searchTerm]
-  )
-  
-  return <ul>{filtered.map(p => <li key={p.id}>{p.name}</li>)}</ul>
-}
-```
-
-**When to use**: Expensive calculations that don't need to run on every render.
-
-## 3. Stabilize Function References
-
-### Problem: New Function on Every Render
-
-```jsx
-// ❌ Bad: handleClick creates new function every render
-function Parent() {
-  const [count, setCount] = useState(0)
-  
-  const handleClick = () => setCount(count + 1)
-  
-  return <Child onClick={handleClick} /> // Child re-renders!
-}
-
-const Child = React.memo(({ onClick }) => {
-  return <button onClick={onClick}>Click</button>
-})
-```
-
-### Solution: useCallback
-
-```jsx
-// ✅ Good: handleClick reference stays stable
-function Parent() {
-  const [count, setCount] = useState(0)
-  
-  const handleClick = useCallback(() => {
-    setCount(c => c + 1) // Use functional update!
-  }, []) // Empty deps because we use functional update
-  
-  return <Child onClick={handleClick} />
-}
-```
-
-**When to use**: Passing callbacks to memoized child components.
-
-## 4. Virtual Lists for Large Datasets
-
-### Problem: Rendering 10,000 Items
-
-```jsx
-// ❌ Bad: Renders all 10,000 items (slow!)
-function LargeList({ items }) {
-  return (
-    <div>
-      {items.map(item => (
-        <div key={item.id}>{item.name}</div>
-      ))}
-    </div>
-  )
-}
-```
-
-### Solution: react-window
-
-```jsx
-// ✅ Good: Only renders visible items
-import { FixedSizeList } from 'react-window'
-
-function LargeList({ items }) {
-  const Row = ({ index, style }) => (
-    <div style={style}>{items[index].name}</div>
-  )
-  
-  return (
-    <FixedSizeList
-      height={600}
-      itemCount={items.length}
-      itemSize={50}
-      width="100%"
-    >
-      {Row}
-    </FixedSizeList>
-  )
-}
-```
-
-**Result**: 10,000 items render in <50ms instead of 2000ms!
-
-## 5. Code Splitting & Lazy Loading
-
-### Problem: Large Bundle Size
-
-```jsx
-// ❌ Bad: Everything loads upfront
-import AdminPanel from './AdminPanel' // 500KB!
-import UserDashboard from './UserDashboard'
-
-function App() {
-  return isAdmin ? <AdminPanel /> : <UserDashboard />
-}
-```
-
-### Solution: React.lazy
-
-```jsx
-// ✅ Good: Load components on demand
-const AdminPanel = React.lazy(() => import('./AdminPanel'))
-const UserDashboard = React.lazy(() => import('./UserDashboard'))
-
-function App() {
-  return (
-    <Suspense fallback={<Loading />}>
-      {isAdmin ? <AdminPanel /> : <UserDashboard />}
-    </Suspense>
-  )
-}
-```
-
-**Result**: Initial bundle: 150KB instead of 650KB!
-
-## 6. Optimize Context Usage
-
-### Problem: Context Causes Mass Re-renders
-
-```jsx
-// ❌ Bad: Every consumer re-renders on any state change
-const AppContext = createContext()
-
-function AppProvider({ children }) {
-  const [user, setUser] = useState(null)
-  const [theme, setTheme] = useState('light')
-  const [notifications, setNotifications] = useState([])
-  
-  return (
-    <AppContext.Provider value={{ user, theme, notifications, setUser, setTheme }}>
-      {children}
-    </AppContext.Provider>
-  )
-}
-```
-
-### Solution: Split Contexts
-
-```jsx
-// ✅ Good: Separate contexts for different concerns
-const UserContext = createContext()
-const ThemeContext = createContext()
-const NotificationContext = createContext()
-
-function AppProvider({ children }) {
-  const [user, setUser] = useState(null)
-  const [theme, setTheme] = useState('light')
-  const [notifications, setNotifications] = useState([])
-  
-  return (
-    <UserContext.Provider value={{ user, setUser }}>
-      <ThemeContext.Provider value={{ theme, setTheme }}>
-        <NotificationContext.Provider value={{ notifications }}>
-          {children}
-        </NotificationContext.Provider>
-      </ThemeContext.Provider>
-    </UserContext.Provider>
-  )
-}
-```
-
-**Result**: Components only re-render when their specific context changes!
-
-## 7. Debounce Expensive Operations
-
-### Problem: Search Triggers on Every Keystroke
-
-```jsx
-// ❌ Bad: API call on every keystroke
-function SearchBox() {
-  const [query, setQuery] = useState('')
-  
-  useEffect(() => {
-    searchAPI(query) // Called 10+ times as user types "javascript"!
-  }, [query])
-  
-  return <input value={query} onChange={e => setQuery(e.target.value)} />
-}
-```
-
-### Solution: Custom Debounce Hook
-
-```jsx
-// ✅ Good: API call only after user stops typing
-function useDebounce(value, delay) {
-  const [debouncedValue, setDebouncedValue] = useState(value)
-  
-  useEffect(() => {
-    const handler = setTimeout(() => setDebouncedValue(value), delay)
-    return () => clearTimeout(handler)
-  }, [value, delay])
-  
-  return debouncedValue
-}
-
-function SearchBox() {
-  const [query, setQuery] = useState('')
-  const debouncedQuery = useDebounce(query, 300)
-  
-  useEffect(() => {
-    if (debouncedQuery) {
-      searchAPI(debouncedQuery) // Called once after 300ms pause!
-    }
-  }, [debouncedQuery])
-  
-  return <input value={query} onChange={e => setQuery(e.target.value)} />
-}
-```
-
-## 8. Key Props Matter
-
-### Problem: Poor Key Choices
-
-```jsx
-// ❌ Bad: Using index as key causes issues
-{items.map((item, index) => (
-  <div key={index}>{item.name}</div>
-))}
-
-// When items reorder, React thinks they're different components!
-```
-
-### Solution: Stable, Unique Keys
-
-```jsx
-// ✅ Good: Use stable IDs
-{items.map(item => (
-  <div key={item.id}>{item.name}</div>
-))}
-```
-
-## Real-World Example: Optimizing a Dashboard
-
-**Before**: Dashboard with 20 widgets, each fetching data, all re-rendering on any state change.
-
-**After optimization**:
-1. Split into separate contexts for user, theme, data
-2. Memoized individual widgets with React.memo
-3. Used useMemo for data transformations
-4. Lazy loaded heavy charts
-5. Debounced filter inputs
-
-**Result**: 
-- Initial render: 3000ms → 800ms
-- Interactions: 200ms → 50ms
-- Bundle size: 800KB → 250KB (initial) + 550KB (lazy)
-
-## Profiling Workflow
-
-1. **React DevTools Profiler**
-   - Record interaction
-   - Identify components taking longest
-   - Check why they rendered (props change? parent render?)
-
-2. **Chrome DevTools Performance**
-   - Record performance
-   - Look for long tasks (>50ms)
-   - Check FPS during animations
-
-3. **Lighthouse**
-   - Run audit
-   - Focus on "Time to Interactive"
-   - Check bundle sizes
-
-## Common Pitfalls
-
-❌ **Don't** optimize prematurely  
-✅ **Do** measure first, optimize bottlenecks
-
-❌ **Don't** memo everything  
-✅ **Do** memo expensive components
-
-❌ **Don't** use useMemo for simple calculations  
-✅ **Do** use for actual performance issues
-
-❌ **Don't** forget dependency arrays  
-✅ **Do** include all dependencies (or use ESLint plugin)
-
-## Performance Checklist
-
-- [ ] Use React DevTools Profiler to identify issues
-- [ ] Memoize expensive child components
-- [ ] Use useMemo for heavy calculations
-- [ ] Use useCallback for callbacks to memoized children
-- [ ] Implement code splitting for large components
-- [ ] Use virtual lists for large datasets
-- [ ] Debounce expensive operations (search, API calls)
-- [ ] Use proper key props for lists
-- [ ] Split contexts to minimize re-renders
-- [ ] Optimize bundle size (tree shaking, minification)
-
-## Tools & Resources
-
-- [React DevTools](https://chrome.google.com/webstore/detail/react-developer-tools)
-- [react-window](https://react-window.vercel.app/)
-- [Bundle Analyzer](https://www.npmjs.com/package/webpack-bundle-analyzer)
-- [Why Did You Render](https://github.com/welldone-software/why-did-you-render)
-
-## Conclusion
-
-Performance optimization is about:
-1. **Measuring** before optimizing
-2. **Identifying** actual bottlenecks
-3. **Applying** targeted fixes
-4. **Verifying** improvements
-
-Don't optimize blindly—profile, fix, measure, repeat!
-
+ 
+In many public systems, support exists but remains underutilized. This is not necessarily because individuals are unwilling to seek help, but because access is often structured in a way that requires prior knowledge. In practice, individuals frequently receive assistance only if they know what to ask for.
+ 
+## Table of Contents
+ 
+1. [Availability vs. Accessibility](#availability)
+2. [Information Asymmetry & Administrative Burden](#asymmetry)
+3. [Fragmented Systems](#fragmentation)
+4. [Time Scarcity & Cognitive Load](#time-scarcity)
+5. [Invisible by Design](#invisible)
+6. [Conditional Access & Reinforced Disparities](#conditional)
+7. [A Structural Problem, Not an Individual One](#structural)
+8. [What Needs to Change](#change)
+9. [Conclusion](#conclusion)
+ 
+## Availability vs. Accessibility {#availability}
+ 
+This creates a fundamental issue in how access is defined. Public health systems often operate under the assumption that the availability of programs equates to accessibility. However, availability alone does not ensure that individuals can realistically identify, understand, or obtain the resources they need.
+ 
+The gap between what exists and what is usable is not a minor administrative detail — it is a core equity issue. A program that exists on paper but cannot be found, understood, or navigated by the people it is meant to serve is not truly accessible.
+ 
+## Information Asymmetry & Administrative Burden {#asymmetry}
+ 
+This dynamic is closely tied to information asymmetry and administrative burden. Systems hold critical information about eligibility, services, and pathways to care, while individuals are expected to navigate these systems with limited guidance. When access depends on asking the right questions, those without prior exposure or system familiarity are at a disadvantage.
+ 
+The burden falls heaviest on the people who can least afford to carry it — those already managing time constraints, financial stress, and competing responsibilities.
+ 
+## Fragmented Systems {#fragmentation}
+ 
+A key issue is that these systems are not only complex, but also fragmented. Programs and services often operate in silos, with limited coordination or communication across agencies and departments. As a result, individuals may interact with multiple parts of a system without receiving a complete understanding of the resources available to them.
+ 
+Even when support exists, it is distributed across disconnected platforms, processes, and points of entry. This lack of integration places the burden on individuals to piece together information that systems themselves do not consolidate. Navigating eligibility requirements, application processes, and program distinctions becomes an additional task layered on top of existing responsibilities. For individuals already experiencing time constraints, this level of fragmentation can prevent engagement altogether.
+ 
+## Time Scarcity & Cognitive Load {#time-scarcity}
+ 
+Modern urban living further compounds this issue. Individuals are often managing full-time work schedules, commuting, and competing responsibilities, leaving limited time or cognitive capacity to explore complex systems. In this context, expecting individuals to independently identify and pursue all available forms of assistance is unrealistic.
+ 
+Time scarcity reduces not only the ability to act, but also the ability to seek information in the first place. When every hour is already allocated, the transaction cost of navigating a fragmented system becomes a real barrier — not a matter of motivation or effort.
+ 
+## Invisible by Design {#invisible}
+ 
+Additionally, the built environment and system design influence how information is encountered. Resources may technically be visible — through websites, brochures, or institutional messaging — but are not always presented in ways that are clear, timely, or actionable.
+ 
+Information that is buried, overly complex, or disconnected from everyday decision points becomes effectively invisible. Visibility on a government website is not the same as visibility in the lived experience of someone trying to figure out where to turn.
+ 
+## Conditional Access & Reinforced Disparities {#conditional}
+ 
+As a result, access becomes conditional. Those who are already informed, connected, or experienced in navigating systems are more likely to benefit, while others may remain unaware of available support. This reinforces disparities — not because resources are absent, but because the pathway to those resources is uneven.
+ 
+This is how systems can appear functional at the institutional level while failing consistently at the individual level. The aggregate numbers may look reasonable. The lived experience tells a different story.
+ 
+## A Structural Problem, Not an Individual One {#structural}
+ 
+From a public health perspective, this represents a structural barrier rather than an individual shortcoming. When systems require individuals to initiate every step — and to navigate fragmented pathways — the burden shifts away from institutions and onto users. This approach does not account for the realities of time constraints, cognitive load, or varying levels of system literacy.
+ 
+Framing access failures as personal failures misses the point entirely. If the system is designed in a way that only rewards those with prior knowledge and navigational capacity, the system is the problem.
+ 
+## What Needs to Change {#change}
+ 
+Addressing this issue requires a shift in how access is operationalized. Key priorities include:
+ 
+- **Integration across programs** so individuals don't have to piece together disconnected services on their own
+- **Proactive outreach** rather than waiting for individuals to request assistance
+- **Simplified communication** that meets people where they are, not where systems assume them to be
+- **Streamlined pathways** that reduce the number of steps between need and support
+- **Systems that communicate internally** and anticipate user needs rather than placing navigation burdens on users
+ 
+## Conclusion {#conclusion}
+ 
+Ultimately, access should not depend on knowing what to ask for or how to navigate fragmented systems. If support is available but remains undiscovered or difficult to assemble, it does not function as true access.
+ 
+Public health efforts aimed at improving outcomes and promoting equity must consider not only what resources exist, but how systems are structured, connected, and experienced in practice. The question is not whether help is available. The question is whether help is actually reachable.
+ 
+## Resources
+ 
+- [CDC Social Determinants of Health](https://www.cdc.gov/socialdeterminants)
+- [RWJF County Health Rankings](https://www.countyhealthrankings.org)
+- [SAMHSA Behavioral Health Resources](https://www.samhsa.gov)
+- [HealthyPeople 2030](https://health.gov/healthypeople)
+ 
 ---
-
-**Want to dive deeper?** Check out my [React Performance Workshop](https://github.com/alexjohnson/react-perf-workshop).
-
-Questions? Reach out on [Twitter](https://twitter.com/alexjohnson)!
+ 
+Questions? Leave a comment below or reach out on [LinkedIn](https://linkedin.com/kamellia)!
