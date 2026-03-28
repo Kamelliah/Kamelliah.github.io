@@ -50,34 +50,30 @@ Circle of Hope, Inc II needed operational support across three interconnected ar
 - Designed materials to reduce time-to-productivity for incoming staff
 
 ## Project Phases
-
 {{< rawhtml >}}
 <svg width="100%" viewBox="0 0 680 600" xmlns="http://www.w3.org/2000/svg">
 
 <defs>
-
 <style>
-.tl-th { font-family: sans-serif; font-size: 14px; font-weight: 600; fill: #111827; }
-
-.tl-ts { font-family: sans-serif; font-size: 12px; fill: #374151; }
+.tl-th { font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; fill: #0F172A; }
+.tl-ts { font-family: Helvetica, Arial, sans-serif; font-size: 12px; fill: #0F172A; }
 
 @media (prefers-color-scheme: dark) {
-.tl-th { fill: #F9FAFB; }
-.tl-ts { fill: #D1D5DB; }
+  .tl-th { fill: #F8FAFC; }
+  .tl-ts { fill: #E5E7EB; }
 }
 </style>
 
 <filter id="shadow">
-<feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.15"/>
+  <feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.15"/>
 </filter>
-
 </defs>
 
 <text class="tl-th" x="340" y="36" text-anchor="middle">
 Capstone project timeline
 </text>
 
-<text class="tl-ts" x="340" y="54" text-anchor="middle">
+<text class="tl-ts" x="340" y="54" text-anchor="middle" fill="#475569">
 Circle of Hope, Inc II — January to May 2025
 </text>
 
@@ -86,7 +82,6 @@ stroke="#94A3B8"
 stroke-width="2"/>
 
 <!-- Phase 1 -->
-
 <circle cx="120" cy="102" r="9"
 fill="#10B981"
 stroke="#047857"
@@ -103,19 +98,19 @@ filter="url(#shadow)"/>
 
 <text class="tl-th" x="160" y="100"
 dominant-baseline="central"
-fill="#064E3B">
-Phase 1 — Handbook review & refinement
+fill="#052E26">
+Phase 1 — Handbook review &amp; refinement
 </text>
 
 <text class="tl-ts" x="160" y="118"
 dominant-baseline="central"
-fill="#065F46">
+fill="#064E3B">
 Jan 28 – Feb 15
 </text>
 
 <text class="tl-ts" x="160" y="134"
 dominant-baseline="central"
-fill="#065F46">
+fill="#064E3B">
 Audited policies, revised outdated content, ensured legal compliance
 </text>
 
@@ -125,7 +120,6 @@ stroke="#94A3B8"
 stroke-width="2"/>
 
 <!-- Phase 2 -->
-
 <circle cx="120" cy="170" r="9"
 fill="#8B5CF6"
 stroke="#5B21B6"
@@ -142,19 +136,19 @@ filter="url(#shadow)"/>
 
 <text class="tl-th" x="160" y="168"
 dominant-baseline="central"
-fill="#2E1065">
+fill="#1F1147">
 Phase 2 — Hiring process analysis
 </text>
 
 <text class="tl-ts" x="160" y="186"
 dominant-baseline="central"
-fill="#4C1D95">
+fill="#3B1F7A">
 Feb 16 – Mar 10
 </text>
 
 <text class="tl-ts" x="160" y="202"
 dominant-baseline="central"
-fill="#4C1D95">
+fill="#3B1F7A">
 Assessed Indeed pricing impact, evaluated alternative platforms
 </text>
 
@@ -164,7 +158,6 @@ stroke="#94A3B8"
 stroke-width="2"/>
 
 <!-- Phase 3 -->
-
 <circle cx="120" cy="238" r="9"
 fill="#F59E0B"
 stroke="#B45309"
@@ -181,19 +174,19 @@ filter="url(#shadow)"/>
 
 <text class="tl-th" x="160" y="236"
 dominant-baseline="central"
-fill="#78350F">
-Phase 3 — Recruitment & onboarding plan
+fill="#5B2A06">
+Phase 3 — Recruitment &amp; onboarding plan
 </text>
 
 <text class="tl-ts" x="160" y="254"
 dominant-baseline="central"
-fill="#92400E">
+fill="#78350F">
 Mar 11 – Mar 31
 </text>
 
 <text class="tl-ts" x="160" y="270"
 dominant-baseline="central"
-fill="#92400E">
+fill="#78350F">
 New hiring strategy, standardized job descriptions, onboarding materials
 </text>
 
@@ -203,7 +196,6 @@ stroke="#94A3B8"
 stroke-width="2"/>
 
 <!-- Phase 4 -->
-
 <circle cx="120" cy="306" r="9"
 fill="#F97316"
 stroke="#C2410C"
@@ -220,19 +212,19 @@ filter="url(#shadow)"/>
 
 <text class="tl-th" x="160" y="304"
 dominant-baseline="central"
-fill="#7C2D12">
-Phase 4 — Implementation & staff training
+fill="#5F220C">
+Phase 4 — Implementation &amp; staff training
 </text>
 
 <text class="tl-ts" x="160" y="322"
 dominant-baseline="central"
-fill="#9A3412">
+fill="#7C2D12">
 Apr 1 – Apr 15
 </text>
 
 <text class="tl-ts" x="160" y="338"
 dominant-baseline="central"
-fill="#9A3412">
+fill="#7C2D12">
 Trained HR and management on new policies and recruitment processes
 </text>
 
@@ -242,7 +234,6 @@ stroke="#94A3B8"
 stroke-width="2"/>
 
 <!-- Phase 5 -->
-
 <circle cx="120" cy="374" r="9"
 fill="#3B82F6"
 stroke="#1D4ED8"
@@ -259,19 +250,19 @@ filter="url(#shadow)"/>
 
 <text class="tl-th" x="160" y="372"
 dominant-baseline="central"
-fill="#1E3A8A">
-Phase 5 — Pilot & evaluation
+fill="#172554">
+Phase 5 — Pilot &amp; evaluation
 </text>
 
 <text class="tl-ts" x="160" y="390"
 dominant-baseline="central"
-fill="#1D4ED8">
+fill="#1E3A8A">
 Apr 16 – May 5
 </text>
 
 <text class="tl-ts" x="160" y="406"
 dominant-baseline="central"
-fill="#1D4ED8">
+fill="#1E3A8A">
 Tracked strategy effectiveness, cost comparisons, onboarding feedback
 </text>
 
@@ -281,7 +272,6 @@ stroke="#94A3B8"
 stroke-width="2"/>
 
 <!-- Phase 6 -->
-
 <circle cx="120" cy="442" r="9"
 fill="#84CC16"
 stroke="#4D7C0F"
@@ -298,19 +288,19 @@ filter="url(#shadow)"/>
 
 <text class="tl-th" x="160" y="440"
 dominant-baseline="central"
-fill="#365314">
-Phase 6 — Final review & adjustments
+fill="#1F3A08">
+Phase 6 — Final review &amp; adjustments
 </text>
 
 <text class="tl-ts" x="160" y="458"
 dominant-baseline="central"
-fill="#4D7C0F">
+fill="#365314">
 May 6 – May 9
 </text>
 
 <text class="tl-ts" x="160" y="474"
 dominant-baseline="central"
-fill="#4D7C0F">
+fill="#365314">
 Compiled final report, documented outcomes and recommendations
 </text>
 
@@ -319,7 +309,7 @@ width="510"
 height="32"
 rx="10"
 fill="#F8FAFC"
-stroke="#CBD5F5"
+stroke="#CBD5E1"
 stroke-width="1"
 filter="url(#shadow)"/>
 
@@ -328,10 +318,8 @@ x="399"
 y="520"
 text-anchor="middle"
 dominant-baseline="central"
-fill="#374151">
-
+fill="#334155">
 Total duration: 15 weeks (Jan 28 – May 9, 2025)
-
 </text>
 
 </svg>
