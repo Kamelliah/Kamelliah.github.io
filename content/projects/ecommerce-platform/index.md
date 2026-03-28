@@ -8,9 +8,7 @@ role: "Policy Consultant"
 duration: "1 month"
 team_size: 1
 tags:
-  - Policy & Administration
-  - Health Law & Policy
-  - Veteran Health
+  - Health Policy
   - Public Health
 highlights:
   - "Estimated 6–8 veteran lives saved annually"
