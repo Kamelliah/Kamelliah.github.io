@@ -48,28 +48,28 @@ sections:
       spacing:
         padding: ["6rem", "0", "4rem", "0"]
 
-  # Filterable Portfolio
-  - block: portfolio
-    id: projects
-    content:
-      title: "Featured Projects"
-      subtitle: "A selection of my recent work"
-      count: 0
-      filters:
-        folders:
-          - projects
-      buttons:
-    - name: All
-      tag: '*'
-    - name: Healthcare Administration
-      tag: Healthcare Administration
-    - name: Health Policy
-      tag: Health Policy
-    - name: Operations Improvement
-      tag: Operations Improvement
-    - name: Public Health
-      tag: Public Health
-      default_button_index: 0
+# PROJECTS
+- block: portfolio
+  id: projects
+  content:
+    title: "Featured Projects"
+    subtitle: "A selection of my recent work"
+    count: 0
+
+    filters:
+      folders:
+        - projects
+    buttons:
+      - name: All
+        tag: '*'
+      - name: Healthcare Administration
+        tag: Healthcare Administration
+      - name: Health Policy
+        tag: Health Policy
+      - name: Operations Improvement
+        tag: Operations Improvement
+      - name: Public Health
+        tag: Public Health
     design:
       columns: 3
       background:
