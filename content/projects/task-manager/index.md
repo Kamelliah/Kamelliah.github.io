@@ -9,7 +9,7 @@ tags:
   - Public Health
 links:
   - type: pdf
-    url: PolicyMemo-3-1.pdf
+    url: uploads/PolicyMemo-3-1.pdf
     label: View Memo
 featured: true
 status: "Completed"
