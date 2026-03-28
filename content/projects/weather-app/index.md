@@ -2,8 +2,6 @@
 title: "Capstone: Refining Employee Policies and Hiring Strategies at Circle of Hope, Inc II"
 date: 2025-05-09
 summary: "An MHA capstone project partnering with a disability services nonprofit to revise employee policies, reduce hiring costs, and standardize onboarding processes"
-image:
-  filename: circle-of-hope-card.png
 tags:
   - Healthcare Operations
   - Policy & Administration
