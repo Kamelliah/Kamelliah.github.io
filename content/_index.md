@@ -5,12 +5,11 @@ date: 2026-01-05
 type: landing
 
 design:
-  # Default section spacing
   spacing: '0'
 
 sections:
 
-  # Developer Hero - Gradient background with name, role, social, and CTAs
+  # Developer Hero
   - block: dev-hero
     id: hero
     content:
@@ -36,6 +35,7 @@ sections:
         - text: Get In Touch
           url: "#contact"
           icon: envelope
+
     design:
       style: centered
       avatar_shape: circle
@@ -45,18 +45,20 @@ sections:
           light: "#fafafa"
           dark: "#0a0a0f"
       spacing:
-        padding: ["6rem", "0", "4rem", "0"]
+        padding: ["6rem","0","4rem","0"]
 
-  # PROJECTS
+  # Projects
   - block: portfolio
     id: projects
     content:
       title: "Featured Projects"
       subtitle: "A selection of my recent work"
       count: 0
+
       filters:
         folders:
           - projects
+
       buttons:
         - name: All
           tag: '*'
@@ -68,6 +70,7 @@ sections:
           tag: Operations Improvement
         - name: Public Health
           tag: Public Health
+
     design:
       columns: 3
       background:
@@ -75,7 +78,7 @@ sections:
           light: "#ffffff"
           dark: "#0d0d12"
       spacing:
-        padding: ["4rem", "0", "4rem", "0"]
+        padding: ["4rem","0","4rem","0"]
 
   # Core Competencies
   - block: tech-stack
@@ -83,7 +86,9 @@ sections:
     content:
       title: "Core Competencies"
       subtitle: "Public health policy, healthcare operations, and regulatory compliance expertise"
+
       categories:
+
         - name: Policy & Compliance
           items:
             - name: Regulatory Compliance
@@ -127,6 +132,7 @@ sections:
               icon: hero/chat-bubble-left-right
             - name: Health Equity
               icon: hero/scale
+
     design:
       style: grid
       show_levels: false
@@ -135,15 +141,17 @@ sections:
           light: "#f5f5f5"
           dark: "#08080c"
       spacing:
-        padding: ["4rem", "0", "4rem", "0"]
+        padding: ["4rem","0","4rem","0"]
 
-  # Experience Timeline
+  # Experience
   - block: resume-experience
     id: experience
     content:
       title: Experience
       date_format: Jan 2006
+
       items:
+
         - title: Community Health & Policy Intern
           company: Children's Wisconsin
           company_url: 'https://childrenswi.org'
@@ -181,6 +189,7 @@ sections:
             * Maintained and updated legacy codebases
             * Participated in code reviews and agile ceremonies
             * Tech stack: React, WordPress, PHP, MySQL
+
     design:
       columns: '1'
       background:
@@ -188,21 +197,24 @@ sections:
           light: "#ffffff"
           dark: "#0d0d12"
       spacing:
-        padding: ["4rem", "0", "4rem", "0"]
+        padding: ["4rem","0","4rem","0"]
 
-  # Recent Blog Posts
+  # Blog
   - block: collection
     id: blog
     content:
       title: Recent Posts
       subtitle: 'Thoughts on web development, tech, and more'
       text: ''
+
       filters:
         folders:
           - blog
         exclude_featured: false
+
       count: 3
       order: desc
+
     design:
       view: card
       columns: 3
@@ -211,32 +223,18 @@ sections:
           light: "#f5f5f5"
           dark: "#08080c"
       spacing:
-        padding: ["4rem", "0", "4rem", "0"]
+        padding: ["4rem","0","4rem","0"]
 
-  # Contact Section
+  # Contact
   - block: contact-info
     id: contact
     content:
       title: Get In Touch
       subtitle: "Let's connect on public health and healthcare initiatives"
+
       text: |-
         I'm always interested in opportunities to contribute to public health and healthcare improvement initiatives.
         Whether you're interested in collaboration, professional connections, or discussing shared interests in healthcare and policy, feel free to reach out.
-
-        <div class="badge-base LI-profile-badge"
-          data-locale="en_US"
-          data-size="medium"
-          data-theme="dark"
-          data-type="VERTICAL"
-          data-vanity="kamellia"
-          data-version="v1">
-
-          <a class="badge-base__link LI-simple-link"
-            href="https://www.linkedin.com/in/kamellia?trk=profile-badge">
-            Kamellia Hyacinth
-          </a>
-
-        </div>
 
       email: kamelliahyacinth@gmail.com
       autolink: true
@@ -248,27 +246,32 @@ sections:
           light: "#ffffff"
           dark: "#0d0d12"
       spacing:
-        padding: ["4rem", "0", "4rem", "0"]
+        padding: ["4rem","0","4rem","0"]
 
-  # CTA Card
+  # CTA
   - block: cta-card
     content:
       title: "Open to Opportunities"
+
       text: |-
         I'm currently seeking opportunities to contribute to public health, healthcare systems improvement, and policy development.
 
         Let's connect and discuss how I can help your team.
+
       button:
         text: 'Download Résumé'
         url: uploads/resume.pdf
         new_tab: true
+
     design:
       card:
         css_class: 'bg-gradient-to-br from-primary-200 via-primary-100 to-secondary-200 dark:from-primary-600 dark:via-primary-700 dark:to-secondary-700'
         text_color: dark
+
       background:
         color:
           light: "#f5f5f5"
           dark: "#08080c"
+
       spacing:
-        padding: ["4rem", "0", "6rem", "0"]
+        padding: ["4rem","0","6rem","0"]
