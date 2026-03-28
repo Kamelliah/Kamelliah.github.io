@@ -2,10 +2,19 @@
 title: "Capstone: Refining Employee Policies and Hiring Strategies at Circle of Hope, Inc II"
 date: 2025-05-09
 summary: "An MHA capstone project partnering with a disability services nonprofit to revise employee policies, reduce hiring costs, and standardize onboarding processes"
-tags:
+featured: true
+status: "Completed"
+role: "MHA Capstone Consultant"
+duration: "4 months"
+team_size: 1
 tags:
   - Healthcare Administration
   - Operations Improvement
+highlights:
+  - "Revised employee handbook for legal compliance and operational clarity"
+  - "Developed cost-effective hiring strategy in response to Indeed pricing changes"
+  - "Standardized onboarding materials improving new hire integration"
+  - "Trained HR and management on revised policies and recruitment processes"
 links:
   - type: pdf
     url: uploads/capstone-proposal.pdf
@@ -13,16 +22,6 @@ links:
   - type: pdf
     url: uploads/capstone-final-report.pdf
     label: Final Report
-featured: true
-status: "Completed"
-role: "MHA Capstone Consultant"
-duration: "4 months"
-team_size: 1
-highlights:
-  - "Revised employee handbook for legal compliance and operational clarity"
-  - "Developed cost-effective hiring strategy in response to Indeed pricing changes"
-  - "Standardized onboarding materials improving new hire integration"
-  - "Trained HR and management on revised policies and recruitment processes"
 ---
 
 For my MHA Capstone at UW–La Crosse, I partnered with Circle of Hope, Inc II, an organization dedicated to providing support for physically and developmentally disabled women. The organization faced significant challenges with outdated employee handbook policies and rising recruitment costs due to changes in pricing on platforms like Indeed. This project addressed these challenges through a six-phase consulting engagement focused on policy revision, cost-effective hiring, and onboarding standardization.
@@ -340,8 +339,8 @@ Total duration: 15 weeks (Jan 28 – May 9, 2025)
 
 ## Project Details
 
-**Program**: Master of Healthcare Administration — UW–La Crosse  
-**Partner Organization**: Circle of Hope, Inc II  
+**Program**: Master of Healthcare Administration — UW–La Crosse
+**Partner Organization**: Circle of Hope, Inc II
 **Competencies Demonstrated**: Systems thinking, organizational leadership, ethical policy judgment, stakeholder communication, data-informed decision-making
 
 ## Lessons Learned
@@ -353,5 +352,5 @@ Total duration: 15 weeks (Jan 28 – May 9, 2025)
 
 ---
 
-**Project Status**: ✅ Completed  
+**Project Status**: ✅ Completed
 **Deliverables**: [Project Proposal](uploads/capstone-proposal.pdf) | [Final Report](uploads/capstone-final-report.pdf)
