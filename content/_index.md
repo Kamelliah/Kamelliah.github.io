@@ -40,7 +40,6 @@ sections:
     design:
       style: centered
       avatar_shape: circle
-      avatar_size: xl
       animations: true
       background:
         color:
