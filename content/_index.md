@@ -1,3 +1,4 @@
+---
 # Leave the homepage title empty to use the site title
 title: 'Kamellia Hyacinth'
 summary: ''
@@ -54,11 +55,9 @@ sections:
       title: "Featured Projects"
       subtitle: "A selection of my recent work"
       count: 0
-
       filters:
         folders:
           - projects
-
       buttons:
         - name: All
           tag: '*'
@@ -86,9 +85,7 @@ sections:
     content:
       title: "Core Competencies"
       subtitle: "Public health policy, healthcare operations, and regulatory compliance expertise"
-
       categories:
-
         - name: Policy & Compliance
           items:
             - name: Regulatory Compliance
@@ -149,9 +146,7 @@ sections:
     content:
       title: Experience
       date_format: Jan 2006
-
       items:
-
         - title: Community Health & Policy Intern
           company: Children's Wisconsin
           company_url: 'https://childrenswi.org'
@@ -206,12 +201,10 @@ sections:
       title: Recent Posts
       subtitle: 'Thoughts on web development, tech, and more'
       text: ''
-
       filters:
         folders:
           - blog
         exclude_featured: false
-
       count: 3
       order: desc
 
@@ -236,6 +229,19 @@ sections:
         I'm always interested in opportunities to contribute to public health and healthcare improvement initiatives.
         Whether you're interested in collaboration, professional connections, or discussing shared interests in healthcare and policy, feel free to reach out.
 
+        <div class="badge-base LI-profile-badge"
+          data-locale="en_US"
+          data-size="medium"
+          data-theme="dark"
+          data-type="VERTICAL"
+          data-vanity="kamellia"
+          data-version="v1">
+          <a class="badge-base__link LI-simple-link"
+            href="https://www.linkedin.com/in/kamellia">
+            Kamellia Hyacinth
+          </a>
+        </div>
+
       email: kamelliahyacinth@gmail.com
       autolink: true
 
@@ -252,7 +258,6 @@ sections:
   - block: cta-card
     content:
       title: "Open to Opportunities"
-
       text: |-
         I'm currently seeking opportunities to contribute to public health, healthcare systems improvement, and policy development.
 
@@ -275,3 +280,5 @@ sections:
 
       spacing:
         padding: ["4rem","0","6rem","0"]
+
+---
