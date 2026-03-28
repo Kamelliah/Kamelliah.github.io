@@ -99,4 +99,4 @@ Recognizing and addressing patterns of structural silence is therefore essential
 
 ---
 
-Questions? Leave a comment below or reach out on [LinkedIn](https://www.linkedin.com/in/kamelliahyacinth)!
+Questions? Leave a comment below or reach out on [LinkedIn](https://www.linkedin.com/in/kamelliahyacinth)
