@@ -23,10 +23,10 @@ sections:
         enable: true
         prefix: "I focus on"
         strings:
-          - "public health systems"
-          - "healthcare quality"
-          - "policy and compliance"
-          - "community health impact"
+          - "public health systems."
+          - "healthcare quality."
+          - "policy and compliance."
+          - "community health impact."
         type_speed: 70
         delete_speed: 40
         pause_time: 2500
@@ -59,14 +59,16 @@ sections:
         folders:
           - projects
       buttons:
-        - name: All
-          tag: '*'
-        - name: Full-Stack
-          tag: Full-Stack
-        - name: Frontend
-          tag: Frontend
-        - name: Backend
-          tag: Backend
+    - name: All
+      tag: '*'
+    - name: Healthcare Administration
+      tag: Healthcare Administration
+    - name: Health Policy
+      tag: Health Policy
+    - name: Operations Improvement
+      tag: Operations Improvement
+    - name: Public Health
+      tag: Public Health
       default_button_index: 0
     design:
       columns: 3
