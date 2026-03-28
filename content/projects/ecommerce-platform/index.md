@@ -4,25 +4,25 @@ date: 2025-11-15
 summary: "A state-level policy brief recommending a structured crisis follow-up program to reduce veteran suicide in Wisconsin"
 image:
   filename: veteran-988-card.png
-tags:
-  - Policy & Administration
-  - Health Law & Policy
-  - Veteran Health
-  - Public Health
-links:
-  - type: pdf
-    url: uploads/annotated-Kamellia_Hyacinth_Policy_Brief-3.pdf
-    label: View Brief
 featured: true
 status: "Completed"
 role: "Policy Consultant"
 duration: "1 month"
 team_size: 1
+tags:
+  - Policy & Administration
+  - Health Law & Policy
+  - Veteran Health
+  - Public Health
 highlights:
   - "Estimated 6–8 veteran lives saved annually"
   - "$1.8M annual cost — 0.026% of WI state budget surplus"
   - "4:1 to 6:1 return on investment"
   - "Recommended over 3 competing policy options"
+links:
+  - type: pdf
+    url: uploads/annotated-Kamellia_Hyacinth_Policy_Brief-3.pdf
+    label: View Brief
 ---
 
 A policy brief developed as part of graduate coursework in the MPH Policy & Management program at UW–Milwaukee, directed to Senator Dianne Hesselbein's office and the Wisconsin State Senate Committee on Veterans & Military Affairs.
@@ -34,12 +34,14 @@ In 2022, an average of 17.6 U.S. veterans died by suicide each day. Wisconsin cu
 ## Key Features
 
 ### Policy Recommendation
+
 - **48-Hour Follow-Up** — Structured contact after 988 crisis calls or psychiatric discharge
 - **30-Day Peer Navigation** — Sustained support reducing disengagement and repeat crises
 - **Statewide Reach** — Covers rural veterans, veterans of color, and non-VA-enrolled veterans
 - **988 Integration** — Builds on existing infrastructure without requiring new systems
 
 ### Policy Options Analyzed
+
 - **Option 1** — Wisconsin ERPO & Safe Firearm Storage Act
 - **Option 2** — Wisconsin 988-to-Care Veteran Follow-Up Program *(Recommended)*
 - **Option 3** — Wisconsin Crisis Firearm Safety Act
@@ -48,15 +50,18 @@ In 2022, an average of 17.6 U.S. veterans died by suicide each day. Wisconsin cu
 ## Technical Highlights
 
 ### Analytical Framework
+
 - CDC criteria applied across effectiveness, equity, feasibility, and cost
 - Causal loop diagram modeling reinforcing and balancing suicide risk pathways
 - Federal gap alignment with Clay Hunt Act, COMPACT Act, and 988 Lifeline
 
 ### Equity Analysis
+
 - Disparate impact assessed for rural veterans, women veterans, Native American veterans, and non-VA-enrolled veterans
 - Option 2 ranked highest on equity across all subgroups
 
 ### Cost-Benefit Analysis
+
 - Total annual cost: $1.8M
 - Cost per life-year saved: $7,500–$10,000
 - Break-even: Year 1
@@ -72,9 +77,9 @@ In 2022, an average of 17.6 U.S. veterans died by suicide each day. Wisconsin cu
 
 ## Project Details
 
-**Course**: Health Policy & Advocacy — UW–Milwaukee MPH Program  
-**Directed To**: Senator Dianne Hesselbein, Wisconsin State Senate  
-**Framework**: CDC Policy Analysis Criteria  
+**Course**: Health Policy & Advocacy — UW–Milwaukee MPH Program
+**Directed To**: Senator Dianne Hesselbein, Wisconsin State Senate
+**Framework**: CDC Policy Analysis Criteria
 **Deliverable**: Policy Brief with Fact Sheet, Appendices, and Causal Loop Diagram
 
 ## Lessons Learned
@@ -86,5 +91,5 @@ In 2022, an average of 17.6 U.S. veterans died by suicide each day. Wisconsin cu
 
 ---
 
-**Project Status**: ✅ Completed  
+**Project Status**: ✅ Completed
 **Deliverable**: [View Policy Brief](uploads/veteran-suicide-prevention.pdf)
