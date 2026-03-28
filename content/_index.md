@@ -149,7 +149,7 @@ sections:
         - title: Community Health & Policy Intern 
           company: Children's Wisconsin
           company_url: 'https://childrenswi.org'
-          company_logo: 'childrens-wisconsin'
+          company_logo: 'childrens-wisconsin.png'
           location: Remote
           date_start: '2023-01-01'
           date_end: ''
