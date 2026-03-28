@@ -2,6 +2,8 @@
 title: "Wisconsin 988-to-Care Veteran Follow-Up Program"
 date: 2025-11-15
 summary: "A state-level policy brief recommending a structured crisis follow-up program to reduce veteran suicide in Wisconsin"
+image:
+  filename: veteran-988-card.png
 tags:
   - Policy & Administration
   - Health Law & Policy
