@@ -69,14 +69,14 @@ sections:
           tag: Operations Improvement
         - name: Public Health
           tag: Public Health
-      design:
-        columns: 3
-        background:
-          color:
-            light: "#ffffff"
-            dark: "#0d0d12"
-        spacing:
-          padding: ["4rem", "0", "4rem", "0"]
+    design:
+      columns: 3
+      background:
+        color:
+          light: "#ffffff"
+          dark: "#0d0d12"
+      spacing:
+        padding: ["4rem", "0", "4rem", "0"]
 
   # Core Competencies
   - block: tech-stack
@@ -223,6 +223,12 @@ sections:
       text: |-
         I'm always interested in opportunities to contribute to public health and healthcare improvement initiatives.
         Whether you're interested in collaboration, professional connections, or discussing shared interests in healthcare and policy, feel free to reach out.
+
+        {{< rawhtml >}}
+        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="kamellia" data-version="v1">
+          <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/kamellia?trk=profile-badge">Kamellia Hyacinth</a>
+        </div>
+        {{< /rawhtml >}}
       email: kamelliahyacinth@gmail.com
       autolink: true
     design:
