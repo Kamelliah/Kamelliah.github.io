@@ -1,170 +1,83 @@
 ---
-title: "TaskFlow - Project Management Tool"
-date: 2024-09-20
-summary: "Real-time collaborative task management application with drag-and-drop Kanban boards and team features"
+title: "Policy Analysis: Enhancing Price Transparency in Private Health Insurance"
+date: 2024-10-09
+summary: "A policy memo analyzing options for improving healthcare price transparency while preserving private insurer competitiveness"
 tags:
-  - Full-Stack
-  - Next.js
-  - Real-Time
-  - Productivity
-tech_stack:
-  - Next.js
-  - TypeScript
-  - Prisma
-  - PostgreSQL
-  - WebSockets
-  - Tailwind CSS
+  - Policy & Administration
+  - Health Law & Policy
+  - Health Economics
+  - Public Health
 links:
-  - type: github
-    url: https://github.com/alexjohnson/taskflow
-    label: Code
-  - type: live
-    url: https://taskflow-demo.example.com
-    label: Demo
+  - type: pdf
+    url: uploads/health-price-transparency.pdf
+    label: View Memo
 featured: true
-status: "Live"
-role: "Solo Developer"
-duration: "2 months"
+status: "Completed"
+role: "Policy Consultant"
+duration: "3 weeks"
 team_size: 1
 highlights:
-  - "Real-time collaboration with WebSockets"
-  - "2000+ active users"
-  - "Featured on Product Hunt"
+  - "Analyzed 3 federal transparency policy options"
+  - "Recommended standardized price reporting for AHIP"
+  - "Addressed equity implications for rural and small providers"
+  - "Informed by CMS, NEJM, and KFF research"
 ---
 
-A modern, intuitive task management tool built for remote teams. Features real-time collaboration, customizable workflows, and beautiful UI.
+A staged policy memo developed as part of graduate coursework in the MHA program at UW–La Crosse, written from the perspective of a policy consultant advising America's Health Insurance Plans (AHIP) on healthcare price transparency legislation.
 
 ## Overview
 
-TaskFlow was born out of frustration with existing project management tools being either too complex or lacking essential features. I built a solution that's powerful yet simple to use.
+Healthcare price transparency is a critical issue as consumers demand clearer information to make informed decisions. Federal regulations including the Transparency in Coverage Rule (2020) and the Hospital Price Transparency Rule (2021) have sought to address this — but only 65% of hospitals reviewed by CMS in 2022 were fully compliant. This memo analyzes three policy options and recommends the approach best aligned with AHIP's goals.
 
 ## Key Features
 
-### Core Functionality
-- **Kanban Boards** - Drag-and-drop interface for visual task management
-- **Real-Time Sync** - See changes instantly as team members update tasks
-- **Multiple Views** - Switch between Kanban, List, and Calendar views
-- **Task Details** - Rich descriptions, attachments, comments, and checklists
-- **Labels & Filters** - Organize and find tasks quickly
+### Policy Recommendation
+- **Standardized Price Reporting** — Mandating uniform formats for service prices and cost-sharing data across providers and insurers
+- **Phased Implementation** — Reducing administrative burden on smaller providers through staged rollout
+- **Technical Assistance** — Support for rural and small providers to meet compliance requirements
+- **Consumer Empowerment** — Clear, comparable pricing enabling informed healthcare decisions
 
-### Collaboration
-- **Team Workspaces** - Separate spaces for different projects/teams
-- **@Mentions** - Tag team members in comments for notifications
-- **Activity Feed** - Track all changes and updates
-- **Permissions** - Role-based access control (admin, member, viewer)
+### Policy Options Analyzed
+- **Option 1** — Implementing Standardized Price Reporting *(Recommended)*
+- **Option 2** — Incentive-Based Compliance Program
+- **Option 3** — Enhanced Consumer Education and Decision-Support Tools
 
-### Productivity
-- **Keyboard Shortcuts** - Power user features for faster navigation
-- **Templates** - Reusable board templates for common workflows
-- **Due Dates & Reminders** - Never miss a deadline
-- **Time Tracking** - Built-in timer for task duration tracking
+## Technical Highlights
 
-## Technical Implementation
+### Stakeholder Analysis
+- Mapped interests and influence of consumers, providers, private insurers, policymakers, employers, and advocacy organizations
+- Identified points of conflict and alignment across stakeholder groups
 
-### Real-Time Features
-Used WebSockets (Socket.io) for instant updates across all connected clients. Implemented optimistic UI updates for snappy user experience even before server confirmation.
+### Policy Assessment
+- Evaluated each option on transparency impact, administrative burden, equity implications, and market competitiveness
+- Applied AHIP's organizational goals as a framework for recommendation
 
-### Drag & Drop
-Built custom drag-and-drop using react-beautiful-dnd with smooth animations and mobile touch support.
-
-### Performance
-- Implemented virtual scrolling for boards with 1000+ tasks
-- Optimized database queries with proper indexing
-- Used Redis for session storage and caching
-- Image optimization with Next.js Image component
-
-### Authentication
-- Secure auth with NextAuth.js
-- Support for email/password and OAuth (Google, GitHub)
-- JWT tokens with automatic refresh
-
-## Architecture
-
-Built as a modern monolith with Next.js API routes:
-
-```
-┌─────────────┐     ┌──────────────┐     ┌─────────────┐
-│  Next.js    │────▶│   API Routes │────▶│ PostgreSQL  │
-│  (React)    │     │  (REST/WS)   │     │  + Prisma   │
-└─────────────┘     └──────────────┘     └─────────────┘
-       │                    │
-       │             ┌──────▼───────┐
-       └────────────▶│  Socket.io   │
-                     │  (Real-Time) │
-                     └──────────────┘
-```
-
-## Challenges Solved
-
-### Real-Time Conflicts
-**Problem**: Multiple users editing same task simultaneously
-
-**Solution**: Implemented operational transformation (OT) for conflict resolution and last-write-wins strategy with conflict notifications
-
-### Mobile Performance
-**Problem**: Drag-and-drop laggy on mobile devices
-
-**Solution**: Optimized touch handlers and reduced re-renders using React.memo and useMemo
-
-### Scale
-**Problem**: Growing user base causing performance issues
-
-**Solution**: Added Redis caching layer and optimized database queries, reducing response time by 65%
+### Equity Considerations
+- Identified rural and low-income populations as disproportionately affected by both opaque pricing and digital tool limitations
+- Flagged risk of small provider market exit under poorly implemented mandates
 
 ## Results
 
-- 📈 **Users**: 2000+ active users within 3 months
-- ⭐ **Product Hunt**: Featured and received 200+ upvotes
-- 🚀 **Performance**: Sub-100ms API response times
-- 💯 **Uptime**: 99.8% uptime since launch
-- 📱 **Mobile**: 40% of traffic from mobile devices
+- **Recommendation**: Standardized Price Reporting as the most direct solution to consumer confusion and pricing inconsistency
+- **Equity**: Phased implementation reduces harm to small and rural providers
+- **Feasibility**: Aligned with existing CMS regulatory direction
+- **Consumer Impact**: Uniform formats enable meaningful cost comparison across providers
 
-## Tech Stack
+## Project Details
 
-**Frontend**
-- Next.js 14 (App Router)
-- TypeScript
-- Tailwind CSS
-- Framer Motion (animations)
-- React Beautiful DnD
+**Course**: Health Law & Policy — UW–La Crosse MHA Program  
+**Client**: America's Health Insurance Plans (AHIP) *(simulated)*  
+**Audience**: U.S. House Representatives considering transparency legislation  
+**Deliverable**: Staged Policy Memo with Landscape Analysis, Options, and Recommendation
 
-**Backend**
-- Next.js API Routes
-- Prisma ORM
-- PostgreSQL
-- Socket.io for WebSockets
-- NextAuth.js for authentication
+## Lessons Learned
 
-**Infrastructure**
-- Vercel for hosting
-- Supabase for PostgreSQL
-- Redis Cloud for caching
-- AWS S3 for file storage
-
-## User Feedback
-
-> "Finally, a task manager that doesn't get in my way. The real-time updates are magical!" - Sarah K., Product Manager
-
-> "We switched from Trello and haven't looked back. TaskFlow is faster and more intuitive." - Mike R., Engineering Lead
-
-## Open Source
-
-TaskFlow is open source! Contributions welcome.
-
-**License**: MIT  
-**GitHub**: [alexjohnson/taskflow](https://github.com/alexjohnson/taskflow)  
-**Demo**: [Try it live](https://taskflow-demo.example.com)
-
-## What's Next
-
-Currently working on:
-- [ ] Mobile apps (iOS & Android)
-- [ ] Gantt chart view
-- [ ] Advanced reporting and analytics
-- [ ] API for third-party integrations
-- [ ] Offline mode support
+1. **Transparency is not neutral** — Disclosure requirements affect stakeholders differently depending on size, geography, and resources
+2. **Administrative burden is an equity issue** — Compliance costs fall hardest on the providers serving underserved communities
+3. **Consumer tools are not enough** — Education-based approaches fail populations with time constraints or low health literacy
+4. **Phased implementation reduces resistance** — Stakeholder buy-in increases when transitions are gradual and supported
 
 ---
 
-**Status**: ✅ Live & Actively Maintained  
-**Try it**: [taskflow-demo.example.com](https://taskflow-demo.example.com)
+**Project Status**: ✅ Completed  
+**Deliverable**: [View Policy Memo](uploads/health-price-transparency.pdf)
