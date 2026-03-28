@@ -1,526 +1,102 @@
 ---
-title: "Docker Deployment Guide: From Development to Production"
-date: 2024-10-15
-summary: "Learn how to containerize your applications with Docker, optimize images, and deploy to production with best practices"
+title: "Structural Silence: When Public Health Systems Do Not Hear All Voices"
+date: 2026-03-27
+summary: "Examining how uneven access to public health workforce pathways limits representation, narrows perspectives, and ultimately undermines the equity goals the field claims to pursue"
 tags:
-  - Docker
-  - DevOps
-  - Deployment
-  - Tutorial
+  - Public Health
+  - Health Equity
+  - Workforce Development
+  - Policy
+  - Systems Design
 authors:
   - me
 featured: false
 ---
 
-Docker simplifies deployment by packaging your application with all dependencies. This guide covers containerizing apps, optimizing images, and production deployment.
+Public health as a field emphasizes equity, inclusion, and community-centered approaches. However, the extent to which these values are reflected in system design and workforce pathways warrants closer examination. While public health systems aim to address disparities, not all voices are equally represented in shaping the policies and practices intended to do so.
 
-## Why Docker?
+## Table of Contents
 
-**Problems Docker solves**:
-- ❌ "Works on my machine" syndrome
-- ❌ Complex dependency management
-- ❌ Environment inconsistencies
-- ❌ Difficult scaling
+1. [How Entry Is Structured](#entry)
+2. [The Circular Barrier](#circular)
+3. [Education vs. Opportunity](#education)
+4. [Awareness Without Access](#awareness)
+5. [Economic & Social Realities](#economic)
+6. [Narrowing the Pipeline](#pipeline)
+7. [The Cost to Public Health Outcomes](#outcomes)
+8. [Trust, Engagement & Representation](#trust)
+9. [What Needs to Change](#change)
+10. [Conclusion](#conclusion)
 
-**Benefits**:
-- ✅ Consistent environments (dev = prod)
-- ✅ Easy scaling
-- ✅ Simplified deployment
-- ✅ Isolation and security
+## How Entry Is Structured {#entry}
 
-## Basic Dockerfile
+One contributing factor is how entry into public health and adjacent technical fields is structured. Access to roles that influence decision-making is often framed around prior experience, specific exposures, or familiarity with institutional systems. While these expectations may serve as quality controls, they can also create barriers for individuals seeking to enter the field through nontraditional or less direct pathways.
 
-For a Node.js application:
+## The Circular Barrier {#circular}
 
-```dockerfile
-# Use official Node image
-FROM node:18-alpine
+A related challenge exists in how qualifications are evaluated within public health and technical environments. Entry into these spaces is frequently experience-based, with emphasis placed on prior exposure to specific systems, tools, or roles. However, this creates a circular barrier: individuals are expected to demonstrate experience in order to access opportunities that are necessary to gain that very experience.
 
-# Set working directory
-WORKDIR /app
+This is not a small design flaw. It is a structural feature that systematically advantages those who already have access — through networks, unpaid opportunities, or institutional proximity — while disadvantaging those who don't.
 
-# Copy package files
-COPY package*.json ./
+## Education vs. Opportunity {#education}
 
-# Install dependencies
-RUN npm ci --only=production
+While education provides foundational knowledge and technical understanding, it is not always recognized as sufficient for entry into practice-based roles. As a result, individuals who have invested in formal training may still encounter difficulty accessing positions that would allow them to apply and build upon that knowledge.
 
-# Copy application code
-COPY . .
+This disconnect between education and opportunity can limit workforce entry, particularly for those who do not already have informal access to relevant experiences or professional networks. The credential exists. The door still doesn't open.
 
-# Expose port
-EXPOSE 3000
+## Awareness Without Access {#awareness}
 
-# Start application
-CMD ["node", "server.js"]
-```
+Public health training equips individuals with the ability to understand systems, identify gaps, and analyze structural challenges. However, in the absence of accessible pathways into practice-based roles, this awareness does not always translate into meaningful participation or influence.
 
-Build and run:
+Individuals may develop a high level of system awareness while encountering limited opportunities to apply that knowledge in ways that contribute to change. This is a loss — not just for the individual, but for the field itself.
 
-```bash
-docker build -t my-app .
-docker run -p 3000:3000 my-app
-```
+## Economic & Social Realities {#economic}
 
-## Multi-Stage Builds (Optimization)
+These barriers are not only shaped by professional expectations, but also by broader economic and social realities. Individuals from lower-income backgrounds, those who are underinsured, or those balancing multiple responsibilities may have less flexibility to pursue unpaid or low-paid opportunities that are often positioned as entry points into the field.
 
-Reduce image size with multi-stage builds:
+Additionally, inconsistent hiring criteria — such as being screened out for both lack of experience and perceived overqualification — can further complicate access. The goalposts shift depending on who is being evaluated, and that inconsistency is not neutral.
 
-```dockerfile
-# Stage 1: Build
-FROM node:18-alpine AS builder
+## Narrowing the Pipeline {#pipeline}
 
-WORKDIR /app
-COPY package*.json ./
-RUN npm ci
+From a systems perspective, these patterns contribute to a narrowing of the workforce pipeline. When exposure is contingent upon prior experience, and experience is contingent upon access, entry into technical fields becomes uneven. This may unintentionally exclude individuals who are otherwise prepared to contribute, reinforcing patterns of structural silence within the field.
 
-COPY . .
-RUN npm run build
+## The Cost to Public Health Outcomes {#outcomes}
 
-# Stage 2: Production
-FROM node:18-alpine
+The implications of this extend beyond workforce composition and directly affect public health outcomes. When entry into technical and decision-making roles is restricted, the range of perspectives informing public health practice becomes limited. This can result in programs and policies that are less responsive to the lived realities of the populations they are intended to serve.
 
-WORKDIR /app
+A workforce shaped by uneven access may lack representation from individuals with direct or proximate experience of the communities most impacted by health disparities. This is particularly relevant in areas such as access to care, insurance navigation, and community-based interventions, where understanding structural barriers is essential. Without diverse pathways into the field, public health systems risk reinforcing a disconnect between policy development and real-world conditions.
 
-# Copy only necessary files from builder
-COPY --from=builder /app/dist ./dist
-COPY --from=builder /app/node_modules ./node_modules
-COPY package*.json ./
+In addition, limiting access to technical roles can reduce system adaptability and innovation. Public health challenges are increasingly complex, requiring varied perspectives and approaches. When pathways into the field are constrained, the system draws from a narrower range of experiences, potentially overlooking practical and context-specific solutions.
 
-EXPOSE 3000
-CMD ["node", "dist/server.js"]
-```
+## Trust, Engagement & Representation {#trust}
 
-**Result**: Image size reduced from 800MB → 150MB!
+These patterns also influence trust and engagement. Communities are more likely to engage with systems that reflect their experiences and demonstrate an understanding of their needs. When public health institutions appear distant or unrepresentative, this can contribute to lower participation in programs and reduced uptake of services.
 
-## Docker Compose for Local Development
+Representation is not just a values question. It is a functional one. Systems that fail to reflect the communities they serve will struggle to reach them.
 
-`docker-compose.yml`:
+## What Needs to Change {#change}
 
-```yaml
-version: '3.8'
+Addressing these challenges requires a shift in how access to the field is structured. Key priorities include:
 
-services:
-  app:
-    build: .
-    ports:
-      - "3000:3000"
-    environment:
-      - NODE_ENV=development
-      - DATABASE_URL=postgresql://user:pass@db:5432/mydb
-    volumes:
-      - .:/app
-      - /app/node_modules
-    depends_on:
-      - db
-      - redis
+- **Expanding pathways** into practice-based roles beyond traditional credentialing and network-based access
+- **Aligning education with opportunity** so that formal training translates into real entry points
+- **Transparent and inclusive hiring practices** that reduce reliance on informal networks
+- **Workforce development efforts** that minimize dependence on unpaid experience
+- **Consistent evaluation criteria** that do not penalize candidates for being either underexperienced or overqualified
 
-  db:
-    image: postgres:15-alpine
-    environment:
-      - POSTGRES_USER=user
-      - POSTGRES_PASSWORD=pass
-      - POSTGRES_DB=mydb
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-    ports:
-      - "5432:5432"
+## Conclusion {#conclusion}
 
-  redis:
-    image: redis:7-alpine
-    ports:
-      - "6379:6379"
+Public health is not only defined by the services it provides, but by who is able to participate in designing and delivering those services. When access to the field is uneven, the system risks limiting its own effectiveness.
 
-volumes:
-  postgres_data:
-```
-
-Start everything:
-
-```bash
-docker-compose up -d
-```
-
-## Environment Variables
-
-Never hardcode secrets! Use `.env` file:
-
-```env
-# .env (add to .gitignore!)
-DATABASE_URL=postgresql://user:pass@localhost:5432/mydb
-JWT_SECRET=your-secret-key
-API_KEY=your-api-key
-```
-
-Reference in docker-compose:
-
-```yaml
-services:
-  app:
-    env_file:
-      - .env
-```
-
-## Production Dockerfile
-
-Optimized for production:
-
-```dockerfile
-FROM node:18-alpine AS builder
-
-WORKDIR /app
-
-# Copy package files
-COPY package*.json ./
-
-# Install all dependencies (including devDependencies)
-RUN npm ci
-
-# Copy source
-COPY . .
-
-# Build application
-RUN npm run build
-
-# Remove devDependencies
-RUN npm prune --production
-
-# Production stage
-FROM node:18-alpine
-
-# Add non-root user
-RUN addgroup -g 1001 -S nodejs && \
-    adduser -S nodejs -u 1001
-
-WORKDIR /app
-
-# Copy built app from builder
-COPY --from=builder --chown=nodejs:nodejs /app/dist ./dist
-COPY --from=builder --chown=nodejs:nodejs /app/node_modules ./node_modules
-COPY --from=builder --chown=nodejs:nodejs /app/package*.json ./
-
-# Use non-root user
-USER nodejs
-
-# Health check
-HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-  CMD node healthcheck.js
-
-EXPOSE 3000
-
-CMD ["node", "dist/server.js"]
-```
-
-## Image Optimization Tips
-
-### 1. Use .dockerignore
-
-```
-node_modules
-npm-debug.log
-.git
-.env
-.DS_Store
-*.md
-.vscode
-coverage
-.github
-```
-
-### 2. Layer Caching
-
-```dockerfile
-# ❌ Bad: Changes to code invalidate ALL layers
-COPY . .
-RUN npm ci
-
-# ✅ Good: Package changes don't rebuild code
-COPY package*.json ./
-RUN npm ci
-COPY . .
-```
-
-### 3. Use Alpine Images
-
-```dockerfile
-# Large: node:18 (900MB)
-FROM node:18
-
-# Small: node:18-alpine (150MB)
-FROM node:18-alpine
-```
-
-### 4. Combine RUN Commands
-
-```dockerfile
-# ❌ Bad: Multiple layers
-RUN apt-get update
-RUN apt-get install -y curl
-RUN apt-get clean
-
-# ✅ Good: Single layer
-RUN apt-get update && \
-    apt-get install -y curl && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
-```
-
-## Deploying to AWS ECS
-
-### 1. Build and Push to ECR
-
-```bash
-# Authenticate Docker to ECR
-aws ecr get-login-password --region us-east-1 | \
-  docker login --username AWS --password-stdin 123456789.dkr.ecr.us-east-1.amazonaws.com
-
-# Build image
-docker build -t my-app .
-
-# Tag image
-docker tag my-app:latest 123456789.dkr.ecr.us-east-1.amazonaws.com/my-app:latest
-
-# Push to ECR
-docker push 123456789.dkr.ecr.us-east-1.amazonaws.com/my-app:latest
-```
-
-### 2. ECS Task Definition
-
-```json
-{
-  "family": "my-app",
-  "networkMode": "awsvpc",
-  "requiresCompatibilities": ["FARGATE"],
-  "cpu": "256",
-  "memory": "512",
-  "containerDefinitions": [
-    {
-      "name": "my-app",
-      "image": "123456789.dkr.ecr.us-east-1.amazonaws.com/my-app:latest",
-      "portMappings": [
-        {
-          "containerPort": 3000,
-          "protocol": "tcp"
-        }
-      ],
-      "environment": [
-        {
-          "name": "NODE_ENV",
-          "value": "production"
-        }
-      ],
-      "secrets": [
-        {
-          "name": "DATABASE_URL",
-          "valueFrom": "arn:aws:secretsmanager:..."
-        }
-      ],
-      "logConfiguration": {
-        "logDriver": "awslogs",
-        "options": {
-          "awslogs-group": "/ecs/my-app",
-          "awslogs-region": "us-east-1",
-          "awslogs-stream-prefix": "ecs"
-        }
-      }
-    }
-  ]
-}
-```
-
-## Docker Security Best Practices
-
-### 1. Use Non-Root User
-
-```dockerfile
-# Add user
-RUN addgroup -g 1001 -S nodejs && \
-    adduser -S nodejs -u 1001
-
-# Switch to user
-USER nodejs
-```
-
-### 2. Scan for Vulnerabilities
-
-```bash
-# Using Trivy
-docker run --rm -v /var/run/docker.sock:/var/run/docker.sock \
-  aquasec/trivy image my-app:latest
-```
-
-### 3. Keep Base Images Updated
-
-```dockerfile
-# ✅ Pin specific version, update regularly
-FROM node:18.19.0-alpine
-
-# ❌ Avoid 'latest' tag
-FROM node:latest
-```
-
-### 4. Read-Only Filesystem
-
-```yaml
-services:
-  app:
-    read_only: true
-    tmpfs:
-      - /tmp
-```
-
-## Health Checks
-
-Simple health check endpoint:
-
-```javascript
-// healthcheck.js
-const http = require('http')
-
-const options = {
-  host: 'localhost',
-  port: 3000,
-  path: '/health',
-  timeout: 2000
-}
-
-const request = http.request(options, (res) => {
-  if (res.statusCode === 200) {
-    process.exit(0)
-  } else {
-    process.exit(1)
-  }
-})
-
-request.on('error', () => {
-  process.exit(1)
-})
-
-request.end()
-```
-
-## Monitoring & Logging
-
-### Container Logs
-
-```bash
-# View logs
-docker logs my-app
-
-# Follow logs
-docker logs -f my-app
-
-# Last 100 lines
-docker logs --tail 100 my-app
-```
-
-### Docker Stats
-
-```bash
-# View resource usage
-docker stats
-
-# Specific container
-docker stats my-app
-```
-
-## Common Issues & Solutions
-
-### Issue: Image Too Large
-
-**Solution**: Multi-stage builds, Alpine images, .dockerignore
-
-### Issue: Slow Builds
-
-**Solution**: Optimize layer caching, use BuildKit
-
-```bash
-DOCKER_BUILDKIT=1 docker build -t my-app .
-```
-
-### Issue: Container Won't Start
-
-**Solution**: Check logs, verify CMD/ENTRYPOINT
-
-```bash
-docker logs container-id
-docker inspect container-id
-```
-
-## CI/CD Pipeline Example (GitHub Actions)
-
-```yaml
-name: Deploy
-
-on:
-  push:
-    branches: [main]
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v2
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
-
-      - name: Login to Amazon ECR
-        id: login-ecr
-        uses: aws-actions/amazon-ecr-login@v1
-
-      - name: Build and push image
-        env:
-          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: my-app
-          IMAGE_TAG: ${{ github.sha }}
-        run: |
-          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-
-      - name: Update ECS service
-        run: |
-          aws ecs update-service --cluster my-cluster \
-            --service my-app --force-new-deployment
-```
-
-## Best Practices Checklist
-
-- [ ] Use multi-stage builds
-- [ ] Use .dockerignore
-- [ ] Run as non-root user
-- [ ] Pin base image versions
-- [ ] Scan for vulnerabilities
-- [ ] Implement health checks
-- [ ] Use environment variables for config
-- [ ] Keep images small (<500MB)
-- [ ] Tag images properly (not just 'latest')
-- [ ] Set up logging and monitoring
+Recognizing and addressing patterns of structural silence is therefore essential to building a more responsive, equitable, and effective public health system. The field cannot credibly pursue equity externally while maintaining inequitable structures internally.
 
 ## Resources
 
-- [Docker Documentation](https://docs.docker.com/)
-- [Docker Best Practices](https://docs.docker.com/develop/dev-best-practices/)
-- [Dockerfile Reference](https://docs.docker.com/engine/reference/builder/)
-- [Docker Compose](https://docs.docker.com/compose/)
-
-## Conclusion
-
-Docker streamlines deployment by:
-1. Creating consistent environments
-2. Simplifying dependency management
-3. Enabling easy scaling
-4. Improving security through isolation
-
-Start small, optimize incrementally, and always test in staging before production!
+- [CDC Public Health Workforce](https://www.cdc.gov/publichealthgateway/workforce)
+- [APHA Workforce Development](https://www.apha.org)
+- [RWJF Health Equity Resources](https://www.rwjf.org/en/building-a-culture-of-health/focus-areas/features/achieving-health-equity.html)
+- [HealthyPeople 2030](https://health.gov/healthypeople)
 
 ---
 
-**Example repo**: [github.com/alexjohnson/docker-guide](https://github.com/alexjohnson/docker-guide)
-
-Questions? Reach out on [Twitter](https://twitter.com/alexjohnson)!
+Questions? Leave a comment below or reach out on [LinkedIn](https://linkedin.com/kamellia)!
