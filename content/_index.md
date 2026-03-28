@@ -228,20 +228,6 @@ sections:
       text: |-
         I'm always interested in opportunities to contribute to public health and healthcare improvement initiatives.
         Whether you're interested in collaboration, professional connections, or discussing shared interests in healthcare and policy, feel free to reach out.
-
-        <div class="badge-base LI-profile-badge"
-          data-locale="en_US"
-          data-size="medium"
-          data-theme="dark"
-          data-type="VERTICAL"
-          data-vanity="kamellia"
-          data-version="v1">
-          <a class="badge-base__link LI-simple-link"
-            href="https://www.linkedin.com/in/kamellia">
-            Kamellia Hyacinth
-          </a>
-        </div>
-
       email: kamelliahyacinth@gmail.com
       autolink: true
 
