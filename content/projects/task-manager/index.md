@@ -3,9 +3,7 @@ title: "Policy Analysis: Enhancing Price Transparency in Private Health Insuranc
 date: 2024-10-09
 summary: "A policy memo analyzing options for improving healthcare price transparency while preserving private insurer competitiveness"
 tags:
-  - Policy & Administration
-  - Health Law & Policy
-  - Health Economics
+  - Health Policy
   - Public Health
 links:
   - type: pdf
