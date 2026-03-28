@@ -3,10 +3,9 @@ title: "Capstone: Refining Employee Policies and Hiring Strategies at Circle of 
 date: 2025-05-09
 summary: "An MHA capstone project partnering with a disability services nonprofit to revise employee policies, reduce hiring costs, and standardize onboarding processes"
 tags:
-  - Healthcare Operations
-  - Policy & Administration
-  - Workforce Development
-  - Organizational Management
+tags:
+  - Healthcare Administration
+  - Operations Improvement
 links:
   - type: pdf
     url: uploads/capstone-proposal.pdf
