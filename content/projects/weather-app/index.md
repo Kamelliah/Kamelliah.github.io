@@ -1,179 +1,105 @@
 ---
-title: "WeatherNow - Real-Time Weather App"
-date: 2024-06-10
-summary: "Beautiful weather application with real-time data, 7-day forecasts, and interactive maps"
+title: "Capstone: Refining Employee Policies and Hiring Strategies at Circle of Hope, Inc II"
+date: 2025-05-09
+summary: "An MHA capstone project partnering with a disability services nonprofit to revise employee policies, reduce hiring costs, and standardize onboarding processes"
 tags:
-  - Frontend
-  - React
-  - API Integration
-  - PWA
-tech_stack:
-  - React
-  - TypeScript
-  - OpenWeather API
-  - Mapbox
-  - Tailwind CSS
-  - Vite
+  - Healthcare Operations
+  - Policy & Administration
+  - Workforce Development
+  - Organizational Management
 links:
-  - type: github
-    url: https://github.com/alexjohnson/weather-now
-    label: Code
-  - type: live
-    url: https://weathernow-demo.netlify.app
-    label: Demo
-featured: false
-status: "Live"
-role: "Solo Developer"
-duration: "3 weeks"
+  - type: pdf
+    url: uploads/capstone-proposal.pdf
+    label: Project Proposal
+  - type: pdf
+    url: uploads/capstone-final-report.pdf
+    label: Final Report
+featured: true
+status: "Completed"
+role: "MHA Capstone Consultant"
+duration: "4 months"
 team_size: 1
 highlights:
-  - "PWA with offline support"
-  - "5000+ monthly active users"
-  - "Lighthouse score: 100"
+  - "Revised employee handbook for legal compliance and operational clarity"
+  - "Developed cost-effective hiring strategy in response to Indeed pricing changes"
+  - "Standardized onboarding materials improving new hire integration"
+  - "Trained HR and management on revised policies and recruitment processes"
 ---
 
-A fast, beautiful weather application that provides real-time weather data, forecasts, and interactive maps. Built as a Progressive Web App with offline support.
+For my MHA Capstone at UW–La Crosse, I partnered with Circle of Hope, Inc II, an organization dedicated to providing support for physically and developmentally disabled women. The organization faced significant challenges with outdated employee handbook policies and rising recruitment costs due to changes in pricing on platforms like Indeed. This project addressed these challenges through a six-phase consulting engagement focused on policy revision, cost-effective hiring, and onboarding standardization.
 
 ## Overview
 
-WeatherNow started as a weekend project to learn PWA development. It evolved into a fully-featured weather app used by thousands of people daily.
+Circle of Hope, Inc II needed operational support across three interconnected areas: employee handbook compliance and clarity, recruitment cost reduction, and onboarding efficiency. This capstone served as a full consulting engagement, requiring systems thinking, stakeholder collaboration, ethical policy judgment, and data-informed decision-making.
 
-## Features
+## Key Deliverables
 
-### Weather Data
-- **Current Conditions** - Real-time weather for any location
-- **7-Day Forecast** - Detailed daily forecasts with hourly breakdown
-- **Weather Alerts** - Severe weather notifications
-- **Historical Data** - Past weather data and trends
+### Revised Employee Handbook
+- Audited existing policies for legal compliance and operational clarity
+- Revised outdated language and standardized roles, responsibilities, and expectations
+- Aligned handbook with industry best practices to reduce turnover and improve employee satisfaction
 
-### User Experience
-- **Location Detection** - Automatic location based on GPS or IP
-- **Search** - Find weather for any city worldwide
-- **Favorites** - Save frequently checked locations
-- **Units** - Toggle between metric and imperial
-- **Dark Mode** - Automatic or manual theme switching
+### Cost-Effective Hiring Strategy
+- Analyzed the impact of Indeed's pricing model changes on recruitment costs
+- Evaluated alternative platforms and sourcing methods
+- Developed recommendations for more affordable and effective candidate sourcing
 
-### Progressive Web App
-- **Offline Support** - Access cached data without internet
-- **Install** - Add to home screen like a native app
-- **Fast** - Optimized for performance (Lighthouse 100)
-- **Responsive** - Perfect on any device
+### Standardized Onboarding Materials
+- Created onboarding checklists and training materials for new hire integration
+- Digitized onboarding documents for remote accessibility
+- Designed materials to reduce time-to-productivity for incoming staff
 
-## Technical Highlights
+## Project Phases
 
-### Performance
-- Achieved **100/100 Lighthouse score** across all categories
-- Implemented service workers for offline functionality
-- Optimized bundle size: < 150KB gzipped
-- Lazy loading for images and components
-- Prefetching for instant navigation
+### Phase 1 — Handbook Review & Refinement
+*(January 28 – February 15, 2025)*
+Audited the current employee handbook, revised outdated policies, and ensured compliance with legal standards.
 
-### Data Management
-- Smart caching strategy with stale-while-revalidate
-- Background sync for updated forecasts
-- Efficient API usage with request batching
-- Local storage for user preferences
+### Phase 2 — Hiring Process Analysis
+*(February 16 – March 10, 2025)*
+Assessed the impact of Indeed's pricing changes and evaluated alternative recruitment platforms and methods.
 
-### UI/UX
-- Smooth animations with Framer Motion
-- Interactive weather map with Mapbox
-- Weather icons that match current conditions
-- Accessible (WCAG AA compliant)
+### Phase 3 — Recruitment & Onboarding Plan Development
+*(March 11 – March 31, 2025)*
+Created a new hiring strategy, standardized job descriptions, and developed improved onboarding materials.
 
-## API Integration
+### Phase 4 — Implementation & Staff Training
+*(April 1 – April 15, 2025)*
+Trained HR and management on new hiring policies and employee handbook updates.
 
-Integrated multiple weather APIs for comprehensive data:
+### Phase 5 — Pilot & Evaluation
+*(April 16 – May 5, 2025)*
+Implemented new strategies and tracked effectiveness through cost comparisons and onboarding feedback.
 
-```typescript
-// Example: Fetching weather data
-const fetchWeather = async (lat: number, lon: number) => {
-  const response = await fetch(
-    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`
-  )
-  return response.json()
-}
-```
+### Phase 6 — Final Review & Adjustments
+*(May 6 – May 9, 2025)*
+Compiled final report with evaluation of project success, challenges, and recommendations for future improvements.
 
-## Architecture
+## Methodology
 
-```
-┌─────────────┐     ┌──────────────┐
-│  React App  │────▶│ OpenWeather  │
-│   (Vite)    │     │     API      │
-└──────┬──────┘     └──────────────┘
-       │
-       │            ┌──────────────┐
-       └───────────▶│   Mapbox     │
-                    │     API      │
-                    └──────────────┘
-```
-
-## Challenges
-
-### Challenge: API Rate Limits
-**Solution**: Implemented intelligent caching and request batching to stay within free tier limits while maintaining data freshness
-
-### Challenge: Offline Experience
-**Solution**: Service workers with cache-first strategy for UI, network-first for data with graceful fallbacks
-
-### Challenge: Performance on Slow Networks
-**Solution**: Image optimization, code splitting, and Progressive rendering for instant perceived performance
+- **In-Person Observations** — Biweekly site visits to assess workflow efficiency and operational challenges
+- **Remote Development** — Digitized onboarding materials and refined hiring strategies between site visits
+- **Strategic Meetings** — Weekly consultations with site supervisors and stakeholders
+- **Independent Research** — Developed training materials based on industry best practices and legal compliance standards
 
 ## Results
 
-- 📈 **Users**: 5000+ monthly active users
-- ⚡ **Performance**: 100 Lighthouse score
-- 📱 **PWA**: 40% of users installed as app
-- 🌍 **Global**: Users from 50+ countries
-- ⭐ **Rating**: 4.8/5 average user rating
+- **Hiring Costs**: Identified cost-reduction pathways following Indeed pricing changes
+- **Handbook Compliance**: Policies updated for legal alignment and operational clarity
+- **Onboarding Efficiency**: Standardized materials designed to reduce time-to-productivity for new hires
+- **Organizational Impact**: Delivered tangible operational improvements to a nonprofit serving disabled women
 
-## Tech Stack
+## Project Details
 
-**Frontend**
-- React 18
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-- Vite (build tool)
+**Program**: Master of Healthcare Administration — UW–La Crosse  
+**Partner Organization**: Circle of Hope, Inc II  
+**Competencies Demonstrated**: Systems thinking, organizational leadership, ethical policy judgment, stakeholder communication, data-informed decision-making
 
-**APIs**
-- OpenWeather API
-- Mapbox GL JS
-- IP Geolocation API
+## Reflection
 
-**Tools**
-- Workbox (PWA)
-- React Query (data fetching)
-- Zustand (state management)
-
-**Hosting**
-- Netlify
-- Cloudflare CDN
-
-## Open Source
-
-This project is open source and welcomes contributions!
-
-**License**: MIT  
-**GitHub**: [alexjohnson/weather-now](https://github.com/alexjohnson/weather-now)
-
-## Lessons Learned
-
-1. **PWAs are powerful**: Service workers enable app-like experiences on the web
-2. **Performance matters**: Users notice and appreciate fast apps
-3. **Caching strategy**: Critical for offline support and API cost management
-4. **Simplicity wins**: Started with core features, added more based on user feedback
-
-## Future Plans
-
-- [ ] Weather widgets for websites
-- [ ] Social features (share weather conditions)
-- [ ] Weather photography integration
-- [ ] Apple Watch & Android Wear apps
-- [ ] Premium features (ad-free, extended forecasts)
+This capstone served as a comprehensive demonstration of growth across all five MHA program competencies. Working directly with the staff at Circle of Hope, Inc II made the impact tangible — not just as an academic exercise but as a real contribution to an organization serving a vulnerable population. The experience reinforced that effective healthcare administration requires both technical precision and values-driven leadership.
 
 ---
 
-**Status**: ✅ Live & Maintained  
-**Try it**: [weathernow-demo.netlify.app](https://weathernow-demo.netlify.app)  
-**GitHub**: [@alexjohnson/weather-now](https://github.com/alexjohnson/weather-now)
+**Project Status**: ✅ Completed  
+**Deliverables**: [Project Proposal](uploads/capstone-proposal.pdf) | [Final Report](uploads/capstone-final-report.pdf)
