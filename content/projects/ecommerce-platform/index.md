@@ -1,167 +1,88 @@
 ---
-title: "E-Commerce Platform"
-date: 2024-11-15
-summary: "E-commerce API backend with Stripe payments, inventory management, and real-time webhooks"
-tags: 
-  - Backend
-  - Node.js
-  - API
-  - E-Commerce
-tech_stack:
-  - React
-  - TypeScript
-  - Node.js
-  - Express
-  - PostgreSQL
-  - Stripe
-  - Redis
-  - Docker
+title: "Wisconsin 988-to-Care Veteran Follow-Up Program"
+date: 2025-11-15
+summary: "A state-level policy brief recommending a structured crisis follow-up program to reduce veteran suicide in Wisconsin"
+tags:
+  - Policy & Administration
+  - Health Law & Policy
+  - Veteran Health
+  - Public Health
 links:
-  - type: github
-    url: https://github.com/alexjohnson/ecommerce-platform
-    label: Code
-  - type: live
-    url: https://shop-demo.example.com
-    label: Demo
+  - type: pdf
+    url: uploads/veteran-suicide-prevention.pdf
+    label: View Brief
 featured: true
-status: "Live"
-role: "Lead Developer"
-duration: "4 months"
-team_size: 2
+status: "Completed"
+role: "Policy Consultant"
+duration: "1 month"
+team_size: 1
 highlights:
-  - "Handles 10k+ concurrent users"
-  - "99.9% uptime SLA"
-  - "Processing $50k+ monthly transactions"
-  - "60% faster page load vs competitors"
+  - "Estimated 6–8 veteran lives saved annually"
+  - "$1.8M annual cost — 0.026% of WI state budget surplus"
+  - "4:1 to 6:1 return on investment"
+  - "Recommended over 3 competing policy options"
 ---
 
-A modern, scalable e-commerce platform built from scratch with performance and user experience as top priorities.
+A policy brief developed as part of graduate coursework in the MPH Policy & Management program at UW–Milwaukee, directed to Senator Dianne Hesselbein's office and the Wisconsin State Senate Committee on Veterans & Military Affairs.
 
 ## Overview
 
-Built a complete e-commerce solution for a mid-sized retail company looking to expand online. The platform handles everything from product catalog management to payment processing and order fulfillment.
+In 2022, an average of 17.6 U.S. veterans died by suicide each day. Wisconsin currently lacks a standardized system to ensure timely follow-up after 988 crisis calls or psychiatric discharge, despite strong evidence that rapid contact reduces suicide attempts. This brief evaluates three state-level policy options and recommends adoption of the Wisconsin 988-to-Care Veteran Follow-Up Program.
 
 ## Key Features
 
-### Customer-Facing
-- **Product Catalog** - Dynamic filtering, sorting, and search with instant results
-- **Shopping Cart** - Real-time inventory checking and price calculations
-- **Checkout** - Secure payment processing via Stripe with Apple Pay/Google Pay support
-- **Order Tracking** - Real-time order status updates with email notifications
-- **User Accounts** - Profile management, order history, and saved addresses
+### Policy Recommendation
+- **48-Hour Follow-Up** — Structured contact after 988 crisis calls or psychiatric discharge
+- **30-Day Peer Navigation** — Sustained support reducing disengagement and repeat crises
+- **Statewide Reach** — Covers rural veterans, veterans of color, and non-VA-enrolled veterans
+- **988 Integration** — Builds on existing infrastructure without requiring new systems
 
-### Admin Dashboard
-- **Inventory Management** - Real-time stock tracking and low-stock alerts
-- **Order Management** - Bulk order processing and fulfillment workflow
-- **Analytics** - Sales dashboards, customer insights, and revenue reporting
-- **Product Management** - Easy product creation with image uploads and variants
+### Policy Options Analyzed
+- **Option 1** — Wisconsin ERPO & Safe Firearm Storage Act
+- **Option 2** — Wisconsin 988-to-Care Veteran Follow-Up Program *(Recommended)*
+- **Option 3** — Wisconsin Crisis Firearm Safety Act
+- **Status Quo** — No systematic follow-up after crisis contact
 
 ## Technical Highlights
 
-### Performance Optimization
-- Implemented Redis caching reducing database queries by 70%
-- Optimized images with WebP format and lazy loading
-- Server-side rendering for critical pages improving SEO and load times
-- CDN integration for global content delivery
+### Analytical Framework
+- CDC criteria applied across effectiveness, equity, feasibility, and cost
+- Causal loop diagram modeling reinforcing and balancing suicide risk pathways
+- Federal gap alignment with Clay Hunt Act, COMPACT Act, and 988 Lifeline
 
-### Scalability
-- Microservices architecture allowing independent scaling
-- Horizontal scaling with load balancing
-- Database read replicas for improved query performance
-- Message queues for async processing (order emails, inventory updates)
+### Equity Analysis
+- Disparate impact assessed for rural veterans, women veterans, Native American veterans, and non-VA-enrolled veterans
+- Option 2 ranked highest on equity across all subgroups
 
-### Security
-- JWT authentication with refresh tokens
-- Rate limiting to prevent abuse
-- Input validation and sanitization
-- PCI-compliant payment processing via Stripe
-
-## Architecture
-
-```
-┌─────────────┐     ┌──────────────┐     ┌─────────────┐
-│  React SPA  │────▶│   REST API   │────▶│ PostgreSQL  │
-└─────────────┘     │  (Express)   │     └─────────────┘
-                    └──────┬───────┘
-                           │
-                    ┌──────▼───────┐
-                    │    Redis     │
-                    │   (Cache)    │
-                    └──────────────┘
-```
-
-## Challenges & Solutions
-
-### Challenge 1: Inventory Sync
-**Problem**: Multiple users buying same product simultaneously causing overselling
-
-**Solution**: Implemented optimistic locking with Redis to ensure inventory accuracy during concurrent purchases
-
-### Challenge 2: Payment Processing
-**Problem**: Handling payment failures gracefully while maintaining order integrity
-
-**Solution**: Built robust state machine for order processing with automatic retry logic and customer notifications
-
-### Challenge 3: Performance at Scale
-**Problem**: Slow page loads during traffic spikes
-
-**Solution**: Implemented multi-layer caching strategy (CDN, Redis, in-memory) and database query optimization
+### Cost-Benefit Analysis
+- Total annual cost: $1.8M
+- Cost per life-year saved: $7,500–$10,000
+- Break-even: Year 1
+- Net benefit by Year 2: $6.4M
 
 ## Results
 
-- **Performance**: 60% faster page load times compared to previous platform
-- **Conversion**: 25% increase in conversion rate due to improved UX
-- **Uptime**: 99.9% uptime over 6 months in production
-- **Scale**: Successfully handled Black Friday with 10k concurrent users
-- **Revenue**: Processing over $50k in monthly transactions
+- **Impact**: Estimated 6–8 lives saved annually, scaling to 8–10 by Years 3–5
+- **Equity**: Highest equity ranking across all four options
+- **Feasibility**: No organized opposition; bipartisan support for crisis services
+- **ROI**: 4:1 to 6:1 return on investment
+- **Timeline**: Statewide launch achievable within 18 months
 
-## Tech Stack Details
+## Project Details
 
-**Frontend**
-- React 18 with TypeScript
-- Tailwind CSS for styling
-- React Query for data fetching
-- React Hook Form for forms
-
-**Backend**
-- Node.js with Express
-- PostgreSQL with Prisma ORM
-- Redis for caching and sessions
-- Bull for job queues
-
-**Infrastructure**
-- Docker containers
-- AWS EC2 for hosting
-- AWS S3 for image storage
-- Cloudflare CDN
-- GitHub Actions for CI/CD
-
-**Payment & Services**
-- Stripe for payments
-- SendGrid for emails
-- Sentry for error tracking
-
-## Future Improvements
-
-- [ ] Mobile app (React Native)
-- [ ] Multi-language support
-- [ ] Wishlist and product recommendations
-- [ ] Live chat support
-- [ ] Advanced analytics dashboard
-
-## Screenshots
-
-*(Screenshots would go here in production)*
+**Course**: Health Policy & Advocacy — UW–Milwaukee MPH Program  
+**Directed To**: Senator Dianne Hesselbein, Wisconsin State Senate  
+**Framework**: CDC Policy Analysis Criteria  
+**Deliverable**: Policy Brief with Fact Sheet, Appendices, and Causal Loop Diagram
 
 ## Lessons Learned
 
-1. **Start with Performance**: Built with performance in mind from day one rather than optimizing later
-2. **Testing Matters**: Comprehensive test suite caught critical bugs before production
-3. **Monitor Everything**: Proper logging and monitoring essential for maintaining uptime
-4. **User Feedback**: Regular user testing revealed UX issues we wouldn't have found otherwise
+1. **Equity must be structural** — Aggregate outcomes can mask disparate impacts on subpopulations
+2. **Feasibility matters as much as impact** — The best policy on paper fails without political viability
+3. **Follow-up is the gap** — Federal frameworks identify crisis access but consistently miss post-crisis continuity
+4. **Cost-effectiveness builds the case** — ROI framing strengthens policy arguments beyond public health impact alone
 
 ---
 
-**Project Status**: ✅ Live in Production  
-**GitHub**: [View Source Code](https://github.com/alexjohnson/ecommerce-platform)  
-**Demo**: [Try it Live](https://shop-demo.example.com)
+**Project Status**: ✅ Completed  
+**Deliverable**: [View Policy Brief](uploads/veteran-suicide-prevention.pdf)
