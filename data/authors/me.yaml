@@ -2,7 +2,7 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 avatar:
-  filename: avatar.jpeg
+  filename: avatar.jpg
 name:
   display: Kamellia Hyacinth
   given: Kamellia
