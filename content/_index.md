@@ -151,7 +151,7 @@ sections:
           company_url: 'https://childrenswi.org'
           company_logo: 'childrens-wisconsin.png'
           location: Remote
-          date_start: '2023-01-01'
+          date_start: '2026-05-26'
           date_end: ''
           description: |2-
             * Conduct policy research and environmental scans supporting youth vaping prevention initiatives and school health policy development.
@@ -159,13 +159,13 @@ sections:
             * Contribute to development, implementation, and evaluation of evidence-based community health programs addressing youth risk behaviors.
             * Tech stack: React, Node.js, PostgreSQL, AWS
 
-        - title: Clinical Operations Coordinator
+        - title: Audiology Clinical Operations Coordinator
           company: SSM Health
           company_url: 'https://www.ssmhealth.com'
           company_logo: ''
           location: Madison, WI
-          date_start: '2021-06-01'
-          date_end: '2022-12-31'
+          date_start: '2025-07-28'
+          date_end: '2026-02-12'
           description: |2-
             * Served as sole operations support for two audiology providers, independently managing daily clinic workflow.
             * Collaborated with design team on UI/UX improvements
