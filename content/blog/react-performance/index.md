@@ -94,4 +94,4 @@ Public health efforts aimed at improving outcomes and promoting equity must cons
  
 ---
  
-Questions? Leave a comment below or reach out on [LinkedIn](https://linkedin.com/kamellia)!
+Questions? Leave a comment below or reach out on [LinkedIn](https://linkedin.com/kamellia)
