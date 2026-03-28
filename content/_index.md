@@ -48,36 +48,35 @@ sections:
       spacing:
         padding: ["6rem", "0", "4rem", "0"]
 
-# PROJECTS
-- block: portfolio
-  id: projects
-  content:
-    title: "Featured Projects"
-    subtitle: "A selection of my recent work"
-    count: 0
-
-    filters:
-      folders:
-        - projects
-    buttons:
-      - name: All
-        tag: '*'
-      - name: Healthcare Administration
-        tag: Healthcare Administration
-      - name: Health Policy
-        tag: Health Policy
-      - name: Operations Improvement
-        tag: Operations Improvement
-      - name: Public Health
-        tag: Public Health
-    design:
-      columns: 3
-      background:
-        color:
-          light: "#ffffff"
-          dark: "#0d0d12"
-      spacing:
-        padding: ["4rem", "0", "4rem", "0"]
+  # PROJECTS
+  - block: portfolio
+    id: projects
+    content:
+      title: "Featured Projects"
+      subtitle: "A selection of my recent work"
+      count: 0
+      filters:
+        folders:
+          - projects
+      buttons:
+        - name: All
+          tag: '*'
+        - name: Healthcare Administration
+          tag: Healthcare Administration
+        - name: Health Policy
+          tag: Health Policy
+        - name: Operations Improvement
+          tag: Operations Improvement
+        - name: Public Health
+          tag: Public Health
+      design:
+        columns: 3
+        background:
+          color:
+            light: "#ffffff"
+            dark: "#0d0d12"
+        spacing:
+          padding: ["4rem", "0", "4rem", "0"]
 
   # Core Competencies
   - block: tech-stack
@@ -85,7 +84,6 @@ sections:
     content:
       title: "Core Competencies"
       subtitle: "Public health policy, healthcare operations, and regulatory compliance expertise"
-
       categories:
         - name: Policy & Compliance
           items:
@@ -130,7 +128,6 @@ sections:
               icon: hero/chat-bubble-left-right
             - name: Health Equity
               icon: hero/scale
-
     design:
       style: grid
       show_levels: false
@@ -148,7 +145,7 @@ sections:
       title: Experience
       date_format: Jan 2006
       items:
-        - title: Community Health & Policy Intern 
+        - title: Community Health & Policy Intern
           company: Children's Wisconsin
           company_url: 'https://childrenswi.org'
           company_logo: 'childrens-wisconsin.png'
@@ -173,7 +170,7 @@ sections:
             * Collaborated with design team on UI/UX improvements
             * Tech stack: Next.js, Express, MongoDB, Docker
 
-        - title: CBRF Compliance & Policy Intern 
+        - title: CBRF Compliance & Policy Intern
           company: Circle of Hope Inc. II
           company_url: ''
           company_logo: ''
@@ -185,7 +182,6 @@ sections:
             * Maintained and updated legacy codebases
             * Participated in code reviews and agile ceremonies
             * Tech stack: React, WordPress, PHP, MySQL
-
     design:
       columns: '1'
       background:
@@ -208,7 +204,6 @@ sections:
         exclude_featured: false
       count: 3
       order: desc
-
     design:
       view: card
       columns: 3
@@ -230,7 +225,6 @@ sections:
         Whether you're interested in collaboration, professional connections, or discussing shared interests in healthcare and policy, feel free to reach out.
       email: kamelliahyacinth@gmail.com
       autolink: true
-
     design:
       columns: '1'
       background:
@@ -252,17 +246,14 @@ sections:
         text: 'Download Résumé'
         url: uploads/resume.pdf
         new_tab: true
-
     design:
       card:
         css_class: 'bg-gradient-to-br from-primary-200 via-primary-100 to-secondary-200 dark:from-primary-600 dark:via-primary-700 dark:to-secondary-700'
         text_color: dark
-
       background:
         color:
           light: "#f5f5f5"
           dark: "#08080c"
-
       spacing:
         padding: ["4rem", "0", "6rem", "0"]
 
