@@ -83,4 +83,4 @@ Healthcare price transparency is a critical issue as consumers demand clearer in
 ---
 
 **Project Status**: ✅ Completed
-**Deliverable**: [View Policy Memo](uploads/health-price-transparency.pdf)
+**Deliverable**: [View Policy Memo](/uploads/health-price-transparency.pdf)
