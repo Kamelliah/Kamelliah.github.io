@@ -87,5 +87,5 @@ In 2022, an average of 17.6 U.S. veterans died by suicide each day. Wisconsin cu
 
 ---
 
-**Project Status**: ✅ Completed
-**Deliverable**: [View Policy Brief](uploads/veteran-suicide-prevention.pdf)
+**Project Status**: Completed
+**Deliverable**:[View Policy Brief](/uploads/veteran-suicide-prevention.pdf)
