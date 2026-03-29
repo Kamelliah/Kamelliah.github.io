@@ -152,8 +152,8 @@ sections:
           company_url: 'https://childrenswi.org'
           company_logo: 'childrens-wisconsin.png'
           location: Remote
-          date_start: '2026-05-26'
-          date_end: ''
+          date_start: '2026-26-05'
+          date_end: '2026-26-08'
           description: |2-
             * Conduct policy research and environmental scans supporting youth vaping prevention initiatives and school health policy development.
             * Support Community Health Needs Assessment (CHNA) Implementation Strategy initiatives focused on population health improvement and community benefit priorities.
