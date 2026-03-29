@@ -352,5 +352,5 @@ Total duration: 15 weeks (Jan 28 – May 9, 2025)
 
 ---
 
-**Project Status**: ✅ Completed
-**Deliverables**: [Project Proposal](uploads/capstone-proposal.pdf) | [Final Report](uploads/capstone-final-report.pdf)
+**Project Status**: Completed
+**Deliverables**: [Project Proposal](/uploads/capstone-proposal.pdf) | [Final Report](/uploads/capstone-final-report.pdf)
