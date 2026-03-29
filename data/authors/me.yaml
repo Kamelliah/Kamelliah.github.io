@@ -50,6 +50,7 @@ interests:
 education:
   - degree: Master of Public Health - Public Health Policy & Management
     institution: University of Wisconsin Milwaukee
+    institution_logo: uwlax-logo.png
     start: 2025-09-01
     end: 2027-05-17
     summary: |
@@ -63,6 +64,7 @@ education:
 
   - degree: Master of Science - Healthcare Administration
     institution: University of Wisconsin La Crosse
+    institution_logo: uwlax-logo.png
     start: 2023-05-26
     end: 2025-05-17
     summary: |
@@ -76,6 +78,7 @@ education:
 
   - degree: Bachelor of Science - Information Technology
     institution: St. George's University
+    institution_logo: uwlax-logo.png
     start: 2011-01-22
     end: 2015-12-31
     summary: |
@@ -90,6 +93,7 @@ education:
 experience:
   - role: Community Health & Policy Intern
     org: Children's Wisconsin
+    institution_logo: childrens-wisconsin.png
     start: 2023-01-01
     summary: |
       Supported community health and prevention initiatives through program coordination and policy research.
@@ -98,6 +102,7 @@ experience:
 
   - role: Audiology Clinical Operations Coordinator
     org: SSM Health
+    institution_logo: childrens-wisconsin.png
     start: 2025-07-28
     end: 2026-02-13
     summary: |
@@ -106,6 +111,7 @@ experience:
 
   - role: CBRF Compliance & Policy Intern
     org: Circle Of Hope Inc. II
+    institution_logo: childrens-wisconsin.png
     start: 2020-01-01
     end: 2021-05-31
     summary: |
