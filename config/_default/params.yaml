@@ -173,7 +173,7 @@ hugoblox:
   # Paste your Google Search Console code below after verifying
   # ────────────────────────────────────────────────────────────────────────────
   verification:
-    google: "<meta name=\"google-site-verification\" content=\"6Io3Aw7IAbybnVE3exADV2aVeFTUTn1R6ERpNXi7xeg\" />"
+    google: "6Io3Aw7IAbybnVE3exADV2aVeFTUTn1R6ERpNXi7xeg"
     bing: ""
     baidu: ""
     yandex: ""
