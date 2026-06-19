@@ -17,7 +17,7 @@ highlights:
   - "Recommended over 3 competing policy options"
 links:
   - type: pdf
-    url: uploads/annotated-Kamellia_Hyacinth_Policy_Brief-3.pdf
+    url: uploads/Kamellia_Hyacinth_Policy_Brief-3.pdf
     label: View Brief
 ---
 
