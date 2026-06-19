@@ -140,8 +140,8 @@ sections:
           company_url: "https://childrenswi.org"
           company_logo: "childrens-wisconsin.png"
           location: "Wisconsin"
-          date_start: "2026-05-01"
-          date_end: ""
+          date_start: "2026-06-01"
+          date_end: "2026-08-22"
           description: |-
             Incoming beginning May 2026.
             Selected to support community health and policy initiatives focused on prevention, population health, and community-based improvement efforts.
