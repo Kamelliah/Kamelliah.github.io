@@ -31,25 +31,25 @@ In 2022, an average of 17.6 U.S. veterans died by suicide each day. Wisconsin cu
 
 ### Policy Recommendation
 
-- **48-Hour Follow-Up** — Structured contact after 988 crisis calls or psychiatric discharge
-- **30-Day Peer Navigation** — Sustained support reducing disengagement and repeat crises
-- **Statewide Reach** — Covers rural veterans, veterans of color, and non-VA-enrolled veterans
-- **988 Integration** — Builds on existing infrastructure without requiring new systems
+- **48-Hour Follow-Up** — Structured contact after 988 crisis calls or psychiatric discharge.
+- **30-Day Peer Navigation** — Sustained support reducing disengagement and repeat crises.
+- **Statewide Reach** — Covers rural veterans, veterans of color, and non-VA-enrolled veterans.
+- **988 Integration** — Builds on existing infrastructure without requiring new systems.
 
 ### Policy Options Analyzed
 
-- **Option 1** — Wisconsin ERPO & Safe Firearm Storage Act
-- **Option 2** — Wisconsin 988-to-Care Veteran Follow-Up Program *(Recommended)*
-- **Option 3** — Wisconsin Crisis Firearm Safety Act
-- **Status Quo** — No systematic follow-up after crisis contact
+- **Option 1** — Wisconsin ERPO & Safe Firearm Storage Act.
+- **Option 2** — Wisconsin 988-to-Care Veteran Follow-Up Program *(Recommended)*.
+- **Option 3** — Wisconsin Crisis Firearm Safety Act.
+- **Status Quo** — No systematic follow-up after crisis contact.
 
 ## Technical Highlights
 
 ### Analytical Framework
 
-- CDC criteria applied across effectiveness, equity, feasibility, and cost
-- Causal loop diagram modeling reinforcing and balancing suicide risk pathways
-- Federal gap alignment with Clay Hunt Act, COMPACT Act, and 988 Lifeline
+- CDC criteria applied across effectiveness, equity, feasibility, and cost.
+- Causal loop diagram modeling reinforcing and balancing suicide risk pathways.
+- Federal gap alignment with Clay Hunt Act, COMPACT Act, and 988 Lifeline.
 
 ### Equity Analysis
 
@@ -65,27 +65,22 @@ In 2022, an average of 17.6 U.S. veterans died by suicide each day. Wisconsin cu
 
 ## Results
 
-- **Impact**: Estimated 6–8 lives saved annually, scaling to 8–10 by Years 3–5
-- **Equity**: Highest equity ranking across all four options
-- **Feasibility**: No organized opposition; bipartisan support for crisis services
-- **ROI**: 4:1 to 6:1 return on investment
-- **Timeline**: Statewide launch achievable within 18 months
+- **Impact**: Estimated 6–8 lives saved annually, scaling to 8–10 by Years 3–5.
+- **Equity**: Highest equity ranking across all four options.
+- **Feasibility**: No organized opposition; bipartisan support for crisis services.
+- **ROI**: 4:1 to 6:1 return on investment.
+- **Timeline**: Statewide launch achievable within 18 months.
 
 ## Project Details
 
-**Course**: Health Policy & Advocacy — UW–Milwaukee MPH Program
-**Directed To**: Senator Dianne Hesselbein, Wisconsin State Senate
-**Framework**: CDC Policy Analysis Criteria
-**Deliverable**: Policy Brief with Fact Sheet, Appendices, and Causal Loop Diagram
+- **Course**: Health Policy & Advocacy — UW–Milwaukee MPH Program.
+- **Directed To**: Senator Dianne Hesselbein, Wisconsin State Senate.
+- **Framework**: CDC Policy Analysis Criteria.
+- **Deliverable**: Policy Brief with Fact Sheet, Appendices, and Causal Loop Diagram.
 
 ## Lessons Learned
 
-1. **Equity must be structural** — Aggregate outcomes can mask disparate impacts on subpopulations
-2. **Feasibility matters as much as impact** — The best policy on paper fails without political viability
-3. **Follow-up is the gap** — Federal frameworks identify crisis access but consistently miss post-crisis continuity
-4. **Cost-effectiveness builds the case** — ROI framing strengthens policy arguments beyond public health impact alone
-
----
-
-**Project Status**: Completed
-**Deliverable**: [View Policy Brief] (/uploads/annotated-Kamellia_Hyacinth_Policy_Brief-3.pdf)
+1. **Equity must be structural** — Aggregate outcomes can mask disparate impacts on subpopulations.
+2. **Feasibility matters as much as impact** — The best policy on paper fails without political viability.
+3. **Follow-up is the gap** — Federal frameworks identify crisis access but consistently miss post-crisis continuity.
+4. **Cost-effectiveness builds the case** — ROI framing strengthens policy arguments beyond public health impact alone.
