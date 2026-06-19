@@ -31,7 +31,7 @@ links:
     label: E-mail Me
 
   - icon: brands/github
-    url: https://github.com/alexjohnson
+    url: https://github.com/kamelliah
 
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/kamellia/
@@ -57,11 +57,6 @@ education:
       Focus on public health policy, health systems management, and population health improvement.
       Coursework includes healthcare quality, regulatory compliance, and data-driven decision making.
 
-    button:
-      text: View Project
-      url: https://github.com/alexjohnson/senior-project
-      icon: brands/github
-
   - degree: Master of Science - Healthcare Administration
     institution: University of Wisconsin La Crosse
     institution_logo: 
@@ -70,11 +65,6 @@ education:
     summary: |
       Focus on healthcare operations, leadership, and quality improvement.
       Graduate studies emphasized healthcare finance, policy, and organizational performance improvement.
-
-    button:
-      text: View Project
-      url: https://github.com/alexjohnson/senior-project
-      icon: brands/github
 
   - degree: Bachelor of Science - Information Technology
     institution: St. George's University
@@ -85,11 +75,6 @@ education:
       Focus on information systems, database management, and technical support.
       Developed technical and analytical skills applicable to health information systems and data management.
 
-    button:
-      text: View Project
-      url: https://github.com/alexjohnson/senior-project
-      icon: brands/github
-
 experience:
   - role: Community Health & Policy Intern
     org: Children's Wisconsin
@@ -99,6 +84,15 @@ experience:
       Supported community health and prevention initiatives through program coordination and policy research.
       Assisted with community needs assessments, data analysis, and reporting to support population health strategies.
       Contributed to initiatives addressing health disparities and improving access to care.
+
+  - role: Public Policy & Community Health Intern
+    org: MKE FreshAir Collective
+    institution_logo: mke-freshair-collective.png
+    start: 2026-06-01
+    summary: |
+      Analyzed air quality sensor data across Milwaukee's marginalized neighborhoods to identify environmental health disparities.
+      Drafted policy briefs and research summaries translating findings into advocacy materials.
+      Led community engagement and managed air sensor network operations.
 
   - role: Audiology Clinical Operations Coordinator
     org: SSM Health
@@ -112,8 +106,8 @@ experience:
   - role: CBRF Compliance & Policy Intern
     org: Circle Of Hope Inc. II
     institution_logo: 
-    start: 2020-01-01
-    end: 2021-05-31
+    start: 2024-01-01
+    end: 2025-05-31
     summary: |
       Assisted with compliance review and organizational policy development including contributions to employee handbook improvements.
       Supported workforce system improvements related to onboarding processes, staff policies, and regulatory compliance requirements.
@@ -158,8 +152,8 @@ languages:
 certifications:
   - title: Basic Life Support (BLS) Healthcare Provider
     awarder: American Heart Association
-    date: 2026
+    date: 2026-01-01
 
   - title: Resuscitation Quality Improvement (RQI)
     awarder: American Heart Association
-    date: 2026
+    date: 2026-01-01
