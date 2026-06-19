@@ -33,19 +33,19 @@ Circle of Hope, Inc II needed operational support across three interconnected ar
 ## Key Deliverables
 
 ### Revised Employee Handbook
-- Audited existing policies for legal compliance and operational clarity
-- Revised outdated language and standardized roles, responsibilities, and expectations
-- Aligned handbook with industry best practices to reduce turnover and improve employee satisfaction
+- Audited existing policies for legal compliance and operational clarity.
+- Revised outdated language and standardized roles, responsibilities, and expectations.
+- Aligned handbook with industry best practices to reduce turnover and improve employee satisfaction.
 
 ### Cost-Effective Hiring Strategy
-- Analyzed the impact of Indeed's pricing model changes on recruitment costs
-- Evaluated alternative platforms and sourcing methods
-- Developed recommendations for more affordable and effective candidate sourcing
+- Analyzed the impact of Indeed's pricing model changes on recruitment costs.
+- Evaluated alternative platforms and sourcing methods.
+- Developed recommendations for more affordable and effective candidate sourcing.
 
 ### Standardized Onboarding Materials
-- Created onboarding checklists and training materials for new hire integration
-- Digitized onboarding documents for remote accessibility
-- Designed materials to reduce time-to-productivity for incoming staff
+- Created onboarding checklists and training materials for new hire integration.
+- Digitized onboarding documents for remote accessibility.
+- Designed materials to reduce time-to-productivity for incoming staff.
 
 ## Project Phases
 {{< rawhtml >}}
@@ -53,13 +53,10 @@ Circle of Hope, Inc II needed operational support across three interconnected ar
 
 <defs>
 <style>
-.tl-th { font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; fill: #0F172A; }
-.tl-ts { font-family: Helvetica, Arial, sans-serif; font-size: 12px; fill: #0F172A; }
-
-@media (prefers-color-scheme: dark) {
-  .tl-th { fill: #F8FAFC; }
-  .tl-ts { fill: #E5E7EB; }
-}
+.tl-header-title { font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; fill: currentColor; }
+.tl-header-sub { font-family: Helvetica, Arial, sans-serif; font-size: 12px; fill: currentColor; opacity: 0.65; }
+.tl-th { font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; }
+.tl-ts { font-family: Helvetica, Arial, sans-serif; font-size: 12px; }
 </style>
 
 <filter id="shadow">
@@ -67,11 +64,11 @@ Circle of Hope, Inc II needed operational support across three interconnected ar
 </filter>
 </defs>
 
-<text class="tl-th" x="340" y="36" text-anchor="middle">
+<text class="tl-header-title" x="340" y="36" text-anchor="middle">
 Capstone project timeline
 </text>
 
-<text class="tl-ts" x="340" y="54" text-anchor="middle" fill="#475569">
+<text class="tl-header-sub" x="340" y="54" text-anchor="middle">
 Circle of Hope, Inc II — January to May 2025
 </text>
 
@@ -325,32 +322,27 @@ Total duration: 15 weeks (Jan 28 – May 9, 2025)
 
 ## Methodology
 
-- **In-Person Observations** — Biweekly site visits to assess workflow efficiency and operational challenges
-- **Remote Development** — Digitized onboarding materials and refined hiring strategies between site visits
-- **Strategic Meetings** — Weekly consultations with site supervisors and stakeholders
-- **Independent Research** — Developed training materials based on industry best practices and legal compliance standards
+- **In-Person Observations** — Biweekly site visits to assess workflow efficiency and operational challenges.
+- **Remote Development** — Digitized onboarding materials and refined hiring strategies between site visits.
+- **Strategic Meetings** — Weekly consultations with site supervisors and stakeholders.
+- **Independent Research** — Developed training materials based on industry best practices and legal compliance standards.
 
 ## Results
 
-- **Hiring Costs**: Identified cost-reduction pathways following Indeed pricing changes
-- **Handbook Compliance**: Policies updated for legal alignment and operational clarity
-- **Onboarding Efficiency**: Standardized materials designed to reduce time-to-productivity for new hires
-- **Organizational Impact**: Delivered tangible operational improvements to a nonprofit serving disabled women
+- **Hiring Costs**: Identified cost-reduction pathways following Indeed pricing changes.
+- **Handbook Compliance**: Policies updated for legal alignment and operational clarity.
+- **Onboarding Efficiency**: Standardized materials designed to reduce time-to-productivity for new hires.
+- **Organizational Impact**: Delivered tangible operational improvements to a nonprofit serving disabled women.
 
 ## Project Details
 
-**Program**: Master of Healthcare Administration — UW–La Crosse
-**Partner Organization**: Circle of Hope, Inc II
-**Competencies Demonstrated**: Systems thinking, organizational leadership, ethical policy judgment, stakeholder communication, data-informed decision-making
+- **Program**: Master of Healthcare Administration — UW–La Crosse
+- **Partner Organization**: Circle of Hope, Inc II
+- **Competencies Demonstrated**: Systems thinking, organizational leadership, ethical policy judgment, stakeholder communication, data-informed decision-making.
 
 ## Lessons Learned
 
-1. **Equity must be embedded in operations** — Policy clarity and compliance protect both staff and the populations they serve
-2. **Recruitment costs are a systems issue** — Platform dependency creates vulnerability; diversified sourcing builds resilience
-3. **Onboarding is an investment** — Standardized processes reduce turnover and increase productivity long-term
-4. **Change management requires buy-in** — Training HR and management was as critical as developing the materials themselves
-
----
-
-**Project Status**: Completed
-**Deliverables**: [Project Proposal](/uploads/capstone-proposal.pdf) | [Final Report](/uploads/capstone-final-report.pdf)
+1. **Equity must be embedded in operations** — Policy clarity and compliance protect both staff and the populations they serve.
+2. **Recruitment costs are a systems issue** — Platform dependency creates vulnerability; diversified sourcing builds resilience.
+3. **Onboarding is an investment** — Standardized processes reduce turnover and increase productivity long-term.
+4. **Change management requires buy-in** — Training HR and management was as critical as developing the materials themselves.
