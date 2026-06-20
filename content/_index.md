@@ -232,11 +232,10 @@ sections:
       card:
         css_class: "bg-gradient-to-br from-primary-200 via-primary-100 to-secondary-200 dark:from-primary-600 dark:via-primary-700 dark:to-secondary-700"
         text_color: dark
-    background:
+      background:
         color:
           light: "#f5f5f5"
           dark: "#08080c"
       spacing:
         padding: ["4rem", "0", "6rem", "0"]
 ---
-    
