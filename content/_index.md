@@ -3,10 +3,8 @@ title: "Kamellia Hyacinth"
 summary: ""
 date: 2026-01-05
 type: landing
-
 design:
   spacing: "0"
-
 sections:
   - block: dev-hero
     id: hero
@@ -43,7 +41,6 @@ sections:
           dark: "#0a0a0f"
       spacing:
         padding: ["6rem", "0", "4rem", "0"]
-
   - block: portfolio
     id: projects
     content:
@@ -60,10 +57,10 @@ sections:
           tag: "Public Health"
         - name: "Health Policy"
           tag: "Health Policy"
-        - name: "Healthcare Operations"
-          tag: "Healthcare Operations"
-        - name: "Quality Improvement"
-          tag: "Quality Improvement"
+        - name: "Healthcare Administration"
+          tag: "Healthcare Administration"
+        - name: "Operations Improvement"
+          tag: "Operations Improvement"
     design:
       columns: 3
       background:
@@ -72,7 +69,6 @@ sections:
           dark: "#0d0d12"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-
   - block: tech-stack
     id: skills
     content:
@@ -128,24 +124,32 @@ sections:
           dark: "#08080c"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-
   - block: resume-experience
     id: experience
     content:
       title: "Experience"
       date_format: "Jan 2006"
       items:
-        - title: "Community Health & Policy Intern (Incoming)"
+        - title: "Community Health & Policy Intern"
           company: "Children's Wisconsin"
           company_url: "https://childrenswi.org"
           company_logo: "childrens-wisconsin.png"
           location: "Wisconsin"
           date_start: "2026-06-01"
-          date_end: "2026-08-22"
           description: |-
-            Incoming beginning May 2026.
-            Selected to support community health and policy initiatives focused on prevention, population health, and community-based improvement efforts.
-            Expected responsibilities include supporting community health needs assessment activities, policy research, program implementation support, and health equity initiatives.
+            Supported community health and prevention initiatives through program coordination and policy research.
+            Assisted with community needs assessments, data analysis, and reporting to support population health strategies.
+            Contributed to initiatives addressing health disparities and improving access to care.
+        - title: "Public Policy & Community Health Intern"
+          company: "MKE FreshAir Collective"
+          company_url: ""
+          company_logo: ""
+          location: "Milwaukee, Wisconsin"
+          date_start: "2026-06-01"
+          description: |-
+            Analyzed air quality sensor data across Milwaukee's marginalized neighborhoods to identify environmental health disparities.
+            Drafted policy briefs and research summaries translating findings into advocacy materials.
+            Led community engagement and managed air sensor network operations.
         - title: "Audiology Clinical Operations Coordinator"
           company: "SSM Health"
           company_url: "https://www.ssmhealth.com"
@@ -154,20 +158,18 @@ sections:
           date_start: "2025-07-28"
           date_end: "2026-02-13"
           description: |-
-            Coordinated clinical operations supporting patient scheduling, provider workflow efficiency, and daily service delivery.
-            Supported operational compliance, administrative coordination, and process improvement efforts within a healthcare setting.
-            Contributed to clinic efficiency and continuity of care through organized workflow support and accurate documentation.
+            Coordinated clinical workflows, scheduling operations, and patient service processes.
+            Supported operational efficiency and compliance with healthcare organizational standards.
         - title: "CBRF Compliance & Policy Intern"
           company: "Circle of Hope Inc. II"
           company_url: ""
           company_logo: ""
           location: "Wisconsin"
-          date_start: "2020-01-01"
-          date_end: "2021-05-31"
+          date_start: "2024-01-01"
+          date_end: "2025-05-31"
           description: |-
-            Supported internal compliance efforts through policy review, documentation updates, and workforce process improvement.
-            Assisted with onboarding materials, employee policy development, and organizational alignment with regulatory expectations.
-            Contributed to administrative systems improvement supporting staff operations and compliance readiness.
+            Assisted with compliance review and organizational policy development including contributions to employee handbook improvements.
+            Supported workforce system improvements related to onboarding processes, staff policies, and regulatory compliance requirements.
     design:
       columns: "1"
       background:
@@ -176,7 +178,6 @@ sections:
           dark: "#0d0d12"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-
   - block: collection
     id: blog
     content:
@@ -198,7 +199,6 @@ sections:
           dark: "#08080c"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-
   - block: contact-info
     id: contact
     content:
@@ -218,7 +218,6 @@ sections:
           dark: "#0d0d12"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-
   - block: cta-card
     content:
       title: "Open to Public Health & Healthcare Opportunities"
@@ -239,4 +238,3 @@ sections:
           dark: "#08080c"
       spacing:
         padding: ["4rem", "0", "6rem", "0"]
----
