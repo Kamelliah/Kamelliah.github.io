@@ -84,7 +84,7 @@ hugoblox:
   # COPYRIGHT
   # ────────────────────────────────────────────────────────────────────────────
   copyright:
-    notice: "© {2026} {Kamellia Hyacinth}. This work is licensed under {license}"
+    notice: "© {year} Kamellia Hyacinth. This work is licensed under {license}"
     license:
       type: cc
       allow_derivatives: false
