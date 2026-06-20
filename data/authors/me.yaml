@@ -87,7 +87,7 @@ experience:
 
   - role: Public Policy & Community Health Intern
     org: MKE FreshAir Collective
-    institution_logo: mke-freshair-collective.png
+    institution_logo:
     start: 2026-06-01
     summary: |
       Analyzed air quality sensor data across Milwaukee's marginalized neighborhoods to identify environmental health disparities.
