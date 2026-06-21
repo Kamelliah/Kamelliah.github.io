@@ -41,6 +41,61 @@ sections:
           dark: "#0a0a0f"
       spacing:
         padding: ["6rem", "0", "4rem", "0"]
+  - block: markdown
+    id: countdown
+    content:
+      title: ""
+      text: |-
+        {{< rawhtml >}}
+        <div style="text-align:center; padding:0.5rem 0;">
+          <p style="font-size:0.75rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; opacity:0.5; margin:0 0 1.25rem;">MPH Graduation &middot; May 17, 2027</p>
+          <div id="mph-countdown" style="display:inline-flex; gap:1rem; flex-wrap:wrap; justify-content:center;">
+            <div style="display:flex;flex-direction:column;align-items:center;background:rgba(128,128,128,0.08);border:1px solid rgba(128,128,128,0.15);border-radius:0.75rem;padding:1.25rem 1.75rem;min-width:88px;">
+              <span id="cd-days"  style="font-size:2.75rem;font-weight:700;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-0.02em;">--</span>
+              <span style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;opacity:0.5;margin-top:0.4rem;">Days</span>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:center;background:rgba(128,128,128,0.08);border:1px solid rgba(128,128,128,0.15);border-radius:0.75rem;padding:1.25rem 1.75rem;min-width:88px;">
+              <span id="cd-hours" style="font-size:2.75rem;font-weight:700;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-0.02em;">--</span>
+              <span style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;opacity:0.5;margin-top:0.4rem;">Hours</span>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:center;background:rgba(128,128,128,0.08);border:1px solid rgba(128,128,128,0.15);border-radius:0.75rem;padding:1.25rem 1.75rem;min-width:88px;">
+              <span id="cd-mins"  style="font-size:2.75rem;font-weight:700;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-0.02em;">--</span>
+              <span style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;opacity:0.5;margin-top:0.4rem;">Minutes</span>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:center;background:rgba(128,128,128,0.08);border:1px solid rgba(128,128,128,0.15);border-radius:0.75rem;padding:1.25rem 1.75rem;min-width:88px;">
+              <span id="cd-secs"  style="font-size:2.75rem;font-weight:700;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-0.02em;">--</span>
+              <span style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;opacity:0.5;margin-top:0.4rem;">Seconds</span>
+            </div>
+          </div>
+        </div>
+        <script>
+        (function(){
+          var target = new Date('2027-05-17T10:00:00');
+          function pad(n){ return String(n).padStart(2,'0'); }
+          function tick(){
+            var diff = target - new Date();
+            if(diff <= 0){
+              document.getElementById('mph-countdown').innerHTML =
+                '<span style="font-size:1.25rem;font-weight:600;">🎓 Graduated!</span>';
+              return;
+            }
+            document.getElementById('cd-days').textContent  = pad(Math.floor(diff/86400000));
+            document.getElementById('cd-hours').textContent = pad(Math.floor(diff%86400000/3600000));
+            document.getElementById('cd-mins').textContent  = pad(Math.floor(diff%3600000/60000));
+            document.getElementById('cd-secs').textContent  = pad(Math.floor(diff%60000/1000));
+          }
+          tick();
+          setInterval(tick,1000);
+        })();
+        </script>
+        {{< /rawhtml >}}
+    design:
+      background:
+        color:
+          light: "#fafafa"
+          dark: "#0a0a0f"
+      spacing:
+        padding: ["2rem", "0", "3rem", "0"]
   - block: portfolio
     id: projects
     content:
