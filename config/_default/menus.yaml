@@ -6,6 +6,9 @@ main:
   - name: Projects
     url: /#projects
     weight: 10
+  - name: Academic Work
+    url: /academic-work/
+    weight: 15
   - name: Skills
     url: /#skills
     weight: 20
