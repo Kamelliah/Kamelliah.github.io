@@ -60,17 +60,23 @@ sections:
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
 
-  - block: cta-card
+  - block: markdown
     id: mph-capstone
     content:
-      title: "MPH Capstone — Coming Spring 2027"
+      title: "MPH Capstone"
+      subtitle: "Master of Public Health — UW–Milwaukee"
       text: |-
-        Currently in progress as part of the Master of Public Health — Public Health Policy & Management
-        program at UW–Milwaukee. This section will be updated with the full project upon completion.
+        {{< rawhtml >}}
+        <div style="border:1.5px solid #64748b; border-radius:0.75rem; padding:1.5rem 2rem; margin-top:0.5rem;">
+          <p style="font-size:1.1rem; font-weight:600; margin:0 0 0.5rem;">Coming Spring 2027</p>
+          <p style="margin:0; opacity:0.8;">
+            Currently in progress as part of the Master of Public Health — Public Health Policy &amp;
+            Management program at UW–Milwaukee. This section will be updated with the full project
+            upon completion.
+          </p>
+        </div>
+        {{< /rawhtml >}}
     design:
-      card:
-        css_class: "bg-gradient-to-br from-primary-200 via-primary-100 to-secondary-200 dark:from-primary-600 dark:via-primary-700 dark:to-secondary-700"
-        text_color: dark
       background:
         color:
           light: "#f5f5f5"
