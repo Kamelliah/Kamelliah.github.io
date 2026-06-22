@@ -498,12 +498,12 @@ sections:
                   Currently pursuing opportunities in public health policy, healthcare administration, and health systems improvement.
                   Interested in roles involving healthcare quality, compliance, and population health strategy.
                 </p>
-                <div style="display:flex; flex-wrap:wrap; gap:0.6rem; margin-bottom:1.5rem;">
-                  <a href="mailto:kamelliahyacinth@gmail.com" class="kh-email-btn">
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.6rem; margin-bottom:1.5rem;">
+                  <a href="mailto:kamelliahyacinth@gmail.com" class="kh-email-btn" style="justify-content:center;">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
                     Send an Email
                   </a>
-                  <a href="/uploads/resume.pdf" target="_blank" rel="noopener noreferrer" class="kh-email-btn" style="background:#1e3a5f;">
+                  <a href="/uploads/resume.pdf" target="_blank" rel="noopener noreferrer" class="kh-email-btn" style="background:#1e3a5f; justify-content:center;">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
                     Download Resume
                   </a>
