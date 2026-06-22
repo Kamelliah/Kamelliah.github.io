@@ -1,7 +1,1 @@
-section#hero .w-32.h-32,
-section#about-hero .w-32.h-32 {
-  width: 300px !important;
-  height: 300px !important;
-  min-width: 300px !important;
-  min-height: 300px !important;
-}
+/* Avatar size set directly in dev-hero block template */

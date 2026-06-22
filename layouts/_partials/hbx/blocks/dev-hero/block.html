@@ -319,7 +319,7 @@
     {{ with $avatar }}
     <div class="mb-8">
       <div class="relative inline-block">
-        <div class="w-32 h-32 md:w-40 md:h-40 {{ if eq $avatar_shape "circle" }}rounded-full{{ else }}rounded-2xl{{ end }} overflow-hidden ring-4 ring-gray-200 dark:ring-white/10 shadow-2xl shadow-primary-500/20 mx-auto">
+        <div class="w-48 h-48 md:w-56 md:h-56 {{ if eq $avatar_shape "circle" }}rounded-full{{ else }}rounded-2xl{{ end }} overflow-hidden border-4 border-white shadow-2xl mx-auto">
           <img src="{{ .RelPermalink }}" alt="{{ $author.title }}" class="w-full h-full object-cover">
         </div>
         {{/* Status emoji badge */}}
