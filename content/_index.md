@@ -301,7 +301,7 @@ sections:
         {{< rawhtml >}}
         <style>
           .kh-contact-wrap {
-            max-width: 960px;
+            max-width: 1100px;
             margin: 0 auto;
             text-align: center;
           }
@@ -502,7 +502,6 @@ sections:
 
         <div class="kh-contact-wrap">
           <h2 class="kh-contact-heading">Get in Touch</h2>
-          <p class="kh-contact-sub">Open to opportunities in public health policy, healthcare administration, and regulatory compliance.</p>
 
           <div class="kh-contact-grid">
           <div class="kh-box">
