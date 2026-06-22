@@ -1,6 +1,7 @@
-section#hero .w-32.h-32 {
-  width: 280px !important;
-  height: 280px !important;
-  min-width: 280px !important;
-  min-height: 280px !important;
+section#hero .w-32.h-32,
+section#about-hero .w-32.h-32 {
+  width: 300px !important;
+  height: 300px !important;
+  min-width: 300px !important;
+  min-height: 300px !important;
 }
