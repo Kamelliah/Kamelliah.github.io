@@ -265,20 +265,27 @@ sections:
           dark: "#0d0d12"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  - block: collection
+  - block: portfolio
     id: blog
     content:
       title: "Recent Writing"
       subtitle: "Public health policy, healthcare systems, and population health perspectives"
-      text: ""
+      count: 0
       filters:
         folders:
           - blog
-        exclude_featured: false
-      count: 3
-      order: desc
+      buttons:
+        - name: "All"
+          tag: "*"
+        - name: "Public Health"
+          tag: "Public Health"
+        - name: "Health Equity"
+          tag: "Health Equity"
+        - name: "Policy"
+          tag: "Policy"
+        - name: "Systems Design"
+          tag: "Systems Design"
     design:
-      view: card
       columns: 3
       background:
         color:
