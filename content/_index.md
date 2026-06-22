@@ -301,7 +301,7 @@ sections:
         {{< rawhtml >}}
         <style>
           .kh-contact-wrap {
-            max-width: 720px;
+            max-width: 480px;
             margin: 0 auto;
             text-align: center;
           }
@@ -348,14 +348,10 @@ sections:
           }
           .kh-box-inner {
             position: relative;
-            padding: 2.5rem 2.5rem 2rem;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2.5rem;
-            align-items: start;
-          }
-          @media (max-width: 560px) {
-            .kh-box-inner { grid-template-columns: 1fr; gap: 2rem; padding: 2rem 1.5rem; }
+            padding: 2rem 2rem 1.75rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
           }
           .kh-box-left { text-align: left; }
           .kh-box-tag {
