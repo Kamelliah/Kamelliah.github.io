@@ -29,11 +29,14 @@
 {{ end }}
 {{ $author := partial "functions/get_author_profile" $username }}
 
-{{/* Postnominals — auto-drop (c) on/after graduation date */}}
+{{/* Postnominals — read directly from data/authors/<username>.yaml */}}
 {{ $postnominals := "" }}
-{{ $postnominals_raw := index $author "postnominals" }}
-{{ if eq (printf "%T" $postnominals_raw) "string" }}
-  {{ $postnominals = $postnominals_raw }}
+{{ $author_data := index site.Data.authors $username }}
+{{ if $author_data }}
+  {{ $pn_raw := index $author_data "postnominals" }}
+  {{ if eq (printf "%T" $pn_raw) "string" }}
+    {{ $postnominals = $pn_raw }}
+  {{ end }}
 {{ end }}
 {{ $grad_date := time "2027-05-17T00:00:00Z" }}
 {{ if ge now $grad_date }}
