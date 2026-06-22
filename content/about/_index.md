@@ -46,17 +46,11 @@ sections:
     content:
       title: "My Path to Public Health"
       text: |-
-        My career has never followed a straight line — and I think that makes me a better public health professional.
+        I'm a public health professional with a background that spans information technology, U.S. Army service, and healthcare operations. That range of experience shapes how I approach systems — I understand them from the inside, not just on paper.
 
-        I began in information technology, earning a Bachelor of Science from St. George's University, where I developed a foundation in systems thinking, data management, and analytical problem-solving. After serving in the United States Army, I carried those same skills into healthcare operations, spending years coordinating clinical workflows, managing compliance processes, and working inside the systems that shape how people receive care.
+        I hold an MHA from UW–La Crosse and am completing my MPH in Public Health Policy & Management at UW–Milwaukee (May 2027). I'm currently interning with Children's Wisconsin and MKE FreshAir Collective, where I work on community health initiatives and environmental health equity in Milwaukee.
 
-        What I kept seeing was a gap — between what healthcare systems were designed to do and what the people inside them actually experienced. That gap is what led me to healthcare administration, and eventually to public health policy.
-
-        I completed a Master of Science in Healthcare Administration at the University of Wisconsin–La Crosse in 2025, where my capstone partnered with Circle of Hope, Inc. II — a nonprofit serving physically and developmentally disabled women — to improve their employee policies, hiring strategy, and onboarding processes. I am currently pursuing a Master of Public Health in Public Health Policy & Management at the University of Wisconsin–Milwaukee, with an expected graduation in May 2027.
-
-        Today I work at the intersection of policy, compliance, and community health — as an intern with Children's Wisconsin supporting community health initiatives, and with MKE FreshAir Collective analyzing environmental health disparities across Milwaukee neighborhoods.
-
-        I am drawn to work that asks hard questions about access, equity, and system design. Who gets care, and why? Who doesn't — and what structural decisions made that true? I believe public health outcomes are downstream of policy decisions, and that improving those outcomes requires working upstream.
+        My focus is on policy, compliance, and the structural decisions that determine who gets care — and who doesn't.
     design:
       background:
         color:
@@ -64,6 +58,62 @@ sections:
           dark: "#0d0d12"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
+
+  - block: markdown
+    id: about-countdown
+    content:
+      title: ""
+      text: |-
+        {{< rawhtml >}}
+        <div style="text-align:center; padding:0.5rem 0;">
+          <p style="font-size:0.75rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; opacity:0.5; margin:0 0 1.25rem;">MPH Graduation &middot; May 17, 2027</p>
+          <div id="about-mph-countdown" style="display:inline-flex; gap:1rem; flex-wrap:wrap; justify-content:center;">
+            <div style="display:flex;flex-direction:column;align-items:center;background:rgba(128,128,128,0.08);border:1px solid rgba(128,128,128,0.15);border-radius:0.75rem;padding:1.25rem 1.75rem;min-width:88px;">
+              <span id="acd-days"  style="font-size:2.75rem;font-weight:700;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-0.02em;">--</span>
+              <span style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;opacity:0.5;margin-top:0.4rem;">Days</span>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:center;background:rgba(128,128,128,0.08);border:1px solid rgba(128,128,128,0.15);border-radius:0.75rem;padding:1.25rem 1.75rem;min-width:88px;">
+              <span id="acd-hours" style="font-size:2.75rem;font-weight:700;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-0.02em;">--</span>
+              <span style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;opacity:0.5;margin-top:0.4rem;">Hours</span>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:center;background:rgba(128,128,128,0.08);border:1px solid rgba(128,128,128,0.15);border-radius:0.75rem;padding:1.25rem 1.75rem;min-width:88px;">
+              <span id="acd-mins"  style="font-size:2.75rem;font-weight:700;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-0.02em;">--</span>
+              <span style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;opacity:0.5;margin-top:0.4rem;">Minutes</span>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:center;background:rgba(128,128,128,0.08);border:1px solid rgba(128,128,128,0.15);border-radius:0.75rem;padding:1.25rem 1.75rem;min-width:88px;">
+              <span id="acd-secs"  style="font-size:2.75rem;font-weight:700;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-0.02em;">--</span>
+              <span style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;opacity:0.5;margin-top:0.4rem;">Seconds</span>
+            </div>
+          </div>
+        </div>
+        <script>
+        (function(){
+          var target = new Date('2027-05-17T10:00:00');
+          function pad(n){ return String(n).padStart(2,'0'); }
+          function tick(){
+            var diff = target - new Date();
+            if(diff <= 0){
+              document.getElementById('about-mph-countdown').innerHTML =
+                '<span style="font-size:1.25rem;font-weight:600;">🎓 Graduated!</span>';
+              return;
+            }
+            document.getElementById('acd-days').textContent  = pad(Math.floor(diff/86400000));
+            document.getElementById('acd-hours').textContent = pad(Math.floor(diff%86400000/3600000));
+            document.getElementById('acd-mins').textContent  = pad(Math.floor(diff%3600000/60000));
+            document.getElementById('acd-secs').textContent  = pad(Math.floor(diff%60000/1000));
+          }
+          tick();
+          setInterval(tick,1000);
+        })();
+        </script>
+        {{< /rawhtml >}}
+    design:
+      background:
+        color:
+          light: "#fafafa"
+          dark: "#0a0a0f"
+      spacing:
+        padding: ["2rem", "0", "2rem", "0"]
 
   - block: resume-experience
     id: about-experience
