@@ -249,11 +249,15 @@
         {{ else if in (slice "http" "https") $scheme }}
           {{ $target = "target=\"_blank\" rel=\"noopener noreferrer\"" }}
         {{ end }}
-
+        {{ $brand_style := "background:#6366f1; color:#fff;" }}
+        {{ if eq $icon "brands/linkedin" }}{{ $brand_style = "background:#0a66c2; color:#fff;" }}{{ end }}
+        {{ if eq $icon "brands/github" }}{{ $brand_style = "background:#24292e; color:#fff;" }}{{ end }}
+        {{ if eq $icon "brands/instagram" }}{{ $brand_style = "background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); color:#fff;" }}{{ end }}
         <a
           href="{{ $link | safeURL }}"
           {{ $target | safeHTMLAttr }}
-          class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-white hover:bg-primary-50 dark:hover:bg-primary-500/20 hover:border-primary-300 dark:hover:border-primary-500/50 transition-all duration-300"
+          class="w-10 h-10 flex items-center justify-center rounded-full shadow transition-all duration-300 hover:scale-110"
+          style="{{ $brand_style | safeCSS }}"
           {{ $label := index . "label" }}{{ if $label }}title="{{ $label }}"{{ end }}
         >
           {{ partial "functions/get_icon" (dict "name" $icon "attributes" "class=\"w-5 h-5\"") }}
@@ -386,11 +390,15 @@
         {{ else if in (slice "http" "https") $scheme }}
           {{ $target = "target=\"_blank\" rel=\"noopener noreferrer\"" }}
         {{ end }}
-
+        {{ $brand_style := "background:#6366f1; color:#fff;" }}
+        {{ if eq $icon "brands/linkedin" }}{{ $brand_style = "background:#0a66c2; color:#fff;" }}{{ end }}
+        {{ if eq $icon "brands/github" }}{{ $brand_style = "background:#24292e; color:#fff;" }}{{ end }}
+        {{ if eq $icon "brands/instagram" }}{{ $brand_style = "background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); color:#fff;" }}{{ end }}
         <a
           href="{{ $link | safeURL }}"
           {{ $target | safeHTMLAttr }}
-          class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-white hover:bg-primary-50 dark:hover:bg-primary-500/20 hover:border-primary-300 dark:hover:border-primary-500/50 transition-all duration-300"
+          class="w-12 h-12 flex items-center justify-center rounded-full shadow transition-all duration-300 hover:scale-110"
+          style="{{ $brand_style | safeCSS }}"
           {{ $label := index . "label" }}{{ if $label }}title="{{ $label }}"{{ end }}
         >
           {{ partial "functions/get_icon" (dict "name" $icon "attributes" "class=\"w-5 h-5\"") }}
