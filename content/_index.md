@@ -335,10 +335,11 @@ sections:
           var links = {
             "University of Wisconsin Milwaukee": "https://uwm.edu",
             "University of Wisconsin La Crosse": "https://www.uwlax.edu",
-            "St. George’s University": "https://www.sgu.edu",
-            "Children’s Wisconsin": "https://childrenswi.org",
+            "St. George's University": "https://www.sgu.edu",
+            "Children's Wisconsin": "https://childrenswi.org",
             "SSM Health": "https://www.ssmhealth.com",
-            "MKE FreshAir Collective": "https://www.mkefreshair.com"
+            "MKE FreshAir Collective": "https://www.mkefreshair.com",
+            "Circle Of Hope Inc. II": "https://circleofhopell.com"
           };
           document.querySelectorAll('p').forEach(function(p) {
             var text = p.textContent.trim();
