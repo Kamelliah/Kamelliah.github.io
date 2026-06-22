@@ -37,7 +37,7 @@
   {{ $avatar_shape = lower (strings.TrimSpace $avatar_shape_raw) }}
 {{ end }}
 {{ with $author.avatar }}
-  {{ $avatar = .Fill "600x600 webp Center" }}
+  {{ $avatar = .Fill "640x640 webp Center" }}
 {{ end }}
 
 {{/* Layout style */}}
@@ -319,7 +319,7 @@
     {{ with $avatar }}
     <div class="mb-8">
       <div class="relative inline-block">
-        <div class="w-48 h-48 md:w-56 md:h-56 {{ if eq $avatar_shape "circle" }}rounded-full{{ else }}rounded-2xl{{ end }} overflow-hidden border-4 border-white shadow-2xl mx-auto">
+        <div class="w-64 h-64 md:w-80 md:h-80 {{ if eq $avatar_shape "circle" }}rounded-full{{ else }}rounded-2xl{{ end }} overflow-hidden border-4 border-white shadow-2xl mx-auto">
           <img src="{{ .RelPermalink }}" alt="{{ $author.title }}" class="w-full h-full object-cover">
         </div>
         {{/* Status emoji badge */}}
