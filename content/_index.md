@@ -293,25 +293,210 @@ sections:
           dark: "#08080c"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  - block: contact-info
+  - block: markdown
     id: contact
     content:
-      title: "Contact"
-      subtitle: "Professional connections and collaboration opportunities"
+      title: ""
       text: |-
-        I welcome opportunities to contribute to public health initiatives, healthcare systems improvement efforts, and policy development work.
-        I am especially interested in roles involving healthcare quality, regulatory compliance, and population health improvement.
-        Feel free to reach out regarding collaboration, professional opportunities, or shared interests in healthcare and public health.
-      email: "kamelliahyacinth@gmail.com"
-      autolink: true
+        {{< rawhtml >}}
+        <style>
+          .kh-contact-section {
+            max-width: 860px;
+            margin: 0 auto;
+            text-align: center;
+          }
+          .kh-status-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(34,197,94,0.12);
+            border: 1px solid rgba(34,197,94,0.3);
+            color: #16a34a;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 0.35rem 1rem;
+            border-radius: 9999px;
+            margin-bottom: 1.75rem;
+          }
+          .dark .kh-status-pill {
+            color: #4ade80;
+            background: rgba(74,222,128,0.1);
+            border-color: rgba(74,222,128,0.25);
+          }
+          .kh-contact-heading {
+            font-size: clamp(2.25rem, 5vw, 3.5rem);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+            margin: 0 0 1rem;
+            background: linear-gradient(135deg, #1e293b 0%, #475569 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+          }
+          .dark .kh-contact-heading {
+            background: linear-gradient(135deg, #f8fafc 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+          }
+          .kh-contact-sub {
+            font-size: 1.1rem;
+            color: #64748b;
+            max-width: 520px;
+            margin: 0 auto 3rem;
+            line-height: 1.65;
+          }
+          .dark .kh-contact-sub { color: #94a3b8; }
+          .kh-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.25rem;
+            margin-bottom: 2rem;
+          }
+          @media (max-width: 560px) {
+            .kh-cards-grid { grid-template-columns: 1fr; }
+          }
+          .kh-card {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.4rem 1.5rem;
+            border-radius: 1rem;
+            background: #ffffff;
+            border: 1px solid rgba(0,0,0,0.07);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04);
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+            text-align: left;
+          }
+          .kh-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            border-color: rgba(99,102,241,0.3);
+            text-decoration: none;
+            color: inherit;
+          }
+          .dark .kh-card {
+            background: rgba(255,255,255,0.04);
+            border-color: rgba(255,255,255,0.08);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+          }
+          .dark .kh-card:hover {
+            background: rgba(255,255,255,0.07);
+            border-color: rgba(139,92,246,0.4);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+          }
+          .kh-card-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            flex-shrink: 0;
+          }
+          .kh-card-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #94a3b8;
+            margin-bottom: 0.2rem;
+          }
+          .kh-card-value {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #1e293b;
+          }
+          .dark .kh-card-value { color: #f1f5f9; }
+          .kh-card-arrow {
+            margin-left: auto;
+            color: #cbd5e1;
+            font-size: 1.1rem;
+            transition: transform 0.2s ease, color 0.2s ease;
+          }
+          .kh-card:hover .kh-card-arrow {
+            transform: translateX(3px);
+            color: #6366f1;
+          }
+          .dark .kh-card:hover .kh-card-arrow { color: #818cf8; }
+          .kh-location-strip {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            color: #94a3b8;
+            margin-top: 0.5rem;
+          }
+        </style>
+
+        <div class="kh-contact-section">
+          <div><span class="kh-status-pill">&#9679; Open to Opportunities</span></div>
+          <h2 class="kh-contact-heading">Let&rsquo;s Connect</h2>
+          <p class="kh-contact-sub">
+            Available for roles in public health policy, healthcare administration, and regulatory compliance.
+            Open to remote and Wisconsin-based opportunities.
+          </p>
+
+          <div class="kh-cards-grid">
+
+            <a href="mailto:kamelliahyacinth@gmail.com" class="kh-card">
+              <div class="kh-card-icon" style="background:rgba(239,68,68,0.1);">✉️</div>
+              <div>
+                <div class="kh-card-label">Email</div>
+                <div class="kh-card-value">kamelliahyacinth@gmail.com</div>
+              </div>
+              <span class="kh-card-arrow">›</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/kamellia/" target="_blank" rel="noopener noreferrer" class="kh-card">
+              <div class="kh-card-icon" style="background:rgba(10,102,194,0.1);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="#0a66c2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <div>
+                <div class="kh-card-label">LinkedIn</div>
+                <div class="kh-card-value">linkedin.com/in/kamellia</div>
+              </div>
+              <span class="kh-card-arrow">›</span>
+            </a>
+
+            <a href="/uploads/resume.pdf" target="_blank" rel="noopener noreferrer" class="kh-card">
+              <div class="kh-card-icon" style="background:rgba(16,185,129,0.1);">📄</div>
+              <div>
+                <div class="kh-card-label">Resume</div>
+                <div class="kh-card-value">Download PDF</div>
+              </div>
+              <span class="kh-card-arrow">›</span>
+            </a>
+
+            <a href="https://www.instagram.com/kamelliah/" target="_blank" rel="noopener noreferrer" class="kh-card">
+              <div class="kh-card-icon" style="background:rgba(217,70,239,0.1);">📸</div>
+              <div>
+                <div class="kh-card-label">Instagram</div>
+                <div class="kh-card-value">@kamelliah</div>
+              </div>
+              <span class="kh-card-arrow">›</span>
+            </a>
+
+          </div>
+
+          <div class="kh-location-strip">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Fitchburg, Wisconsin &nbsp;&middot;&nbsp; Remote-friendly
+          </div>
+        </div>
+        {{< /rawhtml >}}
     design:
-      columns: "1"
       background:
         color:
           light: "#ffffff"
           dark: "#0d0d12"
       spacing:
-        padding: ["4rem", "0", "4rem", "0"]
+        padding: ["5rem", "0", "5rem", "0"]
   - block: cta-card
     content:
       title: "Open to Public Health & Healthcare Opportunities"
