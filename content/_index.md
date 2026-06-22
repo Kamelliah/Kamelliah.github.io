@@ -491,17 +491,23 @@ sections:
               <div class="kh-box-left">
                 <div class="kh-box-tag">
                   <svg width="7" height="7" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="currentColor"/></svg>
-                  Available Now
+                  Open to Opportunities
                 </div>
-                <div class="kh-box-title">Let&rsquo;s work together</div>
+                <div class="kh-box-title">Public Health &amp; Healthcare Opportunities</div>
                 <p class="kh-box-text">
-                  I welcome opportunities in public health initiatives, healthcare quality, and health systems improvement.
-                  Especially interested in policy, compliance, and population health strategy.
+                  Currently pursuing opportunities in public health policy, healthcare administration, and health systems improvement.
+                  Interested in roles involving healthcare quality, compliance, and population health strategy.
                 </p>
-                <a href="mailto:kamelliahyacinth@gmail.com" class="kh-email-btn">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
-                  Send an Email
-                </a>
+                <div style="display:flex; flex-wrap:wrap; gap:0.6rem; margin-bottom:1.5rem;">
+                  <a href="mailto:kamelliahyacinth@gmail.com" class="kh-email-btn">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+                    Send an Email
+                  </a>
+                  <a href="/uploads/resume.pdf" target="_blank" rel="noopener noreferrer" class="kh-email-btn" style="background:#1e3a5f;">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+                    Download Resume
+                  </a>
+                </div>
               </div>
 
               <div class="kh-box-right">
@@ -570,26 +576,6 @@ sections:
           dark: "#0d0d12"
       spacing:
         padding: ["5rem", "0", "5rem", "0"]
-  - block: cta-card
-    content:
-      title: "Open to Public Health & Healthcare Opportunities"
-      text: |-
-        Currently pursuing opportunities in public health policy, healthcare administration, and health systems improvement.
-        Interested in roles involving healthcare quality, compliance, and population health strategy.
-      button:
-        text: "Download Resume"
-        url: "uploads/resume.pdf"
-        new_tab: true
-    design:
-      card:
-        css_class: "bg-gradient-to-br from-primary-200 via-primary-100 to-secondary-200 dark:from-primary-600 dark:via-primary-700 dark:to-secondary-700"
-        text_color: dark
-      background:
-        color:
-          light: "#f5f5f5"
-          dark: "#08080c"
-      spacing:
-        padding: ["4rem", "0", "6rem", "0"]
   - block: markdown
     content:
       title: ""
