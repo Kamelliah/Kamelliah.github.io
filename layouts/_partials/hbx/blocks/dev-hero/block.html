@@ -29,7 +29,18 @@
 {{ end }}
 {{ $author := partial "functions/get_author_profile" $username }}
 
-{{/* Get avatar — generate at 600x600 for Retina/HiDPI sharpness */}}
+{{/* Postnominals — auto-drop (c) on/after graduation date */}}
+{{ $postnominals := "" }}
+{{ $postnominals_raw := index $author "postnominals" }}
+{{ if eq (printf "%T" $postnominals_raw) "string" }}
+  {{ $postnominals = $postnominals_raw }}
+{{ end }}
+{{ $grad_date := time "2027-05-17T00:00:00Z" }}
+{{ if ge now $grad_date }}
+  {{ $postnominals = replace $postnominals "(c)" "" | strings.TrimSpace }}
+{{ end }}
+
+{{/* Get avatar — generate at 640x640 for Retina/HiDPI sharpness */}}
 {{ $avatar := "" }}
 {{ $avatar_shape := "circle" }}
 {{ $avatar_shape_raw := index $design "avatar_shape" }}
@@ -207,7 +218,7 @@
           {{ with $name_prefix }}<span class="text-gray-500 dark:text-gray-400 font-normal">{{ . }}</span> {{ end }}
           <span class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 dark:from-white dark:via-gray-100 dark:to-gray-300 bg-clip-text text-transparent">
             {{ $author.title | default $title_override | default (i18n "developer" | default "Developer") }}
-          </span>
+          </span>{{ with $postnominals }}<span class="text-gray-500 dark:text-gray-400 font-normal text-2xl sm:text-3xl">, {{ . }}</span>{{ end }}
         </h1>
 
         {{/* Role/Tagline with optional typewriter */}}
@@ -348,7 +359,7 @@
       {{ with $name_prefix }}<span class="text-gray-500 font-normal">{{ . }}</span> {{ end }}
       <span class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 dark:from-white dark:via-gray-100 dark:to-gray-300 bg-clip-text text-transparent">
         {{ $author.title | default $title_override | default (i18n "developer" | default "Developer") }}
-      </span>
+      </span>{{ with $postnominals }}<span class="text-gray-500 dark:text-gray-400 font-normal text-2xl sm:text-3xl md:text-4xl">, {{ . }}</span>{{ end }}
     </h1>
 
     {{/* Role/Tagline with optional typewriter */}}
