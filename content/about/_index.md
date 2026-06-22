@@ -42,24 +42,6 @@ sections:
         padding: ["6rem", "0", "4rem", "0"]
 
   - block: markdown
-    id: about-story
-    content:
-      title: "My Path to Public Health"
-      text: |-
-        I'm a public health professional with a background that spans information technology, U.S. Army service, and healthcare operations. That range of experience shapes how I approach systems — I understand them from the inside, not just on paper.
-
-        I hold an MHA from UW–La Crosse and am completing my MPH in Public Health Policy & Management at UW–Milwaukee (May 2027). I'm currently interning with Children's Wisconsin and MKE FreshAir Collective, where I work on community health initiatives and environmental health equity in Milwaukee.
-
-        My focus is on policy, compliance, and the structural decisions that determine who gets care — and who doesn't.
-    design:
-      background:
-        color:
-          light: "#ffffff"
-          dark: "#0d0d12"
-      spacing:
-        padding: ["4rem", "0", "4rem", "0"]
-
-  - block: markdown
     id: about-countdown
     content:
       title: ""
