@@ -301,8 +301,10 @@ sections:
         {{< rawhtml >}}
         <style>
           .kh-contact-wrap {
-            max-width: 1100px;
-            margin: 0 auto;
+            width: min(1100px, calc(100vw - 3rem));
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
             text-align: center;
           }
           .kh-contact-grid {
