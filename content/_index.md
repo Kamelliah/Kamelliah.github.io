@@ -301,10 +301,31 @@ sections:
         {{< rawhtml >}}
         <style>
           .kh-contact-wrap {
-            max-width: 480px;
+            max-width: 960px;
             margin: 0 auto;
             text-align: center;
           }
+          .kh-contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            text-align: left;
+          }
+          @media (max-width: 700px) {
+            .kh-contact-grid { grid-template-columns: 1fr; }
+          }
+          .kh-map-panel {
+            border-radius: 1.5rem;
+            overflow: hidden;
+            border: 1px solid rgba(0,0,0,0.08);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.04), 0 20px 60px rgba(0,0,0,0.07);
+            min-height: 420px;
+          }
+          .dark .kh-map-panel {
+            border-color: rgba(255,255,255,0.08);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3), 0 20px 60px rgba(0,0,0,0.4);
+          }
+          #kh-map { width: 100%; height: 100%; min-height: 420px; }
           .kh-contact-heading {
             font-size: clamp(1.9rem, 4vw, 2.8rem);
             font-weight: 800;
@@ -476,10 +497,14 @@ sections:
           .dark .kh-box-footer { border-color: rgba(255,255,255,0.06); }
         </style>
 
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
         <div class="kh-contact-wrap">
           <h2 class="kh-contact-heading">Get in Touch</h2>
           <p class="kh-contact-sub">Open to opportunities in public health policy, healthcare administration, and regulatory compliance.</p>
 
+          <div class="kh-contact-grid">
           <div class="kh-box">
             <div class="kh-box-glow"></div>
             <div class="kh-box-inner">
@@ -552,7 +577,48 @@ sections:
               Fitchburg, Wisconsin &nbsp;&middot;&nbsp; Open to remote &amp; local opportunities
             </div>
           </div>
+
+          <div class="kh-map-panel">
+            <div id="kh-map"></div>
+          </div>
+          </div>
         </div>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var lat = 43.0067, lng = -89.4670;
+          var map = L.map('kh-map', {
+            center: [lat, lng],
+            zoom: 13,
+            zoomControl: true,
+            scrollWheelZoom: false
+          });
+
+          var light = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: 'abcd', maxZoom: 19
+          });
+          var dark = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: 'abcd', maxZoom: 19
+          });
+
+          function isDark() { return document.documentElement.classList.contains('dark'); }
+          (isDark() ? dark : light).addTo(map);
+
+          var pin = L.circleMarker([lat, lng], {
+            radius: 10, fillColor: isDark() ? '#818cf8' : '#6366f1',
+            color: '#fff', weight: 3, fillOpacity: 1
+          }).addTo(map).bindPopup('<b>Fitchburg, WI 53713</b>');
+
+          new MutationObserver(function() {
+            if (isDark()) { map.removeLayer(light); dark.addTo(map); pin.setStyle({fillColor: '#818cf8'}); }
+            else           { map.removeLayer(dark); light.addTo(map); pin.setStyle({fillColor: '#6366f1'}); }
+          }).observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+
+          setTimeout(function() { map.invalidateSize(); }, 300);
+        });
+        </script>
         {{< /rawhtml >}}
     design:
       background:
