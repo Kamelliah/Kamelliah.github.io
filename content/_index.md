@@ -42,6 +42,38 @@ sections:
       spacing:
         padding: ["6rem", "0", "4rem", "0"]
   - block: markdown
+    id: seo-person
+    content:
+      title: ""
+      text: |-
+        {{< rawhtml >}}
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Kamellia Hyacinth",
+          "url": "https://kamelliah.github.io",
+          "email": "kamelliahyacinth@gmail.com",
+          "jobTitle": "Public Health Policy, Systems & Compliance Professional",
+          "description": "MPH candidate, Army veteran, and public health policy professional based in Fitchburg, WI. Focused on regulatory compliance, health systems, and Wisconsin state health policy.",
+          "image": "https://kamelliah.github.io/media/icon_hu_52c4a216464a8cfe.png",
+          "alumniOf": [
+            {"@type": "EducationalOrganization", "name": "University of Wisconsin Milwaukee", "url": "https://uwm.edu"},
+            {"@type": "EducationalOrganization", "name": "University of Wisconsin La Crosse", "url": "https://www.uwlax.edu"},
+            {"@type": "EducationalOrganization", "name": "St. George's University", "url": "https://www.sgu.edu"}
+          ],
+          "sameAs": [
+            "https://www.linkedin.com/in/kamellia/",
+            "https://github.com/kamelliah",
+            "https://www.instagram.com/kamelliah/"
+          ]
+        }
+        </script>
+        {{< /rawhtml >}}
+    design:
+      spacing:
+        padding: ["0", "0", "0", "0"]
+  - block: markdown
     id: countdown
     content:
       title: ""
