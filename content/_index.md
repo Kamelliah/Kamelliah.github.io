@@ -353,7 +353,7 @@ sections:
             flex-direction: column;
             gap: 2rem;
           }
-          .kh-box-left { text-align: left; }
+          .kh-box-left { text-align: center; }
           .kh-box-tag {
             display: inline-flex;
             align-items: center;
