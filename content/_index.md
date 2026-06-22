@@ -300,193 +300,266 @@ sections:
       text: |-
         {{< rawhtml >}}
         <style>
-          .kh-contact-section {
-            max-width: 860px;
+          .kh-contact-wrap {
+            max-width: 720px;
             margin: 0 auto;
             text-align: center;
           }
-          .kh-status-pill {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: rgba(34,197,94,0.12);
-            border: 1px solid rgba(34,197,94,0.3);
-            color: #16a34a;
-            font-size: 0.75rem;
-            font-weight: 600;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            padding: 0.35rem 1rem;
-            border-radius: 9999px;
-            margin-bottom: 1.75rem;
-          }
-          .dark .kh-status-pill {
-            color: #4ade80;
-            background: rgba(74,222,128,0.1);
-            border-color: rgba(74,222,128,0.25);
-          }
           .kh-contact-heading {
-            font-size: clamp(2.25rem, 5vw, 3.5rem);
+            font-size: clamp(1.9rem, 4vw, 2.8rem);
             font-weight: 800;
             letter-spacing: -0.02em;
             line-height: 1.1;
-            margin: 0 0 1rem;
-            background: linear-gradient(135deg, #1e293b 0%, #475569 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            margin: 0 0 0.75rem;
+            color: #0f172a;
           }
-          .dark .kh-contact-heading {
-            background: linear-gradient(135deg, #f8fafc 0%, #94a3b8 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-          }
+          .dark .kh-contact-heading { color: #f1f5f9; }
           .kh-contact-sub {
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: #64748b;
-            max-width: 520px;
-            margin: 0 auto 3rem;
-            line-height: 1.65;
+            margin: 0 auto 2.5rem;
+            line-height: 1.7;
+            max-width: 480px;
           }
           .dark .kh-contact-sub { color: #94a3b8; }
-          .kh-cards-grid {
+          .kh-box {
+            position: relative;
+            border-radius: 1.5rem;
+            background: #fff;
+            border: 1px solid rgba(0,0,0,0.08);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.04), 0 20px 60px rgba(0,0,0,0.07);
+            overflow: hidden;
+          }
+          .dark .kh-box {
+            background: rgba(255,255,255,0.03);
+            border-color: rgba(255,255,255,0.08);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3), 0 20px 60px rgba(0,0,0,0.4);
+          }
+          .kh-box-glow {
+            position: absolute;
+            top: -60px; left: 50%;
+            transform: translateX(-50%);
+            width: 400px; height: 200px;
+            background: radial-gradient(ellipse, rgba(99,102,241,0.15) 0%, transparent 70%);
+            pointer-events: none;
+          }
+          .dark .kh-box-glow {
+            background: radial-gradient(ellipse, rgba(139,92,246,0.2) 0%, transparent 70%);
+          }
+          .kh-box-inner {
+            position: relative;
+            padding: 2.5rem 2.5rem 2rem;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.25rem;
-            margin-bottom: 2rem;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            align-items: start;
           }
           @media (max-width: 560px) {
-            .kh-cards-grid { grid-template-columns: 1fr; }
+            .kh-box-inner { grid-template-columns: 1fr; gap: 2rem; padding: 2rem 1.5rem; }
           }
-          .kh-card {
-            display: flex;
+          .kh-box-left { text-align: left; }
+          .kh-box-tag {
+            display: inline-flex;
             align-items: center;
-            gap: 1rem;
-            padding: 1.4rem 1.5rem;
-            border-radius: 1rem;
-            background: #ffffff;
-            border: 1px solid rgba(0,0,0,0.07);
-            box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04);
-            text-decoration: none;
-            color: inherit;
-            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-            text-align: left;
-          }
-          .kh-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-            border-color: rgba(99,102,241,0.3);
-            text-decoration: none;
-            color: inherit;
-          }
-          .dark .kh-card {
-            background: rgba(255,255,255,0.04);
-            border-color: rgba(255,255,255,0.08);
-            box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-          }
-          .dark .kh-card:hover {
-            background: rgba(255,255,255,0.07);
-            border-color: rgba(139,92,246,0.4);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
-          }
-          .kh-card-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: 0.75rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.4rem;
-            flex-shrink: 0;
-          }
-          .kh-card-label {
+            gap: 0.4rem;
             font-size: 0.7rem;
-            font-weight: 600;
+            font-weight: 700;
             letter-spacing: 0.1em;
             text-transform: uppercase;
-            color: #94a3b8;
-            margin-bottom: 0.2rem;
+            color: #22c55e;
+            background: rgba(34,197,94,0.1);
+            border: 1px solid rgba(34,197,94,0.2);
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            margin-bottom: 1rem;
           }
-          .kh-card-value {
-            font-size: 0.95rem;
-            font-weight: 600;
-            color: #1e293b;
+          .dark .kh-box-tag {
+            color: #4ade80;
+            background: rgba(74,222,128,0.08);
+            border-color: rgba(74,222,128,0.2);
           }
-          .dark .kh-card-value { color: #f1f5f9; }
-          .kh-card-arrow {
-            margin-left: auto;
-            color: #cbd5e1;
-            font-size: 1.1rem;
-            transition: transform 0.2s ease, color 0.2s ease;
+          .kh-box-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin: 0 0 0.75rem;
+            line-height: 1.3;
           }
-          .kh-card:hover .kh-card-arrow {
-            transform: translateX(3px);
-            color: #6366f1;
+          .dark .kh-box-title { color: #f1f5f9; }
+          .kh-box-text {
+            font-size: 0.9rem;
+            color: #64748b;
+            line-height: 1.7;
+            margin: 0 0 1.5rem;
           }
-          .dark .kh-card:hover .kh-card-arrow { color: #818cf8; }
-          .kh-location-strip {
+          .dark .kh-box-text { color: #94a3b8; }
+          .kh-email-btn {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            font-size: 0.85rem;
-            color: #94a3b8;
-            margin-top: 0.5rem;
+            background: #0f172a;
+            color: #fff;
+            font-size: 0.875rem;
+            font-weight: 600;
+            padding: 0.65rem 1.25rem;
+            border-radius: 0.625rem;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.15s;
           }
+          .kh-email-btn:hover { background: #1e293b; transform: translateY(-1px); text-decoration: none; color: #fff; }
+          .dark .kh-email-btn { background: #f1f5f9; color: #0f172a; }
+          .dark .kh-email-btn:hover { background: #fff; }
+          .kh-box-right { text-align: left; }
+          .kh-links-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #94a3b8;
+            margin-bottom: 0.9rem;
+          }
+          .kh-links-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+          }
+          .kh-link-row {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+            padding: 0.7rem 0.85rem;
+            border-radius: 0.75rem;
+            text-decoration: none;
+            color: #1e293b;
+            border: 1px solid rgba(0,0,0,0.06);
+            background: rgba(0,0,0,0.02);
+            transition: background 0.15s, border-color 0.15s, transform 0.15s;
+            font-size: 0.875rem;
+            font-weight: 500;
+          }
+          .kh-link-row:hover {
+            background: rgba(99,102,241,0.06);
+            border-color: rgba(99,102,241,0.2);
+            transform: translateX(3px);
+            text-decoration: none;
+            color: #1e293b;
+          }
+          .dark .kh-link-row {
+            color: #e2e8f0;
+            background: rgba(255,255,255,0.03);
+            border-color: rgba(255,255,255,0.07);
+          }
+          .dark .kh-link-row:hover {
+            background: rgba(139,92,246,0.08);
+            border-color: rgba(139,92,246,0.25);
+            color: #e2e8f0;
+          }
+          .kh-link-icon {
+            width: 32px; height: 32px;
+            border-radius: 0.5rem;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1rem;
+            flex-shrink: 0;
+          }
+          .kh-link-meta { flex: 1; }
+          .kh-link-name { font-weight: 600; font-size: 0.85rem; display: block; }
+          .kh-link-handle { font-size: 0.75rem; color: #94a3b8; }
+          .kh-link-arrow { color: #cbd5e1; font-size: 0.85rem; transition: transform 0.15s; }
+          .kh-link-row:hover .kh-link-arrow { transform: translateX(2px); color: #6366f1; }
+          .dark .kh-link-row:hover .kh-link-arrow { color: #818cf8; }
+          .kh-box-footer {
+            border-top: 1px solid rgba(0,0,0,0.06);
+            padding: 1rem 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            font-size: 0.8rem;
+            color: #94a3b8;
+          }
+          .dark .kh-box-footer { border-color: rgba(255,255,255,0.06); }
         </style>
 
-        <div class="kh-contact-section">
-          <div><span class="kh-status-pill">&#9679; Open to Opportunities</span></div>
-          <h2 class="kh-contact-heading">Let&rsquo;s Connect</h2>
-          <p class="kh-contact-sub">
-            Available for roles in public health policy, healthcare administration, and regulatory compliance.
-            Open to remote and Wisconsin-based opportunities.
-          </p>
+        <div class="kh-contact-wrap">
+          <h2 class="kh-contact-heading">Get in Touch</h2>
+          <p class="kh-contact-sub">Open to opportunities in public health policy, healthcare administration, and regulatory compliance.</p>
 
-          <div class="kh-cards-grid">
+          <div class="kh-box">
+            <div class="kh-box-glow"></div>
+            <div class="kh-box-inner">
 
-            <a href="mailto:kamelliahyacinth@gmail.com" class="kh-card">
-              <div class="kh-card-icon" style="background:rgba(239,68,68,0.1);">✉️</div>
-              <div>
-                <div class="kh-card-label">Email</div>
-                <div class="kh-card-value">kamelliahyacinth@gmail.com</div>
+              <div class="kh-box-left">
+                <div class="kh-box-tag">
+                  <svg width="7" height="7" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="currentColor"/></svg>
+                  Available Now
+                </div>
+                <div class="kh-box-title">Let&rsquo;s work together</div>
+                <p class="kh-box-text">
+                  I welcome opportunities in public health initiatives, healthcare quality, and health systems improvement.
+                  Especially interested in policy, compliance, and population health strategy.
+                </p>
+                <a href="mailto:kamelliahyacinth@gmail.com" class="kh-email-btn">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+                  Send an Email
+                </a>
               </div>
-              <span class="kh-card-arrow">›</span>
-            </a>
 
-            <a href="https://www.linkedin.com/in/kamellia/" target="_blank" rel="noopener noreferrer" class="kh-card">
-              <div class="kh-card-icon" style="background:rgba(10,102,194,0.1);">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="#0a66c2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <div class="kh-box-right">
+                <div class="kh-links-label">Find me on</div>
+                <div class="kh-links-list">
+
+                  <a href="https://www.linkedin.com/in/kamellia/" target="_blank" rel="noopener noreferrer" class="kh-link-row">
+                    <div class="kh-link-icon" style="background:rgba(10,102,194,0.1);">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="#0a66c2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </div>
+                    <div class="kh-link-meta">
+                      <span class="kh-link-name">LinkedIn</span>
+                      <span class="kh-link-handle">linkedin.com/in/kamellia</span>
+                    </div>
+                    <span class="kh-link-arrow">›</span>
+                  </a>
+
+                  <a href="/uploads/resume.pdf" target="_blank" rel="noopener noreferrer" class="kh-link-row">
+                    <div class="kh-link-icon" style="background:rgba(16,185,129,0.1);">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+                    </div>
+                    <div class="kh-link-meta">
+                      <span class="kh-link-name">Resume</span>
+                      <span class="kh-link-handle">Download PDF</span>
+                    </div>
+                    <span class="kh-link-arrow">›</span>
+                  </a>
+
+                  <a href="https://github.com/kamelliah" target="_blank" rel="noopener noreferrer" class="kh-link-row">
+                    <div class="kh-link-icon" style="background:rgba(0,0,0,0.06);">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                    </div>
+                    <div class="kh-link-meta">
+                      <span class="kh-link-name">GitHub</span>
+                      <span class="kh-link-handle">github.com/kamelliah</span>
+                    </div>
+                    <span class="kh-link-arrow">›</span>
+                  </a>
+
+                  <a href="https://www.instagram.com/kamelliah/" target="_blank" rel="noopener noreferrer" class="kh-link-row">
+                    <div class="kh-link-icon" style="background:rgba(217,70,239,0.08);">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d946ef" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="#d946ef"/></svg>
+                    </div>
+                    <div class="kh-link-meta">
+                      <span class="kh-link-name">Instagram</span>
+                      <span class="kh-link-handle">@kamelliah</span>
+                    </div>
+                    <span class="kh-link-arrow">›</span>
+                  </a>
+
+                </div>
               </div>
-              <div>
-                <div class="kh-card-label">LinkedIn</div>
-                <div class="kh-card-value">linkedin.com/in/kamellia</div>
-              </div>
-              <span class="kh-card-arrow">›</span>
-            </a>
+            </div>
 
-            <a href="/uploads/resume.pdf" target="_blank" rel="noopener noreferrer" class="kh-card">
-              <div class="kh-card-icon" style="background:rgba(16,185,129,0.1);">📄</div>
-              <div>
-                <div class="kh-card-label">Resume</div>
-                <div class="kh-card-value">Download PDF</div>
-              </div>
-              <span class="kh-card-arrow">›</span>
-            </a>
-
-            <a href="https://www.instagram.com/kamelliah/" target="_blank" rel="noopener noreferrer" class="kh-card">
-              <div class="kh-card-icon" style="background:rgba(217,70,239,0.1);">📸</div>
-              <div>
-                <div class="kh-card-label">Instagram</div>
-                <div class="kh-card-value">@kamelliah</div>
-              </div>
-              <span class="kh-card-arrow">›</span>
-            </a>
-
-          </div>
-
-          <div class="kh-location-strip">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Fitchburg, Wisconsin &nbsp;&middot;&nbsp; Remote-friendly
+            <div class="kh-box-footer">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Fitchburg, Wisconsin &nbsp;&middot;&nbsp; Open to remote &amp; local opportunities
+            </div>
           </div>
         </div>
         {{< /rawhtml >}}
