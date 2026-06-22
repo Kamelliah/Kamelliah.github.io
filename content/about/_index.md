@@ -47,25 +47,13 @@ sections:
       title: ""
       text: |-
         {{< rawhtml >}}
-        <div style="text-align:center; padding:0.5rem 0;">
-          <p style="font-size:0.75rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; opacity:0.5; margin:0 0 1.25rem;">MPH Graduation &middot; May 17, 2027</p>
-          <div id="about-mph-countdown" style="display:inline-flex; gap:1rem; flex-wrap:wrap; justify-content:center;">
-            <div style="display:flex;flex-direction:column;align-items:center;background:rgba(128,128,128,0.08);border:1px solid rgba(128,128,128,0.15);border-radius:0.75rem;padding:1.25rem 1.75rem;min-width:88px;">
-              <span id="acd-days"  style="font-size:2.75rem;font-weight:700;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-0.02em;">--</span>
-              <span style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;opacity:0.5;margin-top:0.4rem;">Days</span>
-            </div>
-            <div style="display:flex;flex-direction:column;align-items:center;background:rgba(128,128,128,0.08);border:1px solid rgba(128,128,128,0.15);border-radius:0.75rem;padding:1.25rem 1.75rem;min-width:88px;">
-              <span id="acd-hours" style="font-size:2.75rem;font-weight:700;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-0.02em;">--</span>
-              <span style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;opacity:0.5;margin-top:0.4rem;">Hours</span>
-            </div>
-            <div style="display:flex;flex-direction:column;align-items:center;background:rgba(128,128,128,0.08);border:1px solid rgba(128,128,128,0.15);border-radius:0.75rem;padding:1.25rem 1.75rem;min-width:88px;">
-              <span id="acd-mins"  style="font-size:2.75rem;font-weight:700;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-0.02em;">--</span>
-              <span style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;opacity:0.5;margin-top:0.4rem;">Minutes</span>
-            </div>
-            <div style="display:flex;flex-direction:column;align-items:center;background:rgba(128,128,128,0.08);border:1px solid rgba(128,128,128,0.15);border-radius:0.75rem;padding:1.25rem 1.75rem;min-width:88px;">
-              <span id="acd-secs"  style="font-size:2.75rem;font-weight:700;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-0.02em;">--</span>
-              <span style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;opacity:0.5;margin-top:0.4rem;">Seconds</span>
-            </div>
+        <div class="kh-cd-wrap">
+          <p class="kh-cd-label">🎓 MPH Graduation &middot; May 17, 2027</p>
+          <div id="about-mph-countdown" class="kh-cd-grid">
+            <div class="kh-cd-cell"><span id="acd-days"  class="kh-cd-num">--</span><span class="kh-cd-unit">Days</span></div>
+            <div class="kh-cd-cell"><span id="acd-hours" class="kh-cd-num">--</span><span class="kh-cd-unit">Hours</span></div>
+            <div class="kh-cd-cell"><span id="acd-mins"  class="kh-cd-num">--</span><span class="kh-cd-unit">Mins</span></div>
+            <div class="kh-cd-cell"><span id="acd-secs"  class="kh-cd-num">--</span><span class="kh-cd-unit">Secs</span></div>
           </div>
         </div>
         <script>
@@ -76,7 +64,7 @@ sections:
             var diff = target - new Date();
             if(diff <= 0){
               document.getElementById('about-mph-countdown').innerHTML =
-                '<span style="font-size:1.25rem;font-weight:600;">🎓 Graduated!</span>';
+                '<span style="font-size:1.25rem;font-weight:700;color:#6366f1;">🎓 Graduated!</span>';
               return;
             }
             document.getElementById('acd-days').textContent  = pad(Math.floor(diff/86400000));
@@ -84,8 +72,7 @@ sections:
             document.getElementById('acd-mins').textContent  = pad(Math.floor(diff%3600000/60000));
             document.getElementById('acd-secs').textContent  = pad(Math.floor(diff%60000/1000));
           }
-          tick();
-          setInterval(tick,1000);
+          tick(); setInterval(tick,1000);
         })();
         </script>
         {{< /rawhtml >}}
