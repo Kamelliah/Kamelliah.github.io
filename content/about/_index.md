@@ -1,0 +1,114 @@
+---
+title: "About"
+type: landing
+design:
+  spacing: "0"
+sections:
+  - block: markdown
+    id: about-header
+    content:
+      title: "About Me"
+      subtitle: "Public health professional, Army veteran, and lifelong advocate for equitable healthcare systems"
+    design:
+      background:
+        color:
+          light: "#fafafa"
+          dark: "#0a0a0f"
+      spacing:
+        padding: ["4rem", "0", "2rem", "0"]
+
+  - block: markdown
+    id: about-story
+    content:
+      title: ""
+      text: |-
+        ## My Path to Public Health
+
+        My career has never followed a straight line — and I think that makes me a better public health professional.
+
+        I began in information technology, earning a Bachelor of Science from St. George's University, where I developed a foundation in systems thinking, data management, and analytical problem-solving. After serving in the United States Army, I carried those same skills into healthcare operations, spending years coordinating clinical workflows, managing compliance processes, and working inside the systems that shape how people receive care.
+
+        What I kept seeing was a gap — between what healthcare systems were designed to do and what the people inside them actually experienced. That gap is what led me to healthcare administration, and eventually to public health policy.
+
+        I completed a Master of Science in Healthcare Administration at the University of Wisconsin–La Crosse in 2025, where my capstone partnered with Circle of Hope, Inc. II — a nonprofit serving physically and developmentally disabled women — to improve their employee policies, hiring strategy, and onboarding processes. I am currently pursuing a Master of Public Health in Public Health Policy & Management at the University of Wisconsin–Milwaukee, with an expected graduation in May 2027.
+
+        Today I work at the intersection of policy, compliance, and community health — as an intern with Children's Wisconsin supporting community health initiatives, and with MKE FreshAir Collective analyzing environmental health disparities across Milwaukee neighborhoods.
+
+        ## What Drives Me
+
+        I am drawn to work that asks hard questions about access, equity, and system design. Who gets care, and why? Who doesn't — and what structural decisions made that true? My writing and my project work both reflect a belief that public health outcomes are downstream of policy decisions, and that improving those outcomes requires working upstream.
+
+        I am especially interested in regulatory compliance, healthcare quality improvement, and population health strategy — areas where careful analysis, clear communication, and an understanding of how systems actually function can produce meaningful change.
+
+        ## Outside the Work
+
+        I am based in Fitchburg, Wisconsin. I am an Army veteran, a graduate student, and someone who believes the best policy comes from people who have lived inside the systems they are trying to improve.
+    design:
+      background:
+        color:
+          light: "#ffffff"
+          dark: "#0d0d12"
+      spacing:
+        padding: ["3rem", "0", "3rem", "0"]
+
+  - block: resume-experience
+    id: about-experience
+    content:
+      title: "Experience"
+      items:
+        - title: "Community Health & Policy Intern"
+          company: "Children's Wisconsin"
+          company_url: "https://childrenswi.org"
+          date_start: 2026-06-01
+          description: |-
+            Supported community health and prevention initiatives through program coordination and policy research.
+            Assisted with community needs assessments, data analysis, and reporting to support population health strategies.
+
+        - title: "Public Policy & Community Health Intern"
+          company: "MKE FreshAir Collective"
+          company_url: "https://www.mkefreshair.com"
+          date_start: 2026-06-01
+          description: |-
+            Analyzed air quality sensor data across Milwaukee's marginalized neighborhoods to identify environmental health disparities.
+            Drafted policy briefs and research summaries translating findings into advocacy materials.
+
+        - title: "Audiology Clinical Operations Coordinator"
+          company: "SSM Health"
+          company_url: "https://www.ssmhealth.com"
+          date_start: 2025-07-28
+          date_end: 2026-02-13
+          description: |-
+            Coordinated clinical workflows, scheduling operations, and patient service processes.
+            Supported operational efficiency and compliance with healthcare organizational standards.
+
+        - title: "CBRF Compliance & Policy Intern"
+          company: "Circle Of Hope Inc. II"
+          company_url: "https://circleofhopell.com"
+          date_start: 2024-01-01
+          date_end: 2025-05-31
+          description: |-
+            Assisted with compliance review and organizational policy development including employee handbook improvements.
+            Supported workforce system improvements related to onboarding processes, staff policies, and regulatory compliance.
+    design:
+      columns: "1"
+      background:
+        color:
+          light: "#f5f5f5"
+          dark: "#08080c"
+      spacing:
+        padding: ["4rem", "0", "4rem", "0"]
+
+  - block: markdown
+    id: about-cta
+    content:
+      title: ""
+      text: |-
+        **Want to connect or collaborate?** [Get in touch](/#contact) or [download my resume](/uploads/resume.pdf).
+    design:
+      background:
+        color:
+          light: "#ffffff"
+          dark: "#0d0d12"
+      spacing:
+        padding: ["2.5rem", "0", "4rem", "0"]
+---

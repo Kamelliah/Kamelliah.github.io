@@ -1,13 +1,13 @@
 ---
-title: "Academic Work"
+title: "Capstone"
 type: landing
 design:
   spacing: "0"
 sections:
   - block: markdown
-    id: academic-header
+    id: capstone-header
     content:
-      title: "Academic Work"
+      title: "Capstone"
       subtitle: "Capstone projects and practicum work from my graduate programs in Healthcare Administration and Public Health"
     design:
       background:

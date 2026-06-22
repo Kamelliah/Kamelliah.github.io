@@ -131,7 +131,7 @@ sections:
   - block: portfolio
     id: projects
     content:
-      title: "Selected Work"
+      title: "Work"
       subtitle: "Public health, healthcare administration, and systems improvement projects"
       count: 0
       filters:
@@ -268,7 +268,7 @@ sections:
   - block: portfolio
     id: blog
     content:
-      title: "Recent Writing"
+      title: "Writing"
       subtitle: "Public health policy, healthcare systems, and population health perspectives"
       count: 0
       filters:
