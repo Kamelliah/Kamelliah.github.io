@@ -164,7 +164,7 @@ sections:
             - name: "Healthcare Operations"
               icon: hero/building-office-2
             - name: "Clinical Workflow Coordination"
-              icon: hero/cog-6-tooth
+              icon: hero/clipboard-document-list
             - name: "Quality Improvement"
               icon: hero/arrow-path
             - name: "Program Coordination"
@@ -178,7 +178,7 @@ sections:
             - name: "Reporting & Documentation"
               icon: hero/document-chart-bar
             - name: "Population Health Analysis"
-              icon: hero/circle-stack
+              icon: hero/users
         - name: "Leadership & Collaboration"
           items:
             - name: "Project Coordination"
