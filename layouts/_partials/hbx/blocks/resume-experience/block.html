@@ -1,0 +1,101 @@
+{{/* Hugo Blox: Resume Experience — local override adding company_url link support */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $content := $block.content }}
+{{ if not (reflect.IsMap $content) }}{{ $content = dict }}{{ end }}
+{{ $design := $block.design }}
+{{ if not (reflect.IsMap $design) }}{{ $design = dict }}{{ end }}
+
+{{ $title := "" }}
+{{ $title_raw := index $content "title" }}
+{{ if eq (printf "%T" $title_raw) "string" }}{{ $title = $title_raw }}{{ end }}
+
+{{ $date_format := "Jan 2006" }}
+{{ $date_format_raw := index $content "date_format" }}
+{{ if eq (printf "%T" $date_format_raw) "string" }}{{ $date_format = $date_format_raw }}{{ end }}
+
+{{ $items_raw := index $content "items" }}
+{{ $items := slice }}
+{{ if reflect.IsSlice $items_raw }}{{ $items = $items_raw }}{{ end }}
+
+<div class="mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-8">
+  <div class="flex flex-col gap-16">
+    <div class="w-full">
+
+      {{ with $title }}
+      <h2 class="mb-10 text-3xl font-bold text-gray-900 dark:text-white text-center">{{ . }}</h2>
+      {{ end }}
+
+      <div class="relative">
+        <div class="absolute left-4 sm:left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary-500 via-primary-400 to-primary-600/50"></div>
+        <div class="space-y-8">
+
+          {{ range $items }}
+            {{ $item_title := "" }}
+            {{ with index . "title" }}{{ $item_title = printf "%v" . }}{{ end }}
+
+            {{ $company := "" }}
+            {{ with index . "company" }}{{ $company = printf "%v" . }}{{ end }}
+
+            {{ $company_url := "" }}
+            {{ with index . "company_url" }}{{ $company_url = strings.TrimSpace (printf "%v" .) }}{{ end }}
+
+            {{ $location := "" }}
+            {{ with index . "location" }}{{ $location = printf "%v" . }}{{ end }}
+
+            {{ $date_start := "" }}
+            {{ with index . "date_start" }}
+              {{ $date_start = (time (printf "%v" .)).Format $date_format }}
+            {{ end }}
+
+            {{ $date_end_raw := index . "date_end" }}
+            {{ $date_end := "" }}
+            {{ if $date_end_raw }}
+              {{ $date_end = (time (printf "%v" $date_end_raw)).Format $date_format }}
+            {{ end }}
+
+            {{ $description := "" }}
+            {{ with index . "description" }}{{ $description = printf "%v" . }}{{ end }}
+
+            <div class="group relative pl-12 sm:pl-16">
+              <div class="absolute left-0 sm:left-2 top-6 flex items-center justify-center">
+                <div class="relative">
+                  <div class="absolute inset-0 w-8 h-8 bg-primary-500/30 rounded-full blur-md group-hover:bg-primary-500/50 transition-all duration-300"></div>
+                  <div class="relative w-8 h-8 bg-white dark:bg-gray-900 border-2 border-primary-500 rounded-full flex items-center justify-center group-hover:border-primary-400 group-hover:scale-110 transition-all duration-300">
+                    <svg fill="currentColor" viewBox="0 0 256 256" class="w-4 h-4 text-primary-600 dark:text-primary-400"><path d="M216 56H176V48a24 24 0 00-24-24H104A24 24 0 0080 48v8H40A16 16 0 0024 72V200a16 16 0 0016 16H216a16 16 0 0016-16V72A16 16 0 00216 56zM96 48a8 8 0 018-8h48a8 8 0 018 8v8H96zM216 72v41.61A184 184 0 01128 136a184.07 184.07 0 01-88-22.38V72zm0 128H40V131.64A200.19 200.19 0 00128 152a200.25 200.25 0 0088-20.37V200zM104 112a8 8 0 018-8h32a8 8 0 010 16H112a8 8 0 01-8-8z"/></svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="relative bg-white dark:bg-white/[0.02] backdrop-blur-sm rounded-xl border border-gray-200 dark:border-white/[0.06] p-6 hover:bg-gray-50 dark:hover:bg-white/[0.04] hover:border-primary-300 dark:hover:border-primary-500/30 transition-all duration-300 group-hover:translate-x-1 shadow-sm dark:shadow-none">
+                <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">{{ $item_title }}</h3>
+                    <p class="text-primary-600 dark:text-primary-400 font-medium mt-1">
+                      {{ if $company_url }}
+                        <a href="{{ $company_url }}" target="_blank" rel="noopener noreferrer" class="hover:underline underline-offset-2">{{ $company }}</a>
+                      {{ else }}
+                        {{ $company }}
+                      {{ end }}
+                      {{ with $location }}<span class="text-gray-400 dark:text-gray-500 font-normal"> · {{ . }}</span>{{ end }}
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 shrink-0">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5A2 2 0 003 7v12a2 2 0 002 2z"/></svg>
+                    <time>{{ $date_start }}{{ if $date_end }} – {{ $date_end }}{{ else }} – <span class="text-primary-600 dark:text-primary-400 font-medium">Present</span>{{ end }}</time>
+                  </div>
+                </div>
+                {{ with $description }}
+                <div class="prose dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed">
+                  {{ . | $page.RenderString }}
+                </div>
+                {{ end }}
+              </div>
+            </div>
+          {{ end }}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
