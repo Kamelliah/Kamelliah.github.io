@@ -24,8 +24,11 @@ sections:
         delete_speed: 40
         pause_time: 2500
       cta_buttons:
-        - text: "My Experience"
+        - text: "Experience"
           url: "#about-experience"
+          icon: arrow-down
+        - text: "Education"
+          url: "#about-education"
           icon: arrow-down
         - text: "Contact Me"
           url: "/#contact"
@@ -133,6 +136,46 @@ sections:
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
 
+  - block: resume-experience
+    id: about-education
+    content:
+      title: "Education"
+      items:
+        - title: "Master of Public Health — Public Health Policy & Management"
+          company: "University of Wisconsin Milwaukee"
+          company_url: "https://uwm.edu"
+          date_start: 2025-09-01
+          date_end: 2027-05-17
+          description: |-
+            Focus on public health policy, health systems management, and population health improvement.
+            Coursework includes healthcare quality, regulatory compliance, and data-driven decision making.
+
+        - title: "Master of Science — Healthcare Administration"
+          company: "University of Wisconsin La Crosse"
+          company_url: "https://www.uwlax.edu"
+          date_start: 2023-05-26
+          date_end: 2025-05-17
+          description: |-
+            Focus on healthcare operations, leadership, and quality improvement.
+            Graduate studies emphasized healthcare finance, policy, and organizational performance improvement.
+
+        - title: "Bachelor of Science — Information Technology"
+          company: "St. George's University"
+          company_url: "https://www.sgu.edu"
+          date_start: 2011-01-22
+          date_end: 2015-12-31
+          description: |-
+            Focus on information systems, database management, and technical support.
+            Developed technical and analytical skills applicable to health information systems and data management.
+    design:
+      columns: "1"
+      background:
+        color:
+          light: "#f5f5f5"
+          dark: "#08080c"
+      spacing:
+        padding: ["4rem", "0", "4rem", "0"]
+
   - block: markdown
     id: about-cta
     content:
@@ -146,4 +189,5 @@ sections:
           dark: "#0d0d12"
       spacing:
         padding: ["2.5rem", "0", "4rem", "0"]
+
 ---
