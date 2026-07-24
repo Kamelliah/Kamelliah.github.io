@@ -216,7 +216,7 @@ sections:
             Contributed to initiatives addressing health disparities and improving access to care.
         - title: "Public Policy & Community Health Intern"
           company: "MKE FreshAir Collective"
-          company_url: ""
+          company_url: "https://www.mkefreshair.com"
           company_logo: ""
           location: "Milwaukee, Wisconsin"
           date_start: "2026-06-01"
@@ -236,7 +236,7 @@ sections:
             Supported operational efficiency and compliance with healthcare organizational standards.
         - title: "CBRF Compliance & Policy Intern"
           company: "Circle of Hope Inc. II"
-          company_url: ""
+          company_url: "https://circleofhopell.com"
           company_logo: ""
           location: "Wisconsin"
           date_start: "2024-01-01"
